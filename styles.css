@@ -70,6 +70,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   height: 38px;
   flex: 0 0 auto;
   object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .nav-actions { display: flex; align-items: center; gap: 10px; }
@@ -108,6 +109,7 @@ main { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
   height: auto;
   margin: 0 auto 24px;
   object-fit: contain;
+  mix-blend-mode: multiply;
   filter: drop-shadow(0 12px 20px rgba(201, 95, 130, 0.22));
 }
 
