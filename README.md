@@ -12,7 +12,7 @@ The site defaults to Japanese and supports Traditional Chinese and English. It h
 
 ## Before publishing
 
-Replace the temporary support-contact notice in `support.html` with a dedicated public support email address or a public GitHub Issues URL.
+Support requests use the public GitHub Issues page. Users should be reminded not to attach private photos or personal information.
 
 ## Suggested GitHub Pages setup
 
