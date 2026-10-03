@@ -1,14 +1,42 @@
-# OshiLove website
+# OshiLove & OshiPocket website
 
-Static, multilingual GitHub Pages website for OshiLove.
+Static, multilingual product website for OshiLove and OshiPocket. The existing
+OshiLove privacy policy and support pages keep their original URLs and content.
 
 ## Pages
 
-- `index.html` — landing page
+- `index.html` — shared product landing page
+- `landing.css` — landing page layout, pastel colour variables and responsive styles
 - `privacy.html` — privacy policy for App Store / Google Play
 - `support.html` — support page and frequently asked questions
 
 The site defaults to Japanese and supports Traditional Chinese and English. It has no analytics, cookies, external fonts or third-party scripts.
+
+The landing page also includes a side-by-side app chooser and a privacy-focused
+summary so visitors can quickly understand which app fits their needs and how
+their records are stored.
+
+## Product screenshots
+
+The landing page uses real portrait screenshots supplied for both apps:
+
+- `oshilove-home.webp`
+- `oshilove-profile.webp`
+- `oshipocket-stats.webp`
+
+They are presented inside the reusable `.device` frame without cropping app
+controls. Optimised WebP files are loaded on the page; the supplied PNG files
+remain as source assets. New screens should keep the same 9:19.5 ratio and
+descriptive alt text.
+
+The App Store buttons use app IDs verified from App Store Connect. Regional
+availability has not been confirmed, so the page does not claim either app is
+currently available in every storefront. The footer keeps separate Privacy and
+Support URLs for OshiLove and OshiPocket, matching their submitted Apple URLs.
+
+`robots.txt`, `sitemap.xml`, canonical URLs, Open Graph large-image metadata and
+JSON-LD are included for search and link previews. Update the sitemap `lastmod`
+values when publishing meaningful content changes.
 
 ## Before publishing
 
@@ -28,4 +56,3 @@ Suggested App Store URLs:
 - Support URL: `https://yamasaku.github.io/oshilove/support.html`
 
 Copyright: `2026 WONG SUM YI`
-

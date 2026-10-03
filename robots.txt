@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yamasaku.github.io/oshilove/sitemap.xml

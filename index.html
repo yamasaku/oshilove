@@ -3,73 +3,168 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fffafb">
-  <meta name="description" content="OshiLove official support and privacy information.">
-  <title>OshiLove</title>
+  <meta name="theme-color" content="#FFFDFD">
+  <meta name="description" data-page-description-ja="OshiLove と OshiPocket は、推し活の思い出・予定・写真・現場・支出を自分らしく記録できる、アカウント登録不要の iOS アプリです。" data-page-description-zh-tw="OshiLove 與 OshiPocket 是毋須註冊帳戶的 iOS 應用程式，讓您整理追星回憶、日程、相片、活動及開支。" data-page-description-en="OshiLove and OshiPocket are private iOS apps for organising oshi memories, plans, photos, events and expenses without creating an account." content="OshiLove と OshiPocket は、推し活の思い出・予定・写真・現場・支出を自分らしく記録できる、アカウント登録不要の iOS アプリです。">
+  <meta name="keywords" content="OshiLove,OshiPocket,推し活,推し活アプリ,オタ活,思い出記録,ライブ,特典会,チェキ,支出管理,iOSアプリ">
+  <meta name="author" content="WONG SUM YI">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://yamasaku.github.io/oshilove/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OshiLove & OshiPocket">
+  <meta property="og:title" content="OshiLove & OshiPocket｜推し活を、もっと自分らしく。">
+  <meta property="og:description" content="思い出は OshiLove に。現場と支出は OshiPocket に。推し活を自分らしく記録できる、ふたつの iOS アプリ。">
+  <meta property="og:url" content="https://yamasaku.github.io/oshilove/">
+  <meta property="og:image" content="https://yamasaku.github.io/oshilove/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OshiLove and OshiPocket app preview">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OshiLove & OshiPocket">
+  <meta name="twitter:description" content="推し活の思い出、予定、現場と支出を大切に残す、ふたつの iOS アプリ。">
+  <meta name="twitter:image" content="https://yamasaku.github.io/oshilove/social-preview.png">
+  <title data-page-title-ja="OshiLove & OshiPocket｜推し活記録アプリ" data-page-title-zh-tw="OshiLove & OshiPocket｜追星記錄 App" data-page-title-en="OshiLove & OshiPocket | Apps for your oshi life">OshiLove &amp; OshiPocket｜推し活記録アプリ</title>
+  <link rel="icon" href="app-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing.css">
   <script defer src="site.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://yamasaku.github.io/oshilove/#website",
+        "url": "https://yamasaku.github.io/oshilove/",
+        "name": "OshiLove & OshiPocket",
+        "alternateName": "Oshi",
+        "inLanguage": ["ja", "zh-Hant", "en"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://yamasaku.github.io/oshilove/#oshilove",
+        "name": "OshiLove - 推し活・思い出記録アプリ",
+        "alternateName": "OshiLove",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "description": "予定、記念日、日記、写真をひとつにまとめて残せる推し活記録アプリ。",
+        "url": "https://yamasaku.github.io/oshilove/",
+        "downloadUrl": "https://apps.apple.com/app/id6811063943",
+        "sameAs": "https://apps.apple.com/app/id6811063943"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://yamasaku.github.io/oshilove/#oshipocket",
+        "name": "Oshi Pocket - 推し活記録",
+        "alternateName": "OshiPocket",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "description": "ライブや特典会などの現場と、チケット、チェキ、グッズ、交通費などの支出をまとめて記録できる推し活管理アプリ。",
+        "url": "https://yamasaku.github.io/oshi-pocket/",
+        "downloadUrl": "https://apps.apple.com/app/id6811325536",
+        "sameAs": "https://apps.apple.com/app/id6811325536"
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html"><img class="brand-logo" src="app-icon.png" alt="" aria-hidden="true"> OshiLove</a>
-      <div class="nav-actions">
-        <a class="nav-link" href="privacy.html"><span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱</span><span data-lang="en">Privacy</span></a>
-        <a class="nav-link" href="support.html"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a>
-        <select class="lang-select" data-language-select name="language" aria-label="Language">
-          <option value="ja">日本語</option><option value="zh-tw">繁體中文</option><option value="en">English</option>
-        </select>
+<body class="landing">
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main"><span data-lang="ja">本文へ</span><span data-lang="zh-tw">跳至主要內容</span><span data-lang="en">Skip to content</span></a>
+  <header class="landing-header">
+    <nav class="landing-nav" aria-label="Main navigation">
+      <a class="landing-brand" href="#home"><img src="app-icon.png" width="36" height="36" alt=""><span>Oshi</span></a>
+      <div class="nav-sections">
+        <a href="#apps"><span data-lang="ja">アプリ</span><span data-lang="zh-tw">功能</span><span data-lang="en">Features</span></a>
+        <a href="#how-it-works"><span data-lang="ja">はじめ方</span><span data-lang="zh-tw">使用方法</span><span data-lang="en">How it works</span></a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-controls">
+        <select class="lang-select" data-language-select name="language" aria-label="Language"><option value="ja">日本語</option><option value="zh-tw">繁體中文</option><option value="en">English</option></select>
+        <a class="pill-button nav-cta" href="#download"><svg class="line-icon" aria-hidden="true"><use href="#icon-download"></use></svg><span data-lang="ja">ダウンロード</span><span data-lang="zh-tw">下載 App</span><span data-lang="en">Download</span></a>
       </div>
     </nav>
   </header>
-
-  <main>
-    <section class="hero">
-      <img class="hero-logo" src="app-icon.png" alt="" aria-hidden="true">
-      <p class="eyebrow">OshiLove</p>
-      <div data-lang="ja">
-        <h1>推しとの毎日を、<br>大切に残す。</h1>
-        <p class="hero-copy">予定、思い出、写真、記念日をひとつの場所に。OshiLove は、あなたの推し活に寄り添うプライベートな記録アプリです。</p>
+  <main id="main">
+    <section class="landing-hero wrap" id="home">
+      <div class="hero-content">
+        <h1><span data-lang="ja">思い出も、現場も<br><span class='accent-text'>推しごとに</span></span><span data-lang="zh-tw">回憶與活動<br><span class='accent-text'>按推し整理</span></span><span data-lang="en">Memories and events<br><span class='accent-text'>organised by oshi</span></span></h1>
+        <p class="lead"><span data-lang="ja">思い出は OshiLove、現場と支出は OshiPocket</span><span data-lang="zh-tw">OshiLove 珍藏回憶，OshiPocket 整理活動與開支</span><span data-lang="en">OshiLove for memories, OshiPocket for events and spending</span></p>
+        <div class="button-row"><a href="#choose" class="pill-button primary"><span data-lang="ja">アプリを比べる</span><span data-lang="zh-tw">比較兩款 App</span><span data-lang="en">Compare the apps</span> <span aria-hidden="true">↓</span></a></div>
+        <p class="micro-copy"><svg class="line-icon" aria-hidden="true"><use href="#icon-lock"></use></svg><span data-lang="ja">アカウント登録不要 · 記録は端末内に</span><span data-lang="zh-tw">毋須註冊帳戶 · 記錄儲存在裝置內</span><span data-lang="en">No account needed · Your records stay on your device</span></p>
       </div>
-      <div data-lang="zh-tw">
-        <h1>珍藏每一段<br>追星回憶。</h1>
-        <p class="hero-copy">將日程、回憶、相片及紀念日集中整理。OshiLove 是陪伴您記錄追星生活的私人空間。</p>
-      </div>
-      <div data-lang="en">
-        <h1>Keep every moment<br>close to your heart.</h1>
-        <p class="hero-copy">Organise schedules, memories, photos and anniversaries in one private place made for your oshi life.</p>
-      </div>
-      <div class="hero-actions">
-        <a class="button" href="support.html"><span data-lang="ja">サポートを見る</span><span data-lang="zh-tw">查看支援</span><span data-lang="en">Get support</span></a>
-        <a class="button secondary" href="privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy policy</span></a>
+      <div class="hero-stage" aria-label="OshiLove and OshiPocket previews">
+        <article class="hero-product hero-product-love"><strong><img class="product-icon" src="app-icon.png" alt="" width="24" height="24">OshiLove</strong><figure class="device"><div class="app-screenshot-placeholder"><img src="oshilove-home.webp" alt="OshiLove のホーム画面" width="828" height="1800" loading="eager" decoding="async" fetchpriority="high"></div></figure></article>
+        <article class="hero-product hero-product-pocket"><strong><img class="product-icon" src="oshipocket-icon.webp" alt="" width="24" height="24">OshiPocket</strong><figure class="device lavender"><div class="app-screenshot-placeholder"><img src="oshipocket-stats.webp" alt="OshiPocket の支出統計画面" width="828" height="1800" loading="eager" decoding="async"></div></figure></article>
       </div>
     </section>
 
-    <section class="cards" aria-label="Information">
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">♡</div>
-        <h2><span data-lang="ja">あなたの記録</span><span data-lang="zh-tw">您的記錄</span><span data-lang="en">Your memories</span></h2>
-        <p><span data-lang="ja">推しのプロフィール、予定、日記、アルバムを自分らしく整理できます。</span><span data-lang="zh-tw">按照自己的方式整理推し資料、日程、日記及相簿。</span><span data-lang="en">Organise profiles, events, diary entries and albums your way.</span></p>
+    <section class="section wrap" id="apps">
+      <article class="feature-section blush">
+        <div class="feature-copy"><p class="app-name"><img src="app-icon.png" alt="" width="24" height="24">OshiLove</p><h3><span data-lang="ja">思い出を残す</span><span data-lang="zh-tw">珍藏回憶</span><span data-lang="en">Keep your memories</span></h3><p><span data-lang="ja">予定、記念日、日記、写真をひとつに</span><span data-lang="zh-tw">集中整理日程、紀念日、日記與相片</span><span data-lang="en">Plans, anniversaries, diary entries and photos in one place</span></p>
+        <ul class="feature-list"><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">写真と日記で残す Timeline</span><span data-lang="zh-tw">用相片與日記記錄 Timeline</span><span data-lang="en">A timeline of photos and diary entries</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">1日1枚で振り返る、月間まとめ</span><span data-lang="zh-tw">每日一張相片，回顧整月點滴</span><span data-lang="en">Monthly memories, one photo a day</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">大切な記念日と次の予定をカウント</span><span data-lang="zh-tw">重要紀念日與下一次活動倒數</span><span data-lang="en">Anniversary counts and upcoming plans</span></li></ul>
+        <a class="quiet-link" href="#download">OshiLove <span data-lang="ja">を見る</span><span data-lang="zh-tw">詳情</span><span data-lang="en">on the App Store</span> ↗</a></div>
+        <div class="feature-media"><figure class="device feature-device"><div class="app-screenshot-placeholder"><img src="oshilove-profile.webp" alt="OshiLove の推しプロフィール画面" width="828" height="1800" loading="lazy" decoding="async"></div></figure></div>
       </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">⌂</div>
-        <h2><span data-lang="ja">端末の中で大切に</span><span data-lang="zh-tw">資料留在裝置</span><span data-lang="en">Kept on your device</span></h2>
-        <p><span data-lang="ja">記録は基本的に端末内へ保存され、開発者が内容を見ることはありません。</span><span data-lang="zh-tw">記錄主要儲存在您的裝置內，開發者無法查看內容。</span><span data-lang="en">Records are mainly stored on your device and are not visible to the developer.</span></p>
-        <a href="privacy.html"><span data-lang="ja">詳しく見る →</span><span data-lang="zh-tw">了解詳情 →</span><span data-lang="en">Learn more →</span></a>
+      <article class="feature-section lilac reverse">
+        <div class="feature-copy"><p class="app-name"><img src="oshipocket-icon.webp" alt="" width="24" height="24">OshiPocket</p><h3><span data-lang="ja">現場と支出を管理</span><span data-lang="zh-tw">管理活動與開支</span><span data-lang="en">Manage events and spending</span></h3><p><span data-lang="ja">ライブや特典会の予定と費用をまとめて記録</span><span data-lang="zh-tw">集中記錄演出、特典會及相關費用</span><span data-lang="en">Track live events, meet-and-greets and their costs</span></p>
+        <ul class="feature-list"><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">現場ごとの支出とチェキ枚数を記録</span><span data-lang="zh-tw">按活動記錄支出與チェキ數量</span><span data-lang="en">Expenses and cheki counts for each event</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">月別・年別・推し別に振り返る統計</span><span data-lang="zh-tw">按月份、年份及推し查看統計</span><span data-lang="en">Insights by month, year and oshi</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">過去の記録も、これからの予定も</span><span data-lang="zh-tw">回顧過往記錄，安排未來活動</span><span data-lang="en">Past memories and future plans</span></li></ul>
+        <a class="quiet-link" href="#download">OshiPocket <span data-lang="ja">を見る</span><span data-lang="zh-tw">詳情</span><span data-lang="en">on the App Store</span> ↗</a></div>
+        <div class="feature-media"><figure class="device feature-device lavender"><div class="app-screenshot-placeholder"><img src="oshipocket-stats.webp" alt="OshiPocket の支出統計画面" width="828" height="1800" loading="lazy" decoding="async"></div></figure></div>
       </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">?</div>
-        <h2><span data-lang="ja">困ったときに</span><span data-lang="zh-tw">需要協助</span><span data-lang="en">Here to help</span></h2>
-        <p><span data-lang="ja">写真の権限、バックアップ、通知など、よくある質問をご案内します。</span><span data-lang="zh-tw">查看相片權限、備份、通知等常見問題。</span><span data-lang="en">Find help with photo access, backups, notifications and more.</span></p>
-        <a href="support.html"><span data-lang="ja">サポートへ →</span><span data-lang="zh-tw">前往支援 →</span><span data-lang="en">Visit support →</span></a>
-      </article>
+    </section>
+
+    <section class="section wrap choose-section" id="choose">
+      <div class="section-heading centered"><h2><span data-lang="ja">どちらを選ぶ？</span><span data-lang="zh-tw">應該選哪一款？</span><span data-lang="en">Which one should you choose?</span></h2></div>
+      <div class="choice-grid">
+        <article class="choice-card choice-love"><img class="choice-icon" src="app-icon.png" alt="" width="52" height="52"><h3>OshiLove</h3><p><span data-lang="ja">写真・日記・記念日を残したい方に</span><span data-lang="zh-tw">適合記錄相片、日記與紀念日</span><span data-lang="en">For photos, diaries and anniversaries</span></p><a class="choice-link" href="#download"><span data-lang="ja">ダウンロード</span><span data-lang="zh-tw">下載</span><span data-lang="en">Download</span> <span aria-hidden="true">→</span></a></article>
+        <article class="choice-card choice-pocket"><img class="choice-icon" src="oshipocket-icon.webp" alt="" width="52" height="52"><h3>OshiPocket</h3><p><span data-lang="ja">現場・支出・統計を管理したい方に</span><span data-lang="zh-tw">適合管理活動、開支與統計</span><span data-lang="en">For events, spending and insights</span></p><a class="choice-link" href="#download"><span data-lang="ja">ダウンロード</span><span data-lang="zh-tw">下載</span><span data-lang="en">Download</span> <span aria-hidden="true">→</span></a></article>
+      </div>
+      <aside class="privacy-panel">
+        <div class="privacy-icon"><svg class="line-icon" aria-hidden="true"><use href="#icon-lock"></use></svg></div>
+        <div class="privacy-body">
+          <div class="privacy-copy"><h3><span data-lang="ja">アカウント登録不要</span><span data-lang="zh-tw">毋須註冊帳戶</span><span data-lang="en">No account required</span></h3><p><span data-lang="ja">記録は端末内に保存されます</span><span data-lang="zh-tw">記錄儲存在您的裝置內</span><span data-lang="en">Records are stored on your device</span></p></div>
+          <div class="privacy-links"><a href="https://yamasaku.github.io/oshilove/privacy.html">OshiLove <span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy</span></a><a href="https://yamasaku.github.io/oshi-pocket/privacy.html">OshiPocket <span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy</span></a></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section wrap" id="how-it-works">
+      <div class="section-heading centered"><h2><span data-lang="ja">はじめ方</span><span data-lang="zh-tw">使用方法</span><span data-lang="en">How it works</span></h2></div>
+      <ol class="steps">
+        <li><span class="step-number">01</span><h3><span data-lang="ja">アプリを選ぶ</span><span data-lang="zh-tw">選擇 App</span><span data-lang="en">Choose your app</span></h3><p><span data-lang="ja">思い出なら OshiLove、現場と支出なら OshiPocket。</span><span data-lang="zh-tw">記回憶選 OshiLove，整理活動與開支選 OshiPocket。</span><span data-lang="en">OshiLove for memories. OshiPocket for events and spending.</span></p></li><li><span class="step-number">02</span><h3><span data-lang="ja">推しを登録する</span><span data-lang="zh-tw">加入您的推し</span><span data-lang="en">Add your oshi</span></h3><p><span data-lang="ja">推しのプロフィールを登録。自分らしい記録の準備を。</span><span data-lang="zh-tw">加入推し資料，為專屬您的記錄作好準備。</span><span data-lang="en">Set up your oshi profile and make the space your own.</span></p></li><li><span class="step-number">03</span><h3><span data-lang="ja">今日から残していく</span><span data-lang="zh-tw">從今天開始記錄</span><span data-lang="en">Keep your first moment</span></h3><p><span data-lang="ja">予定や写真、現場の支出。好きなところから始めよう。</span><span data-lang="zh-tw">日程、相片或活動開支，由您最想記下的事情開始。</span><span data-lang="en">A plan, a photo or an event expense. Start with what matters to you.</span></p></li>
+      </ol>
+    </section>
+
+    <section class="section faq-section wrap" id="faq">
+      <div class="section-heading"><h2><span data-lang="ja">よくある質問</span><span data-lang="zh-tw">常見問題</span><span data-lang="en">FAQ</span></h2></div>
+      <div class="faq-list">
+        <details><summary><span data-lang="ja">ふたつのアプリの違いは？</span><span data-lang="zh-tw">兩款 App 有甚麼分別？</span><span data-lang="en">How are the two apps different?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><span data-lang="ja">OshiLove は予定・日記・写真・記念日の記録に、OshiPocket は現場と支出の管理に向いています。それぞれ独立したアプリです</span><span data-lang="zh-tw">OshiLove 用於記錄日程、日記、相片和紀念日；OshiPocket 用於管理活動與開支，兩者是獨立 App</span><span data-lang="en">OshiLove records plans, diaries, photos and anniversaries. OshiPocket manages events and expenses. They are separate apps</span></p></details>
+        <details><summary><span data-lang="ja">アカウント登録は必要ですか？</span><span data-lang="zh-tw">需要註冊帳戶嗎？</span><span data-lang="en">Do I need an account?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><span data-lang="ja">どちらのアプリも、アカウント登録なしで始められます</span><span data-lang="zh-tw">兩款 App 均毋須註冊帳戶即可開始使用</span><span data-lang="en">Neither app requires an account to get started</span></p></details>
+        <details><summary><span data-lang="ja">記録はどこに保存されますか？</span><span data-lang="zh-tw">記錄儲存在哪裏？</span><span data-lang="en">Where are my records stored?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><span data-lang="ja">記録は端末内に保存されます。詳しくは各アプリのプライバシーポリシーをご確認ください</span><span data-lang="zh-tw">記錄儲存在您的裝置內，詳情請參閱各 App 的私隱政策</span><span data-lang="en">Records are stored on your device. See each app's privacy policy for details</span></p></details>
+        <details><summary><span data-lang="ja">複数の推しを登録できますか？</span><span data-lang="zh-tw">可以加入多位推し嗎？</span><span data-lang="en">Can I add more than one oshi?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><span data-lang="ja">はい。どちらのアプリも複数の推しを登録し、推しごとに記録を整理できます</span><span data-lang="zh-tw">可以，兩款 App 均可加入多位推し，並按推し整理記錄</span><span data-lang="en">Yes. Both apps support multiple oshis and organise records by oshi</span></p></details>
+        <details><summary><span data-lang="ja">困ったときはどこから問い合わせできますか？</span><span data-lang="zh-tw">需要協助時可以在哪裏聯絡？</span><span data-lang="en">Where can I get help?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><a href="https://yamasaku.github.io/oshilove/support.html">OshiLove <span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a><span aria-hidden="true"> · </span><a href="https://yamasaku.github.io/oshi-pocket/support.html">OshiPocket <span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></p></details>
+      </div>
+    </section>
+
+    <section class="download-section wrap" id="download">
+      <div class="download-heading"><h2><span data-lang="ja">ダウンロード</span><span data-lang="zh-tw">下載 App</span><span data-lang="en">Download</span></h2><p>iOS</p></div>
+      <div class="button-row"><a class="store-button store-love" href="https://apps.apple.com/app/id6811063943" aria-label="OshiLove — App Store"><img class="store-app-icon" src="app-icon.png" alt="" width="52" height="52"><span><small>OshiLove</small><b>App Store</b></span></a><a class="store-button store-pocket" href="https://apps.apple.com/app/id6811325536" aria-label="OshiPocket — App Store"><img class="store-app-icon" src="oshipocket-icon.webp" alt="" width="52" height="52"><span><small>OshiPocket</small><b>App Store</b></span></a></div>
+      <p class="download-note"><span data-lang="ja">配信状況は、お住まいの地域の App Store でご確認ください。</span><span data-lang="zh-tw">供應情況請以您所在地區的 App Store 為準。</span><span data-lang="en">Check your local App Store for availability.</span></p>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="footer-links"><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div>
-    <div>© 2026 WONG SUM YI. All rights reserved.</div>
+  <footer class="landing-footer wrap">
+    <div class="footer-intro"><a class="landing-brand" href="#home"><span class="footer-icon-pair"><img src="app-icon.png" width="32" height="32" alt=""><img src="oshipocket-icon.webp" width="32" height="32" alt=""></span><span>OshiLove <span class="brand-dot">＋</span> OshiPocket</span></a></div>
+    <nav class="footer-products" aria-label="App policies and support">
+      <div class="footer-product"><strong>OshiLove</strong><a href="https://yamasaku.github.io/oshilove/privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy Policy</span></a><a href="https://yamasaku.github.io/oshilove/support.html"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></div>
+      <div class="footer-product"><strong>OshiPocket</strong><a href="https://yamasaku.github.io/oshi-pocket/privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy Policy</span></a><a href="https://yamasaku.github.io/oshi-pocket/support.html"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></div>
+      <div class="footer-product"><strong><span data-lang="ja">その他</span><span data-lang="zh-tw">其他</span><span data-lang="en">More</span></strong><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"><span data-lang="ja">利用規約</span><span data-lang="zh-tw">使用條款</span><span data-lang="en">Terms</span></a><a href="#download">App Store</a></div>
+    </nav>
+    <small class="copyright">© 2026 WONG SUM YI. All rights reserved.</small>
   </footer>
 </body>
 </html>
-

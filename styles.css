@@ -3,7 +3,7 @@
   --bg: #fffafb;
   --surface: #ffffff;
   --surface-soft: #f8f0f5;
-  --ink: #3f3441;
+  --ink: #1a1a1a;
   --muted: #746b75;
   --line: #eadfe6;
   --brand: #c95f82;
@@ -274,4 +274,3 @@ html[data-language="en"] [data-lang="en"] { display: revert; }
 }
 
 :focus-visible { outline: 3px solid rgba(104, 71, 109, 0.45); outline-offset: 3px; }
-
