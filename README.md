@@ -10,7 +10,7 @@ OshiLove privacy policy and support pages keep their original URLs and content.
 - `privacy.html` — privacy policy for App Store / Google Play
 - `support.html` — support page and frequently asked questions
 
-The site defaults to Japanese and supports Traditional Chinese and English. It has no analytics, cookies, external fonts or third-party scripts.
+The site defaults to Japanese and supports Traditional Chinese and English. It uses Google Analytics 4 with Consent Mode: analytics storage is denied by default, limited cookieless measurement may run before consent, and full analytics starts only after consent. Advertising storage and personalisation remain disabled. It uses no external fonts.
 
 The landing page also includes a side-by-side app chooser and a privacy-focused
 summary so visitors can quickly understand which app fits their needs and how
