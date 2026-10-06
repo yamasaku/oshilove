@@ -6,7 +6,23 @@
   // Language switching also works in private mode or local file previews.
   let saved;
   try { saved = localStorage.getItem(storageKey); } catch (_) {}
-  const language = supported.includes(saved) ? saved : "ja";
+
+  function detectBrowserLanguage() {
+    const preferences = Array.isArray(navigator.languages) && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language];
+
+    for (const preference of preferences) {
+      const locale = String(preference || "").toLowerCase();
+      if (locale === "ja" || locale.startsWith("ja-")) return "ja";
+      if (locale === "zh" || locale.startsWith("zh-")) return "zh-tw";
+      if (locale === "en" || locale.startsWith("en-")) return "en";
+    }
+
+    return "en";
+  }
+
+  const language = supported.includes(saved) ? saved : detectBrowserLanguage();
 
   function getAnalyticsConsent() {
     try { return localStorage.getItem(analyticsConsentKey); } catch (_) { return null; }
