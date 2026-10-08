@@ -145,6 +145,9 @@
     document.querySelector(".landing-nav")?.setAttribute("aria-label", labels[0]);
     document.querySelectorAll("[data-language-select]").forEach(el => el.setAttribute("aria-label", labels[1]));
     document.querySelector(".footer-products")?.setAttribute("aria-label", ({ja: "アプリのポリシーとサポート", "zh-tw": "App 政策與支援", en: "App policies and support"})[nextLanguage]);
+    const topLabel = ({ja: "ページの先頭へ", "zh-tw": "返回頁頂", en: "Back to top"})[nextLanguage];
+    document.querySelector(".back-to-top")?.setAttribute("aria-label", topLabel);
+    document.querySelector(".back-to-top")?.setAttribute("title", topLabel);
     document.querySelector(".hero-stage")?.setAttribute("aria-label", labels[2]);
     document.querySelectorAll('img[src="oshilove-home.webp"]').forEach(el => el.alt = labels[3]);
     document.querySelectorAll('img[src="oshilove-profile.webp"]').forEach(el => el.alt = labels[4]);
@@ -224,12 +227,34 @@
         };
       });
     });
+    let backToTop;
+    if (document.body.classList.contains("landing")) {
+      backToTop = document.createElement("button");
+      backToTop.type = "button";
+      backToTop.className = "back-to-top";
+      backToTop.disabled = true;
+      backToTop.tabIndex = -1;
+      backToTop.innerHTML = '<svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 11l6-6 6 6M12 5v14"/></svg>';
+      document.body.appendChild(backToTop);
+      apply(document.documentElement.dataset.language);
+      backToTop.addEventListener("click", () => {
+        const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({top: 0, behavior: reduced ? "instant" : "smooth"});
+        document.querySelector(".landing-brand")?.focus({preventScroll: true});
+      });
+    }
     const navLinks = [...document.querySelectorAll(".nav-sections a")];
     const sections = ["apps", "choose", "how-it-works", "faq", "download"]
       .map(id => document.getElementById(id)).filter(Boolean);
     let pending = false;
     const updateNavigation = () => {
       pending = false;
+      if (backToTop) {
+        const visible = window.scrollY > 320;
+        backToTop.classList.toggle("is-visible", visible);
+        backToTop.disabled = !visible;
+        backToTop.tabIndex = visible ? 0 : -1;
+      }
       const header = document.querySelector(".landing-header");
       const mobile = window.matchMedia("(max-width: 760px)").matches;
       // Hysteresis prevents the row flickering near the top after its height changes.
