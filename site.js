@@ -230,6 +230,13 @@
     let pending = false;
     const updateNavigation = () => {
       pending = false;
+      const header = document.querySelector(".landing-header");
+      const mobile = window.matchMedia("(max-width: 760px)").matches;
+      // Hysteresis prevents the row flickering near the top after its height changes.
+      const collapsed = header?.classList.contains("is-compact");
+      const compact = mobile && window.scrollY > (collapsed ? 16 : 64);
+      header?.classList.toggle("is-compact", compact);
+      document.body.classList.toggle("compact-header", compact);
       const edge = (document.querySelector(".landing-header")?.getBoundingClientRect().bottom || 0) + 48;
       let active = "";
       sections.forEach(section => { if (section.getBoundingClientRect().top <= edge) active = section.id; });

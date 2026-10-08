@@ -291,6 +291,9 @@ html[lang="zh-Hant"] .landing h1, html[lang="zh-Hant"] .landing h2, html[lang="z
   .getting-started { grid-template-columns: 1fr; }
   .getting-started article { padding: 26px; }
   .nav-sections a { flex: 1; }
+  .landing-header.is-compact .nav-sections { display: none; }
+  .landing-header.is-compact .landing-nav { row-gap: 0; }
+  .landing.compact-header section[id] { scroll-margin-top: 96px; }
 }
 
 
