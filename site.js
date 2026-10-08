@@ -1,6 +1,6 @@
 (function () {
   const supported = ["ja", "zh-tw", "en"];
-  const storageKey = "oshilove-site-language-v2";
+  const storageKey = "oshilove-site-language-manual-v3";
   const analyticsConsentKey = "oshi-analytics-consent-v1";
   const measurementId = "G-37KD0MLGN5";
   // Language switching also works in private mode or local file previews.
@@ -22,7 +22,8 @@
     return "en";
   }
 
-  const language = supported.includes(saved) ? saved : detectBrowserLanguage();
+  const requestedLanguage = new URLSearchParams(window.location.search).get("lang") || document.documentElement.dataset.fixedLanguage;
+  const language = supported.includes(requestedLanguage) ? requestedLanguage : supported.includes(saved) ? saved : detectBrowserLanguage();
 
   function getAnalyticsConsent() {
     try { return localStorage.getItem(analyticsConsentKey); } catch (_) { return null; }
@@ -57,24 +58,37 @@
     document.head.appendChild(script);
   }
 
-  function createConsentBanner() {
+  function createConsentBanner(event) {
     if (document.querySelector("[data-analytics-consent]")) return;
     const banner = document.createElement("section");
     banner.className = "analytics-consent";
     banner.dataset.analyticsConsent = "";
     banner.setAttribute("role", "dialog");
     banner.setAttribute("aria-live", "polite");
-    banner.setAttribute("aria-label", "Analytics preferences");
+    banner.setAttribute("aria-label", ({ja: "アクセス解析設定", "zh-tw": "網站分析設定", en: "Analytics preferences"})[document.documentElement.dataset.language]);
+    const returnFocus = event ? document.activeElement : null;
+    banner.tabIndex = -1;
     banner.innerHTML = `
       <div class="analytics-consent-copy">
         <strong><span data-lang="ja">アクセス解析について</span><span data-lang="zh-tw">關於網站分析</span><span data-lang="en">About analytics</span></strong>
-        <p><span data-lang="ja">同意前は Cookie を使用しない限定的な測定のみ行い、同意後に詳細な Google Analytics を有効にします</span><span data-lang="zh-tw">同意前只進行不使用 Cookie 的有限測量，同意後才啟用完整 Google Analytics</span><span data-lang="en">Before consent, only limited cookieless measurement is used. Full Google Analytics starts after consent</span> <a href="privacy.html"><span data-lang="ja">詳細</span><span data-lang="zh-tw">了解詳情</span><span data-lang="en">Learn more</span></a></p>
+        <p><span data-lang="ja">サイトの改善に Google Analytics を使用します。同意すると解析用 Cookie が有効になります。拒否しても Cookie を使わない測定は行われます。設定はページ下部からいつでも変更できます</span><span data-lang="zh-tw">我們使用 Google Analytics 了解網站使用情況，以改善網站；接受會啟用分析 Cookie，拒絕後仍會進行不使用 Cookie 的測量，您可隨時在頁尾更改設定</span><span data-lang="en">We use Google Analytics to improve the site. Accept enables analytics cookies; declining still allows cookieless measurement. Change your choice anytime in the footer</span> <a href="privacy.html"><span data-lang="ja">詳細</span><span data-lang="zh-tw">了解詳情</span><span data-lang="en">Learn more</span></a></p>
       </div>
       <div class="analytics-consent-actions">
         <button type="button" class="consent-button secondary" data-consent="denied"><span data-lang="ja">同意しない</span><span data-lang="zh-tw">拒絕</span><span data-lang="en">Decline</span></button>
         <button type="button" class="consent-button primary" data-consent="granted"><span data-lang="ja">同意する</span><span data-lang="zh-tw">接受</span><span data-lang="en">Accept</span></button>
       </div>`;
+    const existingChoice = getAnalyticsConsent();
+    if (existingChoice) {
+      const status = document.createElement("p");
+      const granted = existingChoice === "granted";
+      status.innerHTML = `<span data-lang="ja">現在の設定：${granted ? "同意済み" : "拒否"}</span><span data-lang="zh-tw">目前設定：${granted ? "已接受" : "已拒絕"}</span><span data-lang="en">Current choice: ${granted ? "accepted" : "declined"}</span>`;
+      banner.querySelector(".analytics-consent-copy").appendChild(status);
+    }
     document.body.appendChild(banner);
+    if (returnFocus) banner.focus();
+    banner.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && returnFocus) { banner.remove(); returnFocus.focus(); }
+    });
     banner.querySelectorAll("[data-consent]").forEach((button) => {
       button.addEventListener("click", () => {
         const choice = button.dataset.consent;
@@ -88,6 +102,7 @@
           });
         }
         banner.remove();
+        if (returnFocus) returnFocus.focus();
       });
     });
   }
@@ -104,10 +119,15 @@
     footer.appendChild(button);
   }
 
-  function apply(nextLanguage) {
+  function apply(nextLanguage, remember = false) {
     document.documentElement.dataset.language = nextLanguage;
     document.documentElement.lang = nextLanguage === "zh-tw" ? "zh-Hant" : nextLanguage;
-    try { localStorage.setItem(storageKey, nextLanguage); } catch (_) {}
+    if (remember) {
+      try { localStorage.setItem(storageKey, nextLanguage); } catch (_) {}
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", nextLanguage);
+      window.history.replaceState(null, "", url);
+    }
     document.querySelectorAll("[data-language-select]").forEach((select) => {
       select.value = nextLanguage;
     });
@@ -116,6 +136,22 @@
     const description = document.querySelector(`[data-page-description-${nextLanguage}]`);
     if (description) {
       description.setAttribute("content", description.getAttribute(`data-page-description-${nextLanguage}`));
+    }
+    const labels = {
+      ja: ["メインナビゲーション", "言語", "OshiLove と OshiPocket の画面", "OshiLove のホーム画面", "OshiLove の推しプロフィール画面", "OshiPocket の支出統計画面"],
+      "zh-tw": ["主要導覽", "語言", "OshiLove 與 OshiPocket 畫面", "OshiLove 首頁畫面", "OshiLove 推し個人檔案畫面", "OshiPocket 開支統計畫面"],
+      en: ["Main navigation", "Language", "OshiLove and OshiPocket previews", "OshiLove home screen", "OshiLove oshi profile screen", "OshiPocket spending statistics screen"]
+    }[nextLanguage];
+    document.querySelector(".landing-nav")?.setAttribute("aria-label", labels[0]);
+    document.querySelectorAll("[data-language-select]").forEach(el => el.setAttribute("aria-label", labels[1]));
+    document.querySelector(".footer-products")?.setAttribute("aria-label", ({ja: "アプリのポリシーとサポート", "zh-tw": "App 政策與支援", en: "App policies and support"})[nextLanguage]);
+    document.querySelector(".hero-stage")?.setAttribute("aria-label", labels[2]);
+    document.querySelectorAll('img[src="oshilove-home.webp"]').forEach(el => el.alt = labels[3]);
+    document.querySelectorAll('img[src="oshilove-profile.webp"]').forEach(el => el.alt = labels[4]);
+    document.querySelectorAll('img[src="oshipocket-stats.webp"]').forEach(el => el.alt = labels[5]);
+    if (description) {
+      document.querySelector('meta[property="og:title"]')?.setAttribute("content", document.title);
+      document.querySelector('meta[property="og:description"]')?.setAttribute("content", description.content);
     }
   }
 
@@ -126,7 +162,12 @@
     if (getAnalyticsConsent() === null) createConsentBanner();
     document.querySelectorAll("[data-language-select]").forEach((select) => {
       select.addEventListener("change", (event) => {
-        apply(event.target.value);
+        if (document.body.classList.contains("landing")) {
+          try { localStorage.setItem(storageKey, event.target.value); } catch (_) {}
+          window.location.assign(event.target.value + ".html" + window.location.hash);
+          return;
+        }
+        apply(event.target.value, true);
         if (window.gtag) window.gtag("event", "language_change", { language: event.target.value });
       });
     });
@@ -144,10 +185,67 @@
       const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
       while (walker.nextNode()) {
         walker.currentNode.nodeValue = walker.currentNode.nodeValue
-          .replace(/。/g, "")
-          .replace(/\.(?=\s|$)/g, "");
+          .replace(/[。.]\s*$/, "")
+          .replace(/。(?=\S)/g, " · ");
       }
     });
+
+    // Reversible disclosure motion; native details remain the no-JS fallback.
+    document.querySelectorAll(".faq-list details").forEach((details) => {
+      const summary = details.querySelector("summary");
+      const answer = details.querySelector("p");
+      let animation;
+      let expanded = details.open;
+      summary.setAttribute("aria-expanded", String(expanded));
+      summary.addEventListener("click", (event) => {
+        event.preventDefault();
+        const from = details.getBoundingClientRect().height;
+        animation?.cancel();
+        expanded = !expanded;
+        details.open = true;
+        summary.setAttribute("aria-expanded", String(expanded));
+        details.classList.toggle("is-expanded", expanded);
+        const to = expanded ? details.scrollHeight : summary.getBoundingClientRect().height;
+        const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduced || !details.animate) {
+          details.open = expanded;
+          if (expanded) answer.animate?.([{opacity: 0}, {opacity: 1}], {duration: 180});
+          return;
+        }
+        details.style.overflow = "hidden";
+        animation = details.animate([{height: from + "px"}, {height: to + "px"}],
+          {duration: 320, easing: "cubic-bezier(.22, 1, .36, 1)"});
+        const current = animation;
+        animation.onfinish = () => {
+          if (animation !== current) return;
+          details.open = expanded;
+          details.style.overflow = "";
+          animation = null;
+        };
+      });
+    });
+    const navLinks = [...document.querySelectorAll(".nav-sections a")];
+    const sections = ["apps", "choose", "how-it-works", "faq", "download"]
+      .map(id => document.getElementById(id)).filter(Boolean);
+    let pending = false;
+    const updateNavigation = () => {
+      pending = false;
+      const edge = (document.querySelector(".landing-header")?.getBoundingClientRect().bottom || 0) + 48;
+      let active = "";
+      sections.forEach(section => { if (section.getBoundingClientRect().top <= edge) active = section.id; });
+      if (active === "choose") active = "apps";
+      navLinks.forEach(link => {
+        const selected = link.hash === "#" + active;
+        link.classList.toggle("is-current", selected);
+        if (selected) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    };
+    window.addEventListener("scroll", () => {
+      if (!pending) { pending = true; requestAnimationFrame(updateNavigation); }
+    }, {passive: true});
+    window.addEventListener("resize", updateNavigation);
+    updateNavigation();
 
     if ("IntersectionObserver" in window) {
       const revealTargets = document.querySelectorAll([
@@ -155,7 +253,7 @@
         ".feature-section",
         ".choice-card",
         ".privacy-panel",
-        ".steps li",
+        ".getting-started article",
         ".faq-list details",
         ".download-section"
       ].join(","));
@@ -172,8 +270,7 @@
             const isVisible = entry.target.classList.contains("is-visible");
             if (!isVisible && entry.intersectionRatio >= 0.14) {
               entry.target.classList.add("is-visible");
-            } else if (isVisible && entry.intersectionRatio <= 0.03) {
-              entry.target.classList.remove("is-visible");
+              observer.unobserve(entry.target);
             }
           });
         });
