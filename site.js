@@ -33,13 +33,17 @@
     try { localStorage.setItem(analyticsConsentKey, value); } catch (_) {}
   }
 
+  let analyticsConsent = getAnalyticsConsent();
+  window[`ga-disable-${measurementId}`] = analyticsConsent !== "granted";
+
   function loadAnalytics() {
+    if (analyticsConsent !== "granted") return;
     if (document.querySelector(`script[data-ga-id="${measurementId}"]`)) return;
+    window[`ga-disable-${measurementId}`] = false;
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-    const analyticsGranted = getAnalyticsConsent() === "granted";
     window.gtag("consent", "default", {
-      analytics_storage: analyticsGranted ? "granted" : "denied",
+      analytics_storage: "granted",
       ad_storage: "denied",
       ad_user_data: "denied",
       ad_personalization: "denied",
@@ -58,6 +62,34 @@
     document.head.appendChild(script);
   }
 
+  function applyAnalyticsChoice(choice) {
+    if (choice !== "granted" && choice !== "denied") return;
+    analyticsConsent = choice;
+    setAnalyticsConsent(choice);
+    if (choice === "granted") {
+      loadAnalytics();
+      return;
+    }
+    // Stop collection immediately. Reload removes the already-executed tag;
+    // sending a denied consent update could itself send a cookieless ping.
+    window[`ga-disable-${measurementId}`] = true;
+    const loaded = document.querySelector(`script[data-ga-id="${measurementId}"]`);
+    if (!loaded) return;
+    window.gtag = function () {};
+    const hostParts = window.location.hostname.split(".");
+    document.cookie.split(";").forEach((entry) => {
+      const name = entry.split("=")[0].trim();
+      if (name !== "_ga" && !name.startsWith("_ga_")) return;
+      const expired = `${name}=; Max-Age=0; path=/`;
+      document.cookie = expired;
+      for (let i = 0; i < hostParts.length - 1; i += 1) {
+        document.cookie = `${expired}; domain=${hostParts.slice(i).join(".")}`;
+      }
+    });
+    loaded.remove();
+    window.location.reload();
+  }
+
   function createConsentBanner(event) {
     if (document.querySelector("[data-analytics-consent]")) return;
     const banner = document.createElement("section");
@@ -71,7 +103,7 @@
     banner.innerHTML = `
       <div class="analytics-consent-copy">
         <strong><span data-lang="ja">アクセス解析について</span><span data-lang="zh-tw">關於網站分析</span><span data-lang="en">About analytics</span></strong>
-        <p><span data-lang="ja">サイトの改善に Google Analytics を使用します。同意すると解析用 Cookie が有効になります。拒否しても Cookie を使わない測定は行われます。設定はページ下部からいつでも変更できます</span><span data-lang="zh-tw">我們使用 Google Analytics 了解網站使用情況，以改善網站；接受會啟用分析 Cookie，拒絕後仍會進行不使用 Cookie 的測量，您可隨時在頁尾更改設定</span><span data-lang="en">We use Google Analytics to improve the site. Accept enables analytics cookies; declining still allows cookieless measurement. Change your choice anytime in the footer</span> <a href="privacy.html"><span data-lang="ja">詳細</span><span data-lang="zh-tw">了解詳情</span><span data-lang="en">Learn more</span></a></p>
+        <p><span data-lang="ja">サイトの改善に Google Analytics を使用します。同意した場合のみ読み込まれ、解析用 Cookie が有効になります。同意前や拒否した場合は、Google Analytics にデータを送信しません。設定はページ下部からいつでも変更できます</span><span data-lang="zh-tw">我們只會在您接受後載入 Google Analytics 並啟用分析 Cookie；未選擇或拒絕時，不會向 Google Analytics 傳送資料。您可隨時在頁尾更改設定</span><span data-lang="en">Google Analytics loads and enables analytics cookies only after you accept. No data is sent to Google Analytics before consent or if you decline. Change your choice anytime in the footer</span> <a href="privacy.html"><span data-lang="ja">詳細</span><span data-lang="zh-tw">了解詳情</span><span data-lang="en">Learn more</span></a></p>
       </div>
       <div class="analytics-consent-actions">
         <button type="button" class="consent-button secondary" data-consent="denied"><span data-lang="ja">同意しない</span><span data-lang="zh-tw">拒絕</span><span data-lang="en">Decline</span></button>
@@ -92,20 +124,18 @@
     banner.querySelectorAll("[data-consent]").forEach((button) => {
       button.addEventListener("click", () => {
         const choice = button.dataset.consent;
-        setAnalyticsConsent(choice);
-        if (window.gtag) {
-          window.gtag("consent", "update", {
-            analytics_storage: choice === "granted" ? "granted" : "denied",
-            ad_storage: "denied",
-            ad_user_data: "denied",
-            ad_personalization: "denied"
-          });
-        }
+        applyAnalyticsChoice(choice);
         banner.remove();
         if (returnFocus) returnFocus.focus();
       });
     });
   }
+
+  window.addEventListener("storage", (event) => {
+    if (event.key === analyticsConsentKey) {
+      applyAnalyticsChoice(event.newValue === "granted" ? "granted" : "denied");
+    }
+  });
 
   function addAnalyticsSettingsControl() {
     const footer = document.querySelector("footer");
@@ -171,13 +201,13 @@
           return;
         }
         apply(event.target.value, true);
-        if (window.gtag) window.gtag("event", "language_change", { language: event.target.value });
+        if (analyticsConsent === "granted" && window.gtag) window.gtag("event", "language_change", { language: event.target.value });
       });
     });
 
     document.querySelectorAll('a[href*="apps.apple.com"]').forEach((link) => {
       link.addEventListener("click", () => {
-        if (!window.gtag) return;
+        if (analyticsConsent !== "granted" || !window.gtag) return;
         const app = link.href.includes("6811325536") ? "OshiPocket" : "OshiLove";
         window.gtag("event", "app_store_click", { app_name: app, link_url: link.href });
       });
