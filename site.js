@@ -184,7 +184,16 @@
     }[nextLanguage];
     document.querySelector(".landing-nav")?.setAttribute("aria-label", labels[0]);
     document.querySelectorAll("[data-language-select]").forEach(el => el.setAttribute("aria-label", labels[1]));
-    document.querySelector(".mobile-language-label")?.replaceChildren(labels[1]);
+    const languageMenu = document.querySelector(".nav-language");
+    if (languageMenu) {
+      const selected = languageMenu.querySelector(`[data-language-option="${nextLanguage}"]`);
+      if (selected) {
+        languageMenu.querySelector(".nav-language-label").textContent = selected.textContent;
+        languageMenu.querySelector("summary").setAttribute("aria-label", `${labels[1]}: ${selected.textContent}`);
+        languageMenu.querySelector("[aria-current]")?.removeAttribute("aria-current");
+        selected.setAttribute("aria-current", "true");
+      }
+    }
     const menuButton = document.querySelector(".mobile-menu-toggle");
     if (menuButton) menuButton.setAttribute("aria-label", menuLabel(menuButton.getAttribute("aria-expanded") === "true"));
     document.querySelector(".footer-products")?.setAttribute("aria-label", ({ja: "アプリのポリシーとサポート", "zh-tw": "App 政策與支援", en: "App policies and support"})[nextLanguage]);
@@ -211,6 +220,30 @@
     return (lang === "ja" ? "" : "/" + lang) + page || "/";
   }
 
+  function createLanguageMenu(select) {
+    const menu = document.createElement("details");
+    menu.className = "nav-language";
+    menu.innerHTML = '<summary><span class="nav-language-label"></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary><div class="nav-language-links"></div>';
+    const options = menu.querySelector(".nav-language-links");
+    for (const option of select.options) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.lang = option.value === "zh-tw" ? "zh-Hant" : option.value;
+      button.dataset.languageOption = option.value;
+      button.textContent = option.textContent;
+      button.addEventListener("click", () => {
+        menu.open = false;
+        menu.querySelector("summary").focus({preventScroll: true});
+        if (select.value === option.value) return;
+        select.value = option.value;
+        select.dispatchEvent(new Event("change"));
+      });
+      options.append(button);
+    }
+    select.hidden = true;
+    return menu;
+  }
+
   function setupMobileNavigation() {
     const header = document.querySelector(".landing-header");
     const nav = header?.querySelector(".landing-nav");
@@ -220,11 +253,10 @@
     const toolsMenu = links?.querySelector(".nav-tools");
     if (!header || !links || !controls || !languageSelect) return;
     links.id = links.id || "site-navigation-links";
-    const languageRow = document.createElement("label");
+    const languageMenu = createLanguageMenu(languageSelect);
+    const dropdowns = [toolsMenu, languageMenu].filter(Boolean);
+    const languageRow = document.createElement("div");
     languageRow.className = "mobile-menu-language";
-    const languageLabel = document.createElement("span");
-    languageLabel.className = "mobile-language-label";
-    languageRow.append(languageLabel);
     links.append(languageRow);
     const toggle = document.createElement("button");
     toggle.type = "button";
@@ -233,7 +265,7 @@
     toggle.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-open-icon" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-close-icon" d="m6 6 12 12M18 6 6 18"/></svg>';
     controls.append(toggle);
     function setOpen(open, restoreFocus = false) {
-      if (!open && toolsMenu) toolsMenu.open = false;
+      if (!open) dropdowns.forEach(menu => { menu.open = false; });
       header.classList.toggle("is-menu-open", open);
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", menuLabel(open));
@@ -242,10 +274,11 @@
     toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
     header.addEventListener("keydown", event => {
       if (event.key !== "Escape") return;
-      if (toolsMenu?.open) {
+      const openMenu = dropdowns.find(menu => menu.open);
+      if (openMenu) {
         event.preventDefault();
-        toolsMenu.open = false;
-        toolsMenu.querySelector("summary")?.focus({preventScroll: true});
+        openMenu.open = false;
+        openMenu.querySelector("summary").focus({preventScroll: true});
       } else if (toggle.getAttribute("aria-expanded") === "true") {
         event.preventDefault();
         setOpen(false, true);
@@ -253,19 +286,28 @@
     });
     header.addEventListener("click", event => {
       if (event.target.closest("a")) setOpen(false);
-      else if (toolsMenu?.open && !toolsMenu.contains(event.target)) toolsMenu.open = false;
+      else dropdowns.forEach(menu => {
+        if (!menu.contains(event.target)) menu.open = false;
+      });
     });
-    toolsMenu?.addEventListener("focusout", event => {
-      if (event.relatedTarget && !toolsMenu.contains(event.relatedTarget)) toolsMenu.open = false;
-    });
+    for (const menu of dropdowns) {
+      menu.addEventListener("focusout", event => {
+        if (event.relatedTarget && !menu.contains(event.relatedTarget)) menu.open = false;
+      });
+      menu.addEventListener("toggle", () => {
+        if (menu.open) dropdowns.forEach(other => {
+          if (other !== menu) other.open = false;
+        });
+      });
+    }
     document.addEventListener("click", event => {
       if (!header.contains(event.target)) setOpen(false);
     });
     const mobile = window.matchMedia("(max-width: 760px)");
     function updateLayout() {
       setOpen(false);
-      if (mobile.matches) languageRow.append(languageSelect);
-      else controls.prepend(languageSelect);
+      if (mobile.matches) languageRow.append(languageMenu);
+      else controls.prepend(languageMenu);
     }
     mobile.addEventListener("change", updateLayout);
     header.classList.add("has-mobile-menu");
