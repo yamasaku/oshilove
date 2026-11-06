@@ -390,3 +390,42 @@ body:has([data-analytics-consent]) .back-to-top { visibility: hidden; }
   .landing-nav .nav-sections a { padding-inline: 2px; font-size: .75rem; white-space: nowrap; }
   .document details[id] { scroll-margin-top: 145px; }
 }
+
+/* The feature image owns the color panel; the text stays on the paper surface. */
+#apps .feature-showcase {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 76px);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+}
+#apps .feature-showcase + .feature-showcase { margin-top: clamp(44px, 8vw, 100px); }
+.feature-showcase .feature-media {
+  padding: clamp(20px, 5vw, 48px);
+  border-radius: clamp(24px, 5vw, 56px);
+  background: #ffedf3;
+}
+.feature-showcase.lilac .feature-media { background: #eeeaff; }
+.feature-showcase .feature-device { width: min(195px, 100%); }
+.feature-showcase .feature-copy { padding: 0; }
+.feature-showcase .feature-copy h2 { line-height: 1.3; }
+html:lang(ja) .feature-showcase .feature-copy h2,
+html:lang(zh) .feature-showcase .feature-copy h2 { letter-spacing: 0; }
+.feature-showcase .feature-intro { margin: 12px 0 16px; color: #5f586a; }
+.feature-showcase .feature-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.feature-showcase .feature-list li { display: block; padding: 4px 10px; border: 1px solid #e8dfe9; border-radius: 999px; color: #514460; font-size: .875rem; }
+.landing-nav a, .hero-store, .feature-showcase .quiet-link { touch-action: manipulation; }
+.landing-nav a:active, .hero-store:active, .feature-showcase .quiet-link:active { opacity: .72; }
+.landing-nav a:focus-visible, .hero-store:focus-visible, .feature-showcase .quiet-link:focus-visible { outline: 2px solid #62518c; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .landing-header { top: max(10px, env(safe-area-inset-top)); width: calc(100% - max(24px, env(safe-area-inset-left) + env(safe-area-inset-right))); }
+  #apps .feature-showcase { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .feature-showcase .feature-copy { padding-inline: 4px; }
+  .feature-showcase .feature-media { padding: 20px; }
+  .feature-showcase .feature-device { width: min(168px, 100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .feature-showcase .device, .feature-showcase .device:hover { transform: none; scale: 1; transition: none; }
+}
