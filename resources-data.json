@@ -1,8 +1,8 @@
 {
   "featured": [
+    "material-9a974c94e5",
     "oshi-story-frames",
-    "oshi-ichiban",
-    "magic"
+    "oshi-ichiban"
   ],
   "items": [
     {
@@ -970,6 +970,41 @@
       "zip": {
         "url": "/materials/magic/all-7197341bf6cd.zip",
         "bytes": 624858
+      }
+    },
+    {
+      "id": "material-9a974c94e5",
+      "title": "いいおなかの日",
+      "type": "frame",
+      "theme": "anniversary",
+      "eventDate": "11-07",
+      "variants": [
+        {
+          "id": "01-21197cb9bab8",
+          "color": "white",
+          "label": "arrow only",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 87118,
+          "preview": "/material-previews/material-9a974c94e5-01-21197cb9bab8.webp",
+          "url": "/materials/material-9a974c94e5/01-21197cb9bab8.png",
+          "downloadName": "material-9a974c94e5-white-01.png"
+        },
+        {
+          "id": "02-02943de087ae",
+          "color": "white",
+          "label": "iionakanohi",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 246358,
+          "preview": "/material-previews/material-9a974c94e5-02-02943de087ae.webp",
+          "url": "/materials/material-9a974c94e5/02-02943de087ae.png",
+          "downloadName": "material-9a974c94e5-white-02.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/material-9a974c94e5/all-05f79c645ad2.zip",
+        "bytes": 333778
       }
     }
   ]

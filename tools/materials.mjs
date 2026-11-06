@@ -32,12 +32,14 @@ const savePlan = plan => fs.writeFileSync(planFile,JSON.stringify(plan,null,2)+"
 async function publish(plan) {
   const currentHash = hash(fs.readFileSync(catalogFile));
   if (![plan.baseHash,hash(Buffer.from(JSON.stringify(plan.catalog,null,2)+"\n"))].includes(currentHash)) throw Error("素材清單已被其他更新更改，請重新匯入，避免覆蓋新內容。");
+  console.log("\n每次顯示 Upload complete 代表一個檔案已上載。請保持視窗開啟，直至顯示「已上線！」。\n");
   for (const job of plan.jobs) {
     if (job.done) continue;
     await run([cli,"r2","object","put",config.r2_buckets[0].bucket_name+"/"+job.key,"--file",job.file,"--content-type",job.type,"--cache-control","public, max-age=31536000, immutable","--remote","--profile",profile]);
     job.done = true;
     savePlan(plan);
   }
+  console.log("\n素材檔案已全部上載，正在發佈網站及更新素材清單…\n");
   for (const preview of plan.previews) fs.copyFileSync(preview.file,path.join(root,"material-previews",preview.name));
   fs.writeFileSync(catalogFile,JSON.stringify(plan.catalog,null,2)+"\n");
   await run([path.join(root,"tools/build-site.mjs")]);
