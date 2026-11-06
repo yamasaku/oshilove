@@ -1,13 +1,56 @@
 {
   "name": "oshilove-official",
   "account_id": "e3462108f1e3c172b346fd25f2c4d198",
-  "main": "./materials-worker.js",
+  "main": "./site-worker.ts",
   "compatibility_date": "2026-10-13",
   "assets": {
     "directory": "./.dist",
     "binding": "ASSETS",
-    "run_worker_first": ["/materials/*"]
+    "run_worker_first": [
+      "/materials/*",
+      "/api/radar/*",
+      "/",
+      "/index.html",
+      "/ja",
+      "/ja.html",
+      "/en",
+      "/en.html",
+      "/en/*",
+      "/zh-tw",
+      "/zh-tw.html",
+      "/zh-tw/*",
+      "/resources",
+      "/resources.html",
+      "/resources/",
+      "/radar",
+      "/radar.html",
+      "/radar/",
+      "/support",
+      "/support.html",
+      "/support/",
+      "/privacy",
+      "/privacy.html",
+      "/privacy/"
+    ]
   },
-  "r2_buckets": [{"binding": "MATERIALS", "bucket_name": "oshilove-materials"}],
-  "observability": {"enabled": true, "head_sampling_rate": 0.1}
+  "r2_buckets": [
+    {
+      "binding": "MATERIALS",
+      "bucket_name": "oshilove-materials"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
+  "ratelimits": [
+    {
+      "name": "API_LIMITER",
+      "namespace_id": "2001",
+      "simple": {
+        "limit": 30,
+        "period": 60
+      }
+    }
+  ]
 }

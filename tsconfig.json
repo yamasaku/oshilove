@@ -1,0 +1,4 @@
+{
+ "compilerOptions":{"target":"ES2022","module":"ESNext","moduleResolution":"Bundler","lib":["ES2022"],"types":["./worker-configuration.d.ts"],"allowJs":true,"strict":true,"noEmit":true,"skipLibCheck":true},
+ "include":["site-worker.ts","materials-worker.js","locale-routes.js","radar-server/**/*.ts","radar-server/**/*.js","worker-configuration.d.ts"]
+}

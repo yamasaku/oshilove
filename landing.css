@@ -39,7 +39,7 @@ html { scroll-behavior: auto; }
 .brand-dot { color: var(--purple); }
 .nav-sections, .nav-controls { display: flex; align-items: center; }
 .nav-sections { width: 100%; justify-self: stretch; justify-content: space-evenly; gap: 0; padding-inline: 8px; }
-.nav-sections a { color: #646273; font-size: .82rem; font-weight: 600; text-decoration: none; }
+.nav-sections a { color: #646273; font-size: .82rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
 .nav-sections a:hover, .quiet-link:hover, .footer-products a:hover { color: #705eb2; }
 .nav-controls { justify-self: end; gap: 24px; padding-right: 6px; }
 .landing-nav .lang-select { border: 0; background: transparent; padding-left: 6px; font-size: .78rem; font-weight: 500; }
@@ -537,6 +537,9 @@ html:lang(ja) .brand-hero .hero-content h1 { letter-spacing: 0; }
 .material-actions .quiet-link { display: inline-flex; align-items: center; min-height: 44px; }
 .materials-note { margin: 20px 0 0; font-size: .875rem; }
 .materials-note a { display: inline-block; }
+@media (min-width: 761px) {
+  .landing-nav { grid-template-columns: minmax(80px, 1fr) minmax(max-content, 2fr) auto; }
+}
 .nav-sections a[aria-current="page"] { color: #514076; background: #eee9ff; }
 @media (max-width: 700px) {
   .material-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
@@ -568,3 +571,5 @@ html:lang(ja) .brand-hero .hero-content h1 { letter-spacing: 0; }
   .has-mobile-menu .mobile-menu-language .lang-select { max-width: 160px; min-height: 44px; font-size: 16px; }
   .landing.compact-header section[id], .landing section[id], .hero-stage[id], .hero-content[id], .document details[id] { scroll-margin-top: 105px; }
 }
+
+.home-radar-panel{border:1px solid var(--border);border-radius:32px;background:#f5f2ff;padding:40px;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:36px}.home-radar-panel h2{font-size:clamp(25px,3vw,36px);letter-spacing:-.04em;margin:12px 0}.home-radar-panel p{color:var(--subtext);margin:0;line-height:1.9}.home-radar-search label{font-size:14px;display:block;margin-bottom:12px}.home-radar-search>div{display:flex;gap:10px}.home-radar-search input{background:white;border:1px solid #dcd5ea;border-radius:16px;padding:14px;font:inherit;font-size:16px;min-width:0;width:100%}.home-radar-search button{flex-shrink:0;border:0;padding:12px 24px;cursor:pointer;min-height:48px}.home-radar-search>a{display:inline-flex;min-height:44px;align-items:center;margin-top:8px;font-size:14px;text-decoration:underline;text-underline-offset:4px}@media(max-width:760px){.home-radar-panel{grid-template-columns:1fr;gap:24px;padding:28px 22px;border-radius:24px}.home-radar-search button{padding:12px 18px}.landing-nav .nav-sections{gap:16px}}

@@ -4,3 +4,5 @@ material-work/
 .dist/
 node_modules/
 .material-work/
+
+worker-configuration.d.ts

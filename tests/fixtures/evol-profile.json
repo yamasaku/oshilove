@@ -1,0 +1,53 @@
+{
+  "code": 200,
+  "message": "OK",
+  "user": {
+    "screen_name": "EVOL__official",
+    "url": "https://x.com/EVOL__official",
+    "id": "1530444250671788032",
+    "followers": 2124,
+    "following": 9,
+    "likes": 0,
+    "media_count": 629,
+    "statuses": 1064,
+    "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+    "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+    "raw_description": {
+      "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+      "facets": [
+        {
+          "type": "url",
+          "indices": [
+            67,
+            90
+          ],
+          "original": "https://t.co/HNwwPwkDfp",
+          "replacement": "https://timetr.ee/p/evol",
+          "display": "timetr.ee/p/evol"
+        },
+        {
+          "type": "url",
+          "indices": [
+            102,
+            125
+          ],
+          "original": "https://t.co/O3ireEy7tK",
+          "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+          "display": "tunecore.co.jp/artists/_EVOL"
+        }
+      ]
+    },
+    "location": "Japan,Tokyo",
+    "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+    "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_normal.jpg",
+    "joined": "Sat May 28 07:02:12 +0000 2022",
+    "protected": false,
+    "website": null,
+    "verification": {
+      "verified": true,
+      "verified_at": null,
+      "type": "individual"
+    },
+    "type": "profile"
+  }
+}

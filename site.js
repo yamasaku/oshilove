@@ -37,6 +37,9 @@
   window[`ga-disable-${measurementId}`] = analyticsConsent !== "granted";
 
   function loadAnalytics() {
+    // Radar queries and browser history can contain searched account names.
+    // Do not initialise GA here, including its remote enhanced measurement.
+    if (document.documentElement.dataset.page === "radar") return;
     if (analyticsConsent !== "granted") return;
     if (document.querySelector(`script[data-ga-id="${measurementId}"]`)) return;
     window[`ga-disable-${measurementId}`] = false;
@@ -103,7 +106,7 @@
     banner.innerHTML = `
       <div class="analytics-consent-copy">
         <strong><span data-lang="ja">アクセス解析について</span><span data-lang="zh-tw">關於網站分析</span><span data-lang="en">About analytics</span></strong>
-        <p><span data-lang="ja">サイトの改善に Google Analytics を使用します。同意した場合のみ読み込まれ、解析用 Cookie が有効になります。同意前や拒否した場合は、Google Analytics にデータを送信しません。設定はページ下部からいつでも変更できます</span><span data-lang="zh-tw">我們只會在您接受後載入 Google Analytics 並啟用分析 Cookie；未選擇或拒絕時，不會向 Google Analytics 傳送資料。您可隨時在頁尾更改設定</span><span data-lang="en">Google Analytics loads and enables analytics cookies only after you accept. No data is sent to Google Analytics before consent or if you decline. Change your choice anytime in the footer</span> <a href="privacy.html"><span data-lang="ja">詳細</span><span data-lang="zh-tw">了解詳情</span><span data-lang="en">Learn more</span></a></p>
+        <p><span data-lang="ja">サイトの改善に Google Analytics を使用します。同意した場合のみ読み込まれ、解析用 Cookie が有効になります。同意前や拒否した場合は、Google Analytics にデータを送信しません。設定はページ下部からいつでも変更できます</span><span data-lang="zh-tw">我們只會在您接受後載入 Google Analytics 並啟用分析 Cookie；未選擇或拒絕時，不會向 Google Analytics 傳送資料。您可隨時在頁尾更改設定</span><span data-lang="en">Google Analytics loads and enables analytics cookies only after you accept. No data is sent to Google Analytics before consent or if you decline. Change your choice anytime in the footer</span> <a href="${localizedPath('/privacy', document.documentElement.dataset.language)}"><span data-lang="ja">詳細</span><span data-lang="zh-tw">了解詳情</span><span data-lang="en">Learn more</span></a></p>
       </div>
       <div class="analytics-consent-actions">
         <button type="button" class="consent-button secondary" data-consent="denied"><span data-lang="ja">同意しない</span><span data-lang="zh-tw">拒絕</span><span data-lang="en">Decline</span></button>
@@ -138,6 +141,7 @@
   });
 
   function addAnalyticsSettingsControl() {
+    if (document.documentElement.dataset.page === "radar") return;
     const footer = document.querySelector("footer");
     if (!footer || footer.querySelector("[data-analytics-settings]")) return;
     const button = document.createElement("button");
@@ -163,7 +167,8 @@
     });
     document.querySelectorAll("a[data-site-lang]").forEach(link => {
       const url = new URL(link.href);
-      url.searchParams.set("lang", nextLanguage);
+      url.pathname = localizedPath(url.pathname, nextLanguage);
+      url.searchParams.delete("lang");
       link.href = url.href;
     });
     const title = document.querySelector(`[data-page-title-${nextLanguage}]`);
@@ -198,6 +203,12 @@
 
   function menuLabel(open) {
     return ({ja: open ? "メニューを閉じる" : "メニューを開く", "zh-tw": open ? "關閉選單" : "開啟選單", en: open ? "Close menu" : "Open menu"})[document.documentElement.dataset.language || language];
+  }
+
+  function localizedPath(path, lang) {
+    let page = path.replace(/\.html$/, "").replace(/^\/(?:en|zh-tw)(?=\/|$)/, "");
+    if (["", "/", "/index", "/ja"].includes(page)) page = "";
+    return (lang === "ja" ? "" : "/" + lang) + page || "/";
   }
 
   function setupMobileNavigation() {
@@ -255,9 +266,17 @@
     apply(language);
     addAnalyticsSettingsControl();
     loadAnalytics();
-    if (getAnalyticsConsent() === null) createConsentBanner();
+    if (getAnalyticsConsent() === null && document.documentElement.dataset.page !== "radar") createConsentBanner();
     document.querySelectorAll("[data-language-select]").forEach((select) => {
       select.addEventListener("change", (event) => {
+        if (document.documentElement.dataset.fixedLanguage) {
+          try { localStorage.setItem(storageKey, event.target.value); } catch (_) {}
+          const url = new URL(location.href);
+          url.pathname = localizedPath(url.pathname, event.target.value);
+          url.searchParams.delete("lang");
+          window.location.assign(url.href);
+          return;
+        }
         if (document.body.classList.contains("landing")) {
           try { localStorage.setItem(storageKey, event.target.value); } catch (_) {}
           window.location.assign(event.target.value + ".html" + window.location.hash);

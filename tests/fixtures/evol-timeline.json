@@ -1,0 +1,3592 @@
+{
+  "code": 200,
+  "results": [
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2109211223183282590",
+      "id": "2109211223183282590",
+      "text": "LIVE映像公開‼️\nΣVOL『ワタシ＝エトセトラ』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://youtu.be/yGN39XcfQ9A?si=I-V1gfMoc2coz9Ld",
+      "raw_text": {
+        "text": "LIVE映像公開‼️\nΣVOL『ワタシ＝エトセトラ』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://t.co/XxyMh6yc99 https://t.co/TS0SJ6SsAr",
+        "display_text_range": [
+          0,
+          99
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              76,
+              99
+            ],
+            "original": "https://t.co/XxyMh6yc99",
+            "replacement": "https://youtu.be/yGN39XcfQ9A?si=I-V1gfMoc2coz9Ld",
+            "display": "youtu.be/yGN39XcfQ9A?si…"
+          },
+          {
+            "type": "media",
+            "indices": [
+              100,
+              123
+            ],
+            "id": "2109210238708744192",
+            "display": "pic.x.com/TS0SJ6SsAr",
+            "original": "https://t.co/TS0SJ6SsAr",
+            "replacement": "https://x.com/EVOL__official/status/2109211223183282590/video/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 33,
+      "likes": 102,
+      "bookmarks": 4,
+      "quotes": 18,
+      "embed_card": "player",
+      "created_at": "Sun Oct 11 09:15:17 +0000 2026",
+      "created_timestamp": 1791710117,
+      "possibly_sensitive": false,
+      "views": 5851,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "id": "2109210238708744192",
+            "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/3840x2160/RGIL-74Tl0gCRLOE.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2109210238708744192/img/Xc6iWpdn0URASCy7.jpg",
+            "duration": 273.916,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/pl/n6iZVhl2f9QASd1O.m3u8?tag=29&v=cfc",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/480x270/sKvapP3tJUVJwBET.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/640x360/vUS7o5ytyk-ahfau.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/1280x720/MYcXnT7qYZ0CnCEM.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/1920x1080/M5YAMb934VGgtT5r.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/3840x2160/RGIL-74Tl0gCRLOE.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "videos": [
+          {
+            "id": "2109210238708744192",
+            "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/3840x2160/RGIL-74Tl0gCRLOE.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2109210238708744192/img/Xc6iWpdn0URASCy7.jpg",
+            "duration": 273.916,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/pl/n6iZVhl2f9QASd1O.m3u8?tag=29&v=cfc",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/480x270/sKvapP3tJUVJwBET.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/640x360/vUS7o5ytyk-ahfau.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/1280x720/MYcXnT7qYZ0CnCEM.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/1920x1080/M5YAMb934VGgtT5r.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2109210238708744192/vid/avc1/3840x2160/RGIL-74Tl0gCRLOE.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "external": {
+          "type": "video",
+          "url": "https://www.youtube.com/embed/yGN39XcfQ9A?si=I-V1gfMoc2coz9Ld",
+          "thumbnail_url": "https://img.youtube.com/vi/yGN39XcfQ9A?si=I-V1gfMoc2coz9Ld/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2108930689269948566",
+      "id": "2108930689269948566",
+      "text": "◤￣￣￣￣￣￣￣￣￣￣￣￣￣\n\n本日は『PIF~最終章~『風岡拓海生誕祭』』にお越しいただきありがとうございました！\n\n ❖━━━━━━━ NΣXT LiVΣ ━━━━━━━❖ \n\n10/14 新宿WALLY『唯我生誕』\n\n                                ＿＿＿＿＿＿＿＿＿＿＿＿＿◢\n\n#ΣVOL",
+      "raw_text": {
+        "text": "◤￣￣￣￣￣￣￣￣￣￣￣￣￣\n\n本日は『PIF~最終章~『風岡拓海生誕祭』』にお越しいただきありがとうございました！\n\n ❖━━━━━━━ NΣXT LiVΣ ━━━━━━━❖ \n\n10/14 新宿WALLY『唯我生誕』\n\n                                ＿＿＿＿＿＿＿＿＿＿＿＿＿◢\n\n#ΣVOL https://t.co/8w815Du93R",
+        "display_text_range": [
+          0,
+          165
+        ],
+        "facets": [
+          {
+            "type": "hashtag",
+            "indices": [
+              160,
+              165
+            ],
+            "original": "ΣVOL"
+          },
+          {
+            "type": "media",
+            "indices": [
+              166,
+              189
+            ],
+            "id": "2108930462794371073",
+            "display": "pic.x.com/8w815Du93R",
+            "original": "https://t.co/8w815Du93R",
+            "replacement": "https://x.com/EVOL__official/status/2108930689269948566/video/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 8,
+      "likes": 47,
+      "bookmarks": 3,
+      "quotes": 0,
+      "embed_card": "player",
+      "created_at": "Sat Oct 10 14:40:33 +0000 2026",
+      "created_timestamp": 1791643233,
+      "possibly_sensitive": false,
+      "views": 2718,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "id": "2108930462794371073",
+            "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/1920x1080/hyJIpVpCRMdxMtJt.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2108930462794371073/img/SfQ2xVSOFynRXraW.jpg",
+            "duration": 76.766,
+            "width": 1920,
+            "height": 1080,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/pl/xlnX53jq3JrouFVV.m3u8?tag=29&v=921",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/480x270/JJKQchzhOXY3OaHf.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/640x360/qMg67IVIwmtqqdLk.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/1280x720/cnr6itNI_Nw2pofv.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/1920x1080/hyJIpVpCRMdxMtJt.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "videos": [
+          {
+            "id": "2108930462794371073",
+            "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/1920x1080/hyJIpVpCRMdxMtJt.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2108930462794371073/img/SfQ2xVSOFynRXraW.jpg",
+            "duration": 76.766,
+            "width": 1920,
+            "height": 1080,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/pl/xlnX53jq3JrouFVV.m3u8?tag=29&v=921",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/480x270/JJKQchzhOXY3OaHf.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/640x360/qMg67IVIwmtqqdLk.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/1280x720/cnr6itNI_Nw2pofv.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108930462794371073/vid/avc1/1920x1080/hyJIpVpCRMdxMtJt.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ]
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/official_sksp/status/2108860162970948055",
+      "id": "2108860162970948055",
+      "text": "🌟コラボメンバー発表🌟\n\n2026年10月15日(木)\n双極スペクトラム主催ツーマンライブ\n「双星邂逅」\n双極スペクトラム×ΣVOL\n\n▼チケットはこちら▼\nhttps://livepocket.jp/e/xactc",
+      "raw_text": {
+        "text": "🌟コラボメンバー発表🌟\n\n2026年10月15日(木)\n双極スペクトラム主催ツーマンライブ\n「双星邂逅」\n双極スペクトラム×ΣVOL\n\n▼チケットはこちら▼\nhttps://t.co/CNKSXdXJsJ https://t.co/h18FGxCBgO",
+        "display_text_range": [
+          0,
+          102
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              79,
+              102
+            ],
+            "original": "https://t.co/CNKSXdXJsJ",
+            "replacement": "https://livepocket.jp/e/xactc",
+            "display": "livepocket.jp/e/xactc"
+          },
+          {
+            "type": "media",
+            "indices": [
+              103,
+              126
+            ],
+            "id": "2108860158323683328",
+            "display": "pic.x.com/h18FGxCBgO",
+            "original": "https://t.co/h18FGxCBgO",
+            "replacement": "https://x.com/official_sksp/status/2108860162970948055/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "official_sksp",
+        "url": "https://x.com/official_sksp",
+        "id": "1303993785483890689",
+        "followers": 10392,
+        "following": 4,
+        "likes": 40,
+        "media_count": 691,
+        "statuses": 1545,
+        "name": "双極スペクトラム official",
+        "description": "2021.2.11始動 新型アイドルユニット ▶︎スケジュール【https://x.gd/SkEaq】 ▶オンラインストア【https://store.soukyoku-spectrum.jp/】▶︎FCサイト【https://push-mi.mi-glamu.com/SKSP】",
+        "raw_description": {
+          "text": "2021.2.11始動 新型アイドルユニット ▶︎スケジュール【https://t.co/4uBWZXDXdJ】 ▶オンラインストア【https://t.co/IQqiIpSMOr】▶︎FCサイト【https://t.co/JLwbtvuqQb】",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                32,
+                55
+              ],
+              "original": "https://t.co/4uBWZXDXdJ",
+              "replacement": "https://x.gd/SkEaq",
+              "display": "x.gd/SkEaq"
+            },
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/IQqiIpSMOr",
+              "replacement": "https://store.soukyoku-spectrum.jp/",
+              "display": "store.soukyoku-spectrum.jp"
+            },
+            {
+              "type": "url",
+              "indices": [
+                99,
+                122
+              ],
+              "original": "https://t.co/JLwbtvuqQb",
+              "replacement": "https://push-mi.mi-glamu.com/SKSP",
+              "display": "push-mi.mi-glamu.com/SKSP"
+            }
+          ]
+        },
+        "location": "2022/3/19 ZeppDiverCity 新体制復活",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1303993785483890689/1788350634",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1493422197213306888/Hr64IgO4_200x200.jpg",
+        "joined": "Thu Sep 10 09:49:21 +0000 2020",
+        "protected": false,
+        "website": {
+          "url": "https://soukyoku-spectrum.jp/",
+          "display_url": "soukyoku-spectrum.jp"
+        },
+        "verification": {
+          "verified": false,
+          "verified_at": null,
+          "type": null
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 9,
+      "likes": 56,
+      "bookmarks": 17,
+      "quotes": 12,
+      "embed_card": "summary_large_image",
+      "created_at": "Sat Oct 10 10:00:18 +0000 2026",
+      "created_timestamp": 1791626418,
+      "possibly_sensitive": false,
+      "views": 11096,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2108860158323683328",
+            "url": "https://pbs.twimg.com/media/HUQtJAnbcAAKtEm.jpg?name=orig",
+            "width": 1521,
+            "height": 1076
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2108860158323683328",
+            "url": "https://pbs.twimg.com/media/HUQtJAnbcAAKtEm.jpg?name=orig",
+            "width": 1521,
+            "height": 1076
+          }
+        ]
+      },
+      "quote": {
+        "type": "status",
+        "url": "https://x.com/official_sksp/status/2104164155397996790",
+        "id": "2104164155397996790",
+        "text": "🔥双極スペクトラム主催ツーマンライブ🔥\n\n2026年10月15日(木)\n双極スペクトラム主催ツーマンライブ\n「双星邂逅」\n双極スペクトラム×ΣVOL\n\n新宿WALLY\nOPEN 16:30 / START 17:00\n前売チケット￥3,000 （Drink代別）\n当日￥3,500（Drink代別）\n\n▼チケット情報▼\n10/2（金）22:20〜チケット発売\nhttps://livepocket.jp/e/xactc\n\n※チケットページは販売時間に公開\n※お支払い方法はクレジットカードのみとなっております。",
+        "raw_text": {
+          "text": "🔥双極スペクトラム主催ツーマンライブ🔥\n\n2026年10月15日(木)\n双極スペクトラム主催ツーマンライブ\n「双星邂逅」\n双極スペクトラム×ΣVOL\n\n新宿WALLY\nOPEN 16:30 / START 17:00\n前売チケット￥3,000 （Drink代別）\n当日￥3,500（Drink代別）\n\n▼チケット情報▼\n10/2（金）22:20〜チケット発売\nhttps://t.co/buL2IJjkyQ\n\n※チケットページは販売時間に公開\n※お支払い方法はクレジットカードのみとなっております。",
+          "display_text_range": [
+            0,
+            251
+          ],
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                180,
+                203
+              ],
+              "original": "https://t.co/buL2IJjkyQ",
+              "replacement": "https://livepocket.jp/e/xactc",
+              "display": "livepocket.jp/e/xactc"
+            },
+            {
+              "type": "media",
+              "indices": [
+                180,
+                203
+              ],
+              "id": "2104164147776880641",
+              "display": "pic.x.com/xVrxhFzOnu",
+              "original": "https://t.co/xVrxhFzOnu",
+              "replacement": "https://x.com/official_sksp/status/2104164155397996790/photo/1"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "official_sksp",
+          "url": "https://x.com/official_sksp",
+          "id": "1303993785483890689",
+          "followers": 10392,
+          "following": 4,
+          "likes": 40,
+          "media_count": 691,
+          "statuses": 1545,
+          "name": "双極スペクトラム official",
+          "description": "2021.2.11始動 新型アイドルユニット ▶︎スケジュール【https://x.gd/SkEaq】 ▶オンラインストア【https://store.soukyoku-spectrum.jp/】▶︎FCサイト【https://push-mi.mi-glamu.com/SKSP】",
+          "raw_description": {
+            "text": "2021.2.11始動 新型アイドルユニット ▶︎スケジュール【https://t.co/4uBWZXDXdJ】 ▶オンラインストア【https://t.co/IQqiIpSMOr】▶︎FCサイト【https://t.co/JLwbtvuqQb】",
+            "facets": [
+              {
+                "type": "url",
+                "indices": [
+                  32,
+                  55
+                ],
+                "original": "https://t.co/4uBWZXDXdJ",
+                "replacement": "https://x.gd/SkEaq",
+                "display": "x.gd/SkEaq"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  67,
+                  90
+                ],
+                "original": "https://t.co/IQqiIpSMOr",
+                "replacement": "https://store.soukyoku-spectrum.jp/",
+                "display": "store.soukyoku-spectrum.jp"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  99,
+                  122
+                ],
+                "original": "https://t.co/JLwbtvuqQb",
+                "replacement": "https://push-mi.mi-glamu.com/SKSP",
+                "display": "push-mi.mi-glamu.com/SKSP"
+              }
+            ]
+          },
+          "location": "2022/3/19 ZeppDiverCity 新体制復活",
+          "banner_url": "https://pbs.twimg.com/profile_banners/1303993785483890689/1788350634",
+          "avatar_url": "https://pbs.twimg.com/profile_images/1493422197213306888/Hr64IgO4_200x200.jpg",
+          "joined": "Thu Sep 10 09:49:21 +0000 2020",
+          "protected": false,
+          "website": {
+            "url": "https://soukyoku-spectrum.jp/",
+            "display_url": "soukyoku-spectrum.jp"
+          },
+          "verification": {
+            "verified": false,
+            "verified_at": null,
+            "type": null
+          },
+          "type": "profile"
+        },
+        "replies": 0,
+        "reposts": 14,
+        "likes": 95,
+        "bookmarks": 49,
+        "quotes": 88,
+        "embed_card": "summary_large_image",
+        "created_at": "Sun Sep 27 11:00:02 +0000 2026",
+        "created_timestamp": 1790506802,
+        "possibly_sensitive": false,
+        "views": 68253,
+        "is_note_tweet": true,
+        "community_note": null,
+        "lang": "ja",
+        "replying_to": null,
+        "media": {
+          "all": [
+            {
+              "type": "photo",
+              "id": "2104164147776880641",
+              "url": "https://pbs.twimg.com/media/HTN-JOFagAEF3Eh.jpg?name=orig",
+              "width": 1754,
+              "height": 1241
+            }
+          ],
+          "photos": [
+            {
+              "type": "photo",
+              "id": "2104164147776880641",
+              "url": "https://pbs.twimg.com/media/HTN-JOFagAEF3Eh.jpg?name=orig",
+              "width": 1754,
+              "height": 1241
+            }
+          ]
+        },
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "provider": "twitter",
+      "reposted_by": {
+        "id": "1530444250671788032",
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "screen_name": "EVOL__official",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "url": "https://x.com/EVOL__official"
+      }
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/REKISEN_event/status/2108150117274705931",
+      "id": "2108150117274705931",
+      "text": "⋱⋰ ⋱REKISEN-歴戦-十五戦目⋱⋰ ⋱\n\n日程：2026年10月18日(日)\n会場：吉祥寺CULB SEATA\n\nOPEN/START 11:40/12:00\nADV/DOOR ¥3,500/¥4,000 （各1D）\n\n【チケット販売について】\n1-2枚取りになります。\n\n🎟 10/11(日)22:55-チケット発売開始\n▶販売URLは1分前に本アカウントから公開",
+      "raw_text": {
+        "text": "⋱⋰ ⋱REKISEN-歴戦-十五戦目⋱⋰ ⋱\n\n日程：2026年10月18日(日)\n会場：吉祥寺CULB SEATA\n\nOPEN/START 11:40/12:00\nADV/DOOR ¥3,500/¥4,000 （各1D）\n\n【チケット販売について】\n1-2枚取りになります。\n\n🎟 10/11(日)22:55-チケット発売開始\n▶販売URLは1分前に本アカウントから公開 https://t.co/qBXbBLNmQu",
+        "display_text_range": [
+          0,
+          187
+        ],
+        "facets": [
+          {
+            "type": "media",
+            "indices": [
+              188,
+              211
+            ],
+            "id": "2108150105845174272",
+            "display": "pic.x.com/qBXbBLNmQu",
+            "original": "https://t.co/qBXbBLNmQu",
+            "replacement": "https://x.com/REKISEN_event/status/2108150117274705931/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              188,
+              211
+            ],
+            "id": "2108150105807482880",
+            "display": "pic.x.com/qBXbBLNmQu",
+            "original": "https://t.co/qBXbBLNmQu",
+            "replacement": "https://x.com/REKISEN_event/status/2108150117274705931/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              188,
+              211
+            ],
+            "id": "2108150105861984256",
+            "display": "pic.x.com/qBXbBLNmQu",
+            "original": "https://t.co/qBXbBLNmQu",
+            "replacement": "https://x.com/REKISEN_event/status/2108150117274705931/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "REKISEN_event",
+        "url": "https://x.com/REKISEN_event",
+        "id": "1908506237291188225",
+        "followers": 947,
+        "following": 2,
+        "likes": 10,
+        "media_count": 36,
+        "statuses": 102,
+        "name": "REKISEN -歴戦-",
+        "description": "NEXT▷9/24.10/18",
+        "raw_description": {
+          "text": "NEXT▷9/24.10/18",
+          "facets": []
+        },
+        "location": "",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1908506237291188225/1743858433",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1908507439064027136/8klFH-bi_200x200.jpg",
+        "joined": "Sat Apr 05 13:05:29 +0000 2025",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": false,
+          "verified_at": null,
+          "type": null
+        },
+        "type": "profile"
+      },
+      "replies": 1,
+      "reposts": 77,
+      "likes": 161,
+      "bookmarks": 182,
+      "quotes": 233,
+      "embed_card": "summary_large_image",
+      "created_at": "Thu Oct 08 10:58:50 +0000 2026",
+      "created_timestamp": 1791457130,
+      "possibly_sensitive": false,
+      "views": 140113,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2108150105845174272",
+            "url": "https://pbs.twimg.com/media/HUGnWhAakAAWWUF.jpg?name=orig",
+            "width": 1366,
+            "height": 2048
+          },
+          {
+            "type": "photo",
+            "id": "2108150105807482880",
+            "url": "https://pbs.twimg.com/media/HUGnWg3bcAAhnu7.jpg?name=orig",
+            "width": 1365,
+            "height": 2048
+          },
+          {
+            "type": "photo",
+            "id": "2108150105861984256",
+            "url": "https://pbs.twimg.com/media/HUGnWhEbEAAaCv1.jpg?name=orig",
+            "width": 1024,
+            "height": 1536
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2108150105845174272",
+            "url": "https://pbs.twimg.com/media/HUGnWhAakAAWWUF.jpg?name=orig",
+            "width": 1366,
+            "height": 2048
+          },
+          {
+            "type": "photo",
+            "id": "2108150105807482880",
+            "url": "https://pbs.twimg.com/media/HUGnWg3bcAAhnu7.jpg?name=orig",
+            "width": 1365,
+            "height": 2048
+          },
+          {
+            "type": "photo",
+            "id": "2108150105861984256",
+            "url": "https://pbs.twimg.com/media/HUGnWhEbEAAaCv1.jpg?name=orig",
+            "width": 1024,
+            "height": 1536
+          }
+        ],
+        "mosaic": {
+          "type": "mosaic_photo",
+          "formats": {
+            "jpeg": "https://mosaic.fxtwitter.com/jpeg/2108150117274705931/HUGnWhAakAAWWUF/HUGnWg3bcAAhnu7/HUGnWhEbEAAaCv1",
+            "webp": "https://mosaic.fxtwitter.com/webp/2108150117274705931/HUGnWhAakAAWWUF/HUGnWg3bcAAhnu7/HUGnWhEbEAAaCv1"
+          }
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": {
+        "id": "1530444250671788032",
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "screen_name": "EVOL__official",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "url": "https://x.com/EVOL__official"
+      }
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2108118288991760759",
+      "id": "2108118288991760759",
+      "text": "LIVE映像公開‼️\nΣVOL『紫炎』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://youtu.be/a8mfNA1TuXA?si=5bnyJbmb_r8Qqv42",
+      "raw_text": {
+        "text": "LIVE映像公開‼️\nΣVOL『紫炎』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://t.co/wAJQSzvceH https://t.co/1eHVvyOxlQ",
+        "display_text_range": [
+          0,
+          92
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              69,
+              92
+            ],
+            "original": "https://t.co/wAJQSzvceH",
+            "replacement": "https://youtu.be/a8mfNA1TuXA?si=5bnyJbmb_r8Qqv42",
+            "display": "youtu.be/a8mfNA1TuXA?si…"
+          },
+          {
+            "type": "media",
+            "indices": [
+              93,
+              116
+            ],
+            "id": "2108117301493133312",
+            "display": "pic.x.com/1eHVvyOxlQ",
+            "original": "https://t.co/1eHVvyOxlQ",
+            "replacement": "https://x.com/EVOL__official/status/2108118288991760759/video/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 44,
+      "likes": 88,
+      "bookmarks": 3,
+      "quotes": 16,
+      "embed_card": "player",
+      "created_at": "Thu Oct 08 08:52:21 +0000 2026",
+      "created_timestamp": 1791449541,
+      "possibly_sensitive": false,
+      "views": 5994,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "id": "2108117301493133312",
+            "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/3840x2160/zzhjxPqNYHEVm9np.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2108117301493133312/img/o9Xq577ceIoIolKe.jpg",
+            "duration": 251.083,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/pl/6ilD1plTmCdvZfZN.m3u8?tag=29&v=cfc",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/480x270/2kfkQRBCD1I79tRf.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/640x360/ZKlMPsku89u3cj7Y.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/1280x720/oglfWq0AndJR3HPP.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/1920x1080/eH47gBafWUsZ6_Ia.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/3840x2160/zzhjxPqNYHEVm9np.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "videos": [
+          {
+            "id": "2108117301493133312",
+            "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/3840x2160/zzhjxPqNYHEVm9np.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2108117301493133312/img/o9Xq577ceIoIolKe.jpg",
+            "duration": 251.083,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/pl/6ilD1plTmCdvZfZN.m3u8?tag=29&v=cfc",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/480x270/2kfkQRBCD1I79tRf.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/640x360/ZKlMPsku89u3cj7Y.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/1280x720/oglfWq0AndJR3HPP.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/1920x1080/eH47gBafWUsZ6_Ia.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2108117301493133312/vid/avc1/3840x2160/zzhjxPqNYHEVm9np.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "external": {
+          "type": "video",
+          "url": "https://www.youtube.com/embed/a8mfNA1TuXA?si=5bnyJbmb_r8Qqv42",
+          "thumbnail_url": "https://img.youtube.com/vi/a8mfNA1TuXA?si=5bnyJbmb_r8Qqv42/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/idolgakuen_off/status/2107442308044280315",
+      "id": "2107442308044280315",
+      "text": "アイドル学園vol.7🔥\n\n▶︎日程：10月22日\n▶︎場所：harevutai\n▶︎時間：OPEN11:00/START11:25\n▶︎料金：前売¥3,000/当日¥3,500\n▶︎販売：10/10 23:10-\n\nSPコラボあり！\n\n販売URLは1分前に本アカウントより公開",
+      "raw_text": {
+        "text": "アイドル学園vol.7🔥\n\n▶︎日程：10月22日\n▶︎場所：harevutai\n▶︎時間：OPEN11:00/START11:25\n▶︎料金：前売¥3,000/当日¥3,500\n▶︎販売：10/10 23:10-\n\nSPコラボあり！\n\n販売URLは1分前に本アカウントより公開 https://t.co/xpehaAYlBw",
+        "display_text_range": [
+          0,
+          139
+        ],
+        "facets": [
+          {
+            "type": "media",
+            "indices": [
+              140,
+              163
+            ],
+            "id": "2107442286334554112",
+            "display": "pic.x.com/xpehaAYlBw",
+            "original": "https://t.co/xpehaAYlBw",
+            "replacement": "https://x.com/idolgakuen_off/status/2107442308044280315/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              140,
+              163
+            ],
+            "id": "2107442286305083392",
+            "display": "pic.x.com/xpehaAYlBw",
+            "original": "https://t.co/xpehaAYlBw",
+            "replacement": "https://x.com/idolgakuen_off/status/2107442308044280315/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              140,
+              163
+            ],
+            "id": "2107442286305103872",
+            "display": "pic.x.com/xpehaAYlBw",
+            "original": "https://t.co/xpehaAYlBw",
+            "replacement": "https://x.com/idolgakuen_off/status/2107442308044280315/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "idolgakuen_off",
+        "url": "https://x.com/idolgakuen_off",
+        "id": "2042444733197279232",
+        "followers": 619,
+        "following": 0,
+        "likes": 2,
+        "media_count": 12,
+        "statuses": 45,
+        "name": "アイドル学園",
+        "description": "",
+        "raw_description": {
+          "text": "",
+          "facets": []
+        },
+        "location": "",
+        "banner_url": "https://pbs.twimg.com/profile_banners/2042444733197279232/1775792135",
+        "avatar_url": "https://pbs.twimg.com/profile_images/2042472601340297217/epue2sES_200x200.jpg",
+        "joined": "Fri Apr 10 03:29:47 +0000 2026",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": false,
+          "verified_at": null,
+          "type": null
+        },
+        "type": "profile"
+      },
+      "replies": 1,
+      "reposts": 84,
+      "likes": 276,
+      "bookmarks": 177,
+      "quotes": 233,
+      "embed_card": "summary_large_image",
+      "created_at": "Tue Oct 06 12:06:15 +0000 2026",
+      "created_timestamp": 1791288375,
+      "possibly_sensitive": false,
+      "views": 152199,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2107442286334554112",
+            "url": "https://pbs.twimg.com/media/HT8jl_2bsAApAS-.jpg?name=orig",
+            "width": 974,
+            "height": 1305
+          },
+          {
+            "type": "photo",
+            "id": "2107442286305083392",
+            "url": "https://pbs.twimg.com/media/HT8jl_vaAAAFibX.jpg?name=orig",
+            "width": 1074,
+            "height": 1373
+          },
+          {
+            "type": "photo",
+            "id": "2107442286305103872",
+            "url": "https://pbs.twimg.com/media/HT8jl_vaUAAXoeH.jpg?name=orig",
+            "width": 1210,
+            "height": 614
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2107442286334554112",
+            "url": "https://pbs.twimg.com/media/HT8jl_2bsAApAS-.jpg?name=orig",
+            "width": 974,
+            "height": 1305
+          },
+          {
+            "type": "photo",
+            "id": "2107442286305083392",
+            "url": "https://pbs.twimg.com/media/HT8jl_vaAAAFibX.jpg?name=orig",
+            "width": 1074,
+            "height": 1373
+          },
+          {
+            "type": "photo",
+            "id": "2107442286305103872",
+            "url": "https://pbs.twimg.com/media/HT8jl_vaUAAXoeH.jpg?name=orig",
+            "width": 1210,
+            "height": 614
+          }
+        ],
+        "mosaic": {
+          "type": "mosaic_photo",
+          "formats": {
+            "jpeg": "https://mosaic.fxtwitter.com/jpeg/2107442308044280315/HT8jl_2bsAApAS-/HT8jl_vaAAAFibX/HT8jl_vaUAAXoeH",
+            "webp": "https://mosaic.fxtwitter.com/webp/2107442308044280315/HT8jl_2bsAApAS-/HT8jl_vaAAAFibX/HT8jl_vaUAAXoeH"
+          }
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": {
+        "id": "1530444250671788032",
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "screen_name": "EVOL__official",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "url": "https://x.com/EVOL__official"
+      }
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2107094120615555260",
+      "id": "2107094120615555260",
+      "text": "◤￣￣￣￣￣￣￣￣￣￣￣￣￣\n\n本日は『SEATA17周年イベント』にお越しいただきありがとうございました！\n\n ❖━━━━━━━ NΣXT LiVΣ ━━━━━━━❖ \n\n10/7 Viblue EBISU 『アフターパーティー』\n※対象者のみ\n                                ＿＿＿＿＿＿＿＿＿＿＿＿＿◢\n\n#ΣVOL",
+      "raw_text": {
+        "text": "◤￣￣￣￣￣￣￣￣￣￣￣￣￣\n\n本日は『SEATA17周年イベント』にお越しいただきありがとうございました！\n\n ❖━━━━━━━ NΣXT LiVΣ ━━━━━━━❖ \n\n10/7 Viblue EBISU 『アフターパーティー』\n※対象者のみ\n                                ＿＿＿＿＿＿＿＿＿＿＿＿＿◢\n\n#ΣVOL https://t.co/CX4DmRcY45",
+        "display_text_range": [
+          0,
+          177
+        ],
+        "facets": [
+          {
+            "type": "hashtag",
+            "indices": [
+              172,
+              177
+            ],
+            "original": "ΣVOL"
+          },
+          {
+            "type": "media",
+            "indices": [
+              178,
+              201
+            ],
+            "id": "2107093805300338688",
+            "display": "pic.x.com/CX4DmRcY45",
+            "original": "https://t.co/CX4DmRcY45",
+            "replacement": "https://x.com/EVOL__official/status/2107094120615555260/video/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 9,
+      "likes": 61,
+      "bookmarks": 3,
+      "quotes": 1,
+      "embed_card": "player",
+      "created_at": "Mon Oct 05 13:02:40 +0000 2026",
+      "created_timestamp": 1791205360,
+      "possibly_sensitive": false,
+      "views": 3207,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "id": "2107093805300338688",
+            "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/1920x1080/xnV74WqaTEegZNVZ.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2107093805300338688/img/732-4BZyXpUPvmBy.jpg",
+            "duration": 117.633,
+            "width": 1920,
+            "height": 1080,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/pl/SZ2Vy5iYSFzDqETj.m3u8?tag=29&v=918",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/480x270/VTiIf4gAV56FRp75.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/640x360/XnYckJAijiru0U55.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/1280x720/ARERz2mzsJHZNr5m.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/1920x1080/xnV74WqaTEegZNVZ.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "videos": [
+          {
+            "id": "2107093805300338688",
+            "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/1920x1080/xnV74WqaTEegZNVZ.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2107093805300338688/img/732-4BZyXpUPvmBy.jpg",
+            "duration": 117.633,
+            "width": 1920,
+            "height": 1080,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/pl/SZ2Vy5iYSFzDqETj.m3u8?tag=29&v=918",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/480x270/VTiIf4gAV56FRp75.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/640x360/XnYckJAijiru0U55.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/1280x720/ARERz2mzsJHZNr5m.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2107093805300338688/vid/avc1/1920x1080/xnV74WqaTEegZNVZ.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ]
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2106661056944996471",
+      "id": "2106661056944996471",
+      "text": "LIVE映像公開‼️\nΣVOL『KiLL KiLL KiLL』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://youtu.be/9cPdgBMECMc?si=4NlgQm69Pu7fum_I",
+      "raw_text": {
+        "text": "LIVE映像公開‼️\nΣVOL『KiLL KiLL KiLL』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://t.co/MIvzNiGJln https://t.co/ix4mZPLmmE",
+        "display_text_range": [
+          0,
+          104
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              81,
+              104
+            ],
+            "original": "https://t.co/MIvzNiGJln",
+            "replacement": "https://youtu.be/9cPdgBMECMc?si=4NlgQm69Pu7fum_I",
+            "display": "youtu.be/9cPdgBMECMc?si…"
+          },
+          {
+            "type": "media",
+            "indices": [
+              105,
+              128
+            ],
+            "id": "2106660064400703488",
+            "display": "pic.x.com/ix4mZPLmmE",
+            "original": "https://t.co/ix4mZPLmmE",
+            "replacement": "https://x.com/EVOL__official/status/2106661056944996471/video/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 32,
+      "likes": 86,
+      "bookmarks": 4,
+      "quotes": 13,
+      "embed_card": "player",
+      "created_at": "Sun Oct 04 08:21:50 +0000 2026",
+      "created_timestamp": 1791102110,
+      "possibly_sensitive": false,
+      "views": 5320,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "id": "2106660064400703488",
+            "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/3840x2160/SAR8d0HO-lMUWh6F.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2106660064400703488/img/u5kwppH1XtxQsoB_.jpg",
+            "duration": 245.5,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/pl/8fDhctugmUp0uVq3.m3u8?tag=29&v=ac4",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/480x270/vuiJZMFCTlCJaTAx.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/640x360/HcyBlYpzAStF2PGL.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/1280x720/tfCYN5tfznmqzBgv.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/1920x1080/hQKF31V_LqgvCL0s.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/3840x2160/SAR8d0HO-lMUWh6F.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "videos": [
+          {
+            "id": "2106660064400703488",
+            "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/3840x2160/SAR8d0HO-lMUWh6F.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2106660064400703488/img/u5kwppH1XtxQsoB_.jpg",
+            "duration": 245.5,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/pl/8fDhctugmUp0uVq3.m3u8?tag=29&v=ac4",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/480x270/vuiJZMFCTlCJaTAx.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/640x360/HcyBlYpzAStF2PGL.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/1280x720/tfCYN5tfznmqzBgv.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/1920x1080/hQKF31V_LqgvCL0s.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2106660064400703488/vid/avc1/3840x2160/SAR8d0HO-lMUWh6F.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "external": {
+          "type": "video",
+          "url": "https://www.youtube.com/embed/9cPdgBMECMc?si=4NlgQm69Pu7fum_I",
+          "thumbnail_url": "https://img.youtube.com/vi/9cPdgBMECMc?si=4NlgQm69Pu7fum_I/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2106368701633380664",
+      "id": "2106368701633380664",
+      "text": "【追加スケジュール】\n11/12 キネマ倶楽部\n\n上記の日程が追加となりました。\n情報が決まり次第随時告知致します。",
+      "raw_text": {
+        "text": "【追加スケジュール】\n11/12 キネマ倶楽部\n\n上記の日程が追加となりました。\n情報が決まり次第随時告知致します。",
+        "display_text_range": [
+          0,
+          58
+        ],
+        "facets": []
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 1,
+      "likes": 10,
+      "bookmarks": 4,
+      "quotes": 4,
+      "embed_card": "summary_large_image",
+      "created_at": "Sat Oct 03 13:00:07 +0000 2026",
+      "created_timestamp": 1791032407,
+      "views": 4786,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {},
+      "quote": {
+        "type": "status",
+        "url": "https://x.com/EVOL__official/status/2103020651422630220",
+        "id": "2103020651422630220",
+        "text": "◥◣＿＿＿＿＿＿＿＿＿＿＿＿＿＿◢◤\n🗓️10月&11月暫定スケジュール更新🗓️\n◢◤￣￣￣￣￣￣￣￣￣￣￣￣￣￣◥◣\n\n🎁10月14日 ゆいが生誕🎁\n\n10月7日 4周年ワンマンライブアフターパーティー\n※対象者のみ\n\n🚄東西ツアー🚄\n10月27日 心斎橋SUNHALL\n10月28日 #G8 NUMBER GATE\n11月17日 新宿HOLIDAY\n12月3日 Osaka RUIDO\n12月4日 KYOTO MUSE\n1月21日 aube Shibuya\n2月8日 Osaka RUIDO\n2月9日 Osaka RUIDO\n\n【ツアーファイナル】\n3月16日 Zepp Shinjuku",
+        "raw_text": {
+          "text": "◥◣＿＿＿＿＿＿＿＿＿＿＿＿＿＿◢◤\n🗓️10月&11月暫定スケジュール更新🗓️\n◢◤￣￣￣￣￣￣￣￣￣￣￣￣￣￣◥◣\n\n🎁10月14日 ゆいが生誕🎁\n\n10月7日 4周年ワンマンライブアフターパーティー\n※対象者のみ\n\n🚄東西ツアー🚄\n10月27日 心斎橋SUNHALL\n10月28日 #G8 NUMBER GATE\n11月17日 新宿HOLIDAY\n12月3日 Osaka RUIDO\n12月4日 KYOTO MUSE\n1月21日 aube Shibuya\n2月8日 Osaka RUIDO\n2月9日 Osaka RUIDO\n\n【ツアーファイナル】\n3月16日 Zepp Shinjuku",
+          "display_text_range": [
+            0,
+            302
+          ],
+          "facets": [
+            {
+              "type": "hashtag",
+              "indices": [
+                144,
+                147
+              ],
+              "original": "G8"
+            },
+            {
+              "type": "media",
+              "indices": [
+                181,
+                204
+              ],
+              "id": "2103020645152120832",
+              "display": "pic.x.com/vFSJwZe4EF",
+              "original": "https://t.co/vFSJwZe4EF",
+              "replacement": "https://x.com/EVOL__official/status/2103020651422630220/photo/1"
+            },
+            {
+              "type": "media",
+              "indices": [
+                181,
+                204
+              ],
+              "id": "2103020645143764992",
+              "display": "pic.x.com/vFSJwZe4EF",
+              "original": "https://t.co/vFSJwZe4EF",
+              "replacement": "https://x.com/EVOL__official/status/2103020651422630220/photo/1"
+            },
+            {
+              "type": "media",
+              "indices": [
+                181,
+                204
+              ],
+              "id": "2103020645147947008",
+              "display": "pic.x.com/vFSJwZe4EF",
+              "original": "https://t.co/vFSJwZe4EF",
+              "replacement": "https://x.com/EVOL__official/status/2103020651422630220/photo/1"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "EVOL__official",
+          "url": "https://x.com/EVOL__official",
+          "id": "1530444250671788032",
+          "followers": 2124,
+          "following": 9,
+          "likes": 0,
+          "media_count": 629,
+          "statuses": 1064,
+          "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+          "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+          "raw_description": {
+            "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+            "facets": [
+              {
+                "type": "url",
+                "indices": [
+                  67,
+                  90
+                ],
+                "original": "https://t.co/HNwwPwkDfp",
+                "replacement": "https://timetr.ee/p/evol",
+                "display": "timetr.ee/p/evol"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  102,
+                  125
+                ],
+                "original": "https://t.co/O3ireEy7tK",
+                "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+                "display": "tunecore.co.jp/artists/_EVOL"
+              }
+            ]
+          },
+          "location": "Japan,Tokyo",
+          "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+          "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+          "joined": "Sat May 28 07:02:12 +0000 2022",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "type": "profile"
+        },
+        "replies": 0,
+        "reposts": 4,
+        "likes": 26,
+        "bookmarks": 14,
+        "quotes": 8,
+        "embed_card": "summary_large_image",
+        "created_at": "Thu Sep 24 07:16:10 +0000 2026",
+        "created_timestamp": 1790234170,
+        "possibly_sensitive": false,
+        "views": 17663,
+        "is_note_tweet": true,
+        "community_note": null,
+        "lang": "ja",
+        "replying_to": null,
+        "media": {
+          "all": [
+            {
+              "type": "photo",
+              "id": "2103020645152120832",
+              "url": "https://pbs.twimg.com/media/HS9uIm2a4AAI45E.jpg?name=orig",
+              "width": 1152,
+              "height": 2048
+            },
+            {
+              "type": "photo",
+              "id": "2103020645143764992",
+              "url": "https://pbs.twimg.com/media/HS9uIm0bYAAu12w.jpg?name=orig",
+              "width": 1152,
+              "height": 2048
+            },
+            {
+              "type": "photo",
+              "id": "2103020645147947008",
+              "url": "https://pbs.twimg.com/media/HS9uIm1bMAAMpTc.jpg?name=orig",
+              "width": 1596,
+              "height": 1026
+            }
+          ],
+          "photos": [
+            {
+              "type": "photo",
+              "id": "2103020645152120832",
+              "url": "https://pbs.twimg.com/media/HS9uIm2a4AAI45E.jpg?name=orig",
+              "width": 1152,
+              "height": 2048
+            },
+            {
+              "type": "photo",
+              "id": "2103020645143764992",
+              "url": "https://pbs.twimg.com/media/HS9uIm0bYAAu12w.jpg?name=orig",
+              "width": 1152,
+              "height": 2048
+            },
+            {
+              "type": "photo",
+              "id": "2103020645147947008",
+              "url": "https://pbs.twimg.com/media/HS9uIm1bMAAMpTc.jpg?name=orig",
+              "width": 1596,
+              "height": 1026
+            }
+          ],
+          "mosaic": {
+            "type": "mosaic_photo",
+            "formats": {
+              "jpeg": "https://mosaic.fxtwitter.com/jpeg/2103020651422630220/HS9uIm2a4AAI45E/HS9uIm0bYAAu12w/HS9uIm1bMAAMpTc",
+              "webp": "https://mosaic.fxtwitter.com/webp/2103020651422630220/HS9uIm2a4AAI45E/HS9uIm0bYAAu12w/HS9uIm1bMAAMpTc"
+            }
+          }
+        },
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105694694349107558",
+      "id": "2105694694349107558",
+      "text": "【喰ィ倒レげェむ】\n\n日程: 2026年10月27日\n時間: 12:00-14:30頃まで\nエリア: 難波、心斎橋エリア\n※詳細、エリア範囲は添付画像をご確認ください。\n\nhttps://www.tiktok.com/@evolofficial_tiktok?_r=1&_t=ZS-9ACEArObt82",
+      "raw_text": {
+        "text": "【喰ィ倒レげェむ】\n\n日程: 2026年10月27日\n時間: 12:00-14:30頃まで\nエリア: 難波、心斎橋エリア\n※詳細、エリア範囲は添付画像をご確認ください。\n\nhttps://t.co/DoGQCCalF3 https://t.co/wbfLDiStq0",
+        "display_text_range": [
+          0,
+          109
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              86,
+              109
+            ],
+            "original": "https://t.co/DoGQCCalF3",
+            "replacement": "https://www.tiktok.com/@evolofficial_tiktok?_r=1&_t=ZS-9ACEArObt82",
+            "display": "tiktok.com/@evolofficial_…"
+          },
+          {
+            "type": "media",
+            "indices": [
+              110,
+              133
+            ],
+            "id": "2105694687994753025",
+            "display": "pic.x.com/wbfLDiStq0",
+            "original": "https://t.co/wbfLDiStq0",
+            "replacement": "https://x.com/EVOL__official/status/2105694694349107558/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              110,
+              133
+            ],
+            "id": "2105694688049262594",
+            "display": "pic.x.com/wbfLDiStq0",
+            "original": "https://t.co/wbfLDiStq0",
+            "replacement": "https://x.com/EVOL__official/status/2105694694349107558/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 5,
+      "likes": 28,
+      "bookmarks": 10,
+      "quotes": 13,
+      "embed_card": "summary_large_image",
+      "created_at": "Thu Oct 01 16:21:51 +0000 2026",
+      "created_timestamp": 1790871711,
+      "possibly_sensitive": false,
+      "views": 10616,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2105694687994753025",
+            "url": "https://pbs.twimg.com/media/HTjuKYtasAENo4e.jpg?name=orig",
+            "width": 945,
+            "height": 1733
+          },
+          {
+            "type": "photo",
+            "id": "2105694688049262594",
+            "url": "https://pbs.twimg.com/media/HTjuKY6acAIK4us.jpg?name=orig",
+            "width": 1146,
+            "height": 1428
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2105694687994753025",
+            "url": "https://pbs.twimg.com/media/HTjuKYtasAENo4e.jpg?name=orig",
+            "width": 945,
+            "height": 1733
+          },
+          {
+            "type": "photo",
+            "id": "2105694688049262594",
+            "url": "https://pbs.twimg.com/media/HTjuKY6acAIK4us.jpg?name=orig",
+            "width": 1146,
+            "height": 1428
+          }
+        ],
+        "mosaic": {
+          "type": "mosaic_photo",
+          "formats": {
+            "jpeg": "https://mosaic.fxtwitter.com/jpeg/2105694694349107558/HTjuKYtasAENo4e/HTjuKY6acAIK4us",
+            "webp": "https://mosaic.fxtwitter.com/webp/2105694694349107558/HTjuKYtasAENo4e/HTjuKY6acAIK4us"
+          }
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105694231868371366",
+      "id": "2105694231868371366",
+      "text": "【ΣVOL東西ツアー】\n日程: 2026年10月27日(火)\n会場: 心斎橋SUNHALL\n開場: 17:40/開演18:00\n販売: 前売 ¥3,000/当日 ¥3,000\n\n日程: 2026年10月28日(水)\n会場: #G8 ナンバーゲート\n開場: 15:40/開演16:00\n販売: 前売 ¥3,000/当日 ¥3,000",
+      "raw_text": {
+        "text": "【ΣVOL東西ツアー】\n日程: 2026年10月27日(火)\n会場: 心斎橋SUNHALL\n開場: 17:40/開演18:00\n販売: 前売 ¥3,000/当日 ¥3,000\n\n日程: 2026年10月28日(水)\n会場: #G8 ナンバーゲート\n開場: 15:40/開演16:00\n販売: 前売 ¥3,000/当日 ¥3,000 https://t.co/6kH0nNMLBz",
+        "display_text_range": [
+          0,
+          165
+        ],
+        "facets": [
+          {
+            "type": "hashtag",
+            "indices": [
+              112,
+              115
+            ],
+            "original": "G8"
+          },
+          {
+            "type": "media",
+            "indices": [
+              166,
+              189
+            ],
+            "id": "2105694227401437187",
+            "display": "pic.x.com/6kH0nNMLBz",
+            "original": "https://t.co/6kH0nNMLBz",
+            "replacement": "https://x.com/EVOL__official/status/2105694231868371366/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 1,
+      "reposts": 9,
+      "likes": 23,
+      "bookmarks": 18,
+      "quotes": 7,
+      "embed_card": "summary_large_image",
+      "created_at": "Thu Oct 01 16:20:01 +0000 2026",
+      "created_timestamp": 1790871601,
+      "possibly_sensitive": false,
+      "views": 5109,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2105694227401437187",
+            "url": "https://pbs.twimg.com/media/HTjtvk3acAM_yeX.jpg?name=orig",
+            "width": 1045,
+            "height": 1567
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2105694227401437187",
+            "url": "https://pbs.twimg.com/media/HTjtvk3acAM_yeX.jpg?name=orig",
+            "width": 1045,
+            "height": 1567
+          }
+        ]
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105694356158181497",
+      "id": "2105694356158181497",
+      "text": "【チケット発売】\n10/27前売 10/21 23:05-\n10/28前売 10/21 23:15-\n※URLはΣVOL公式( @EVOL__official )より1分前公開\n※10分間クレジットカード決済のみ\n※スマホのみ(PC判定の場合無効)\n※1-2枚取り\n\nその他ご不明な点やご質問は公式XのDMまでお問い合わせください。",
+      "raw_text": {
+        "text": "【チケット発売】\n10/27前売 10/21 23:05-\n10/28前売 10/21 23:15-\n※URLはΣVOL公式( @EVOL__official )より1分前公開\n※10分間クレジットカード決済のみ\n※スマホのみ(PC判定の場合無効)\n※1-2枚取り\n\nその他ご不明な点やご質問は公式XのDMまでお問い合わせください。 https://t.co/huRxkhxvlT",
+        "display_text_range": [
+          0,
+          166
+        ],
+        "facets": [
+          {
+            "type": "mention",
+            "indices": [
+              64,
+              79
+            ],
+            "original": "EVOL__official",
+            "id": "1530444250671788032"
+          },
+          {
+            "type": "media",
+            "indices": [
+              167,
+              190
+            ],
+            "id": "2105694351951282176",
+            "display": "pic.x.com/huRxkhxvlT",
+            "original": "https://t.co/huRxkhxvlT",
+            "replacement": "https://x.com/EVOL__official/status/2105694356158181497/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 0,
+      "likes": 6,
+      "bookmarks": 8,
+      "quotes": 4,
+      "embed_card": "summary_large_image",
+      "created_at": "Thu Oct 01 16:20:31 +0000 2026",
+      "created_timestamp": 1790871631,
+      "possibly_sensitive": false,
+      "views": 5422,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": {
+        "screen_name": "EVOL__official",
+        "status": "2105694231868371366",
+        "url": "https://x.com/EVOL__official/status/2105694231868371366",
+        "profile_url": "https://x.com/EVOL__official"
+      },
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2105694351951282176",
+            "url": "https://pbs.twimg.com/media/HTjt202aQAADlIf.jpg?name=orig",
+            "width": 1045,
+            "height": 1567
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2105694351951282176",
+            "url": "https://pbs.twimg.com/media/HTjt202aQAADlIf.jpg?name=orig",
+            "width": 1045,
+            "height": 1567
+          }
+        ]
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/MELT_THE_BULLET/status/2105643921493881219",
+      "id": "2105643921493881219",
+      "text": "『PIF~最終章~『風岡拓海生誕祭』』\n\n開催 : 2026年10月10日(土)\n会場 : 吉祥寺CLUB SEATA\nOPEN/START : 12:35/13:05\nADV/DOOR : ¥2500+1D/ ¥3000+1D\n\n【チケット発売】10/3 22:45-\n※22:45-22:55迄 クレジットカード決済のみ\n\n➣販売URLは1分前に本アカウントから公開",
+      "raw_text": {
+        "text": "『PIF~最終章~『風岡拓海生誕祭』』\n\n開催 : 2026年10月10日(土)\n会場 : 吉祥寺CLUB SEATA\nOPEN/START : 12:35/13:05\nADV/DOOR : ¥2500+1D/ ¥3000+1D\n\n【チケット発売】10/3 22:45-\n※22:45-22:55迄 クレジットカード決済のみ\n\n➣販売URLは1分前に本アカウントから公開 https://t.co/eH34QDbAcd",
+        "display_text_range": [
+          0,
+          185
+        ],
+        "facets": [
+          {
+            "type": "media",
+            "indices": [
+              186,
+              209
+            ],
+            "id": "2105643904515325953",
+            "display": "pic.x.com/eH34QDbAcd",
+            "original": "https://t.co/eH34QDbAcd",
+            "replacement": "https://x.com/MELT_THE_BULLET/status/2105643921493881219/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              186,
+              209
+            ],
+            "id": "2105643904553082880",
+            "display": "pic.x.com/eH34QDbAcd",
+            "original": "https://t.co/eH34QDbAcd",
+            "replacement": "https://x.com/MELT_THE_BULLET/status/2105643921493881219/photo/1"
+          },
+          {
+            "type": "media",
+            "indices": [
+              186,
+              209
+            ],
+            "id": "2105643904511135744",
+            "display": "pic.x.com/eH34QDbAcd",
+            "original": "https://t.co/eH34QDbAcd",
+            "replacement": "https://x.com/MELT_THE_BULLET/status/2105643921493881219/photo/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "MELT_THE_BULLET",
+        "url": "https://x.com/MELT_THE_BULLET",
+        "id": "1820022682790060032",
+        "followers": 3642,
+        "following": 9,
+        "likes": 10,
+        "media_count": 565,
+        "statuses": 947,
+        "name": "MELT THE BULLET【公式】",
+        "description": "\"全力疾走系\"メンズアイドル🔫 2024.09.06始動 出演依頼、お問い合わせはDMまで✉️ #めるばれ",
+        "raw_description": {
+          "text": "\"全力疾走系\"メンズアイドル🔫 2024.09.06始動 出演依頼、お問い合わせはDMまで✉️ #めるばれ",
+          "facets": [
+            {
+              "type": "hashtag",
+              "indices": [
+                48,
+                53
+              ],
+              "original": "めるばれ"
+            }
+          ]
+        },
+        "location": "株式会社Prince-Entertainment",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1820022682790060032/1768497027",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1821820472788709379/muZDbpfG_200x200.jpg",
+        "joined": "Sun Aug 04 09:03:45 +0000 2024",
+        "protected": false,
+        "website": {
+          "url": "https://timetr.ee/p/melt_the_bullet",
+          "display_url": "timetr.ee/p/melt_the_bul…"
+        },
+        "verification": {
+          "verified": false,
+          "verified_at": null,
+          "type": null
+        },
+        "type": "profile"
+      },
+      "replies": 1,
+      "reposts": 53,
+      "likes": 149,
+      "bookmarks": 113,
+      "quotes": 186,
+      "embed_card": "summary_large_image",
+      "created_at": "Thu Oct 01 13:00:06 +0000 2026",
+      "created_timestamp": 1790859606,
+      "possibly_sensitive": false,
+      "views": 179479,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "type": "photo",
+            "id": "2105643904515325953",
+            "url": "https://pbs.twimg.com/media/HTi_-ZgaQAE13RT.jpg?name=orig",
+            "width": 1721,
+            "height": 2435
+          },
+          {
+            "type": "photo",
+            "id": "2105643904553082880",
+            "url": "https://pbs.twimg.com/media/HTi_-ZpaYAASxJU.jpg?name=orig",
+            "width": 1721,
+            "height": 2435
+          },
+          {
+            "type": "photo",
+            "id": "2105643904511135744",
+            "url": "https://pbs.twimg.com/media/HTi_-ZfaUAA9SdY.jpg?name=orig",
+            "width": 2048,
+            "height": 2048
+          }
+        ],
+        "photos": [
+          {
+            "type": "photo",
+            "id": "2105643904515325953",
+            "url": "https://pbs.twimg.com/media/HTi_-ZgaQAE13RT.jpg?name=orig",
+            "width": 1721,
+            "height": 2435
+          },
+          {
+            "type": "photo",
+            "id": "2105643904553082880",
+            "url": "https://pbs.twimg.com/media/HTi_-ZpaYAASxJU.jpg?name=orig",
+            "width": 1721,
+            "height": 2435
+          },
+          {
+            "type": "photo",
+            "id": "2105643904511135744",
+            "url": "https://pbs.twimg.com/media/HTi_-ZfaUAA9SdY.jpg?name=orig",
+            "width": 2048,
+            "height": 2048
+          }
+        ],
+        "mosaic": {
+          "type": "mosaic_photo",
+          "formats": {
+            "jpeg": "https://mosaic.fxtwitter.com/jpeg/2105643921493881219/HTi_-ZgaQAE13RT/HTi_-ZpaYAASxJU/HTi_-ZfaUAA9SdY",
+            "webp": "https://mosaic.fxtwitter.com/webp/2105643921493881219/HTi_-ZgaQAE13RT/HTi_-ZpaYAASxJU/HTi_-ZfaUAA9SdY"
+          }
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": {
+        "id": "1530444250671788032",
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "screen_name": "EVOL__official",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "url": "https://x.com/EVOL__official"
+      }
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105579753743008071",
+      "id": "2105579753743008071",
+      "text": "LIVE映像公開‼️\nΣVOL『BLACK SWAN』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://youtu.be/YJHZEU4Nip4?si=Z_pnC6FEfXv5B0bp",
+      "raw_text": {
+        "text": "LIVE映像公開‼️\nΣVOL『BLACK SWAN』 at 2026.9.1 EX THEATER ROPPONGI 4周年ワンマンライブ「偽楽園」\n\nhttps://t.co/d2y3iCWERo https://t.co/GpSyDfNvdV",
+        "display_text_range": [
+          0,
+          100
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              77,
+              100
+            ],
+            "original": "https://t.co/d2y3iCWERo",
+            "replacement": "https://youtu.be/YJHZEU4Nip4?si=Z_pnC6FEfXv5B0bp",
+            "display": "youtu.be/YJHZEU4Nip4?si…"
+          },
+          {
+            "type": "media",
+            "indices": [
+              101,
+              124
+            ],
+            "id": "2105578577496526852",
+            "display": "pic.x.com/GpSyDfNvdV",
+            "original": "https://t.co/GpSyDfNvdV",
+            "replacement": "https://x.com/EVOL__official/status/2105579753743008071/video/1"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 46,
+      "likes": 109,
+      "bookmarks": 3,
+      "quotes": 15,
+      "embed_card": "player",
+      "created_at": "Thu Oct 01 08:45:07 +0000 2026",
+      "created_timestamp": 1790844307,
+      "possibly_sensitive": false,
+      "views": 6820,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {
+        "all": [
+          {
+            "id": "2105578577496526852",
+            "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/3840x2160/TDrrYrxt7ZQkYV7v.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2105578577496526852/img/1CKlWxMNq_CtoBk1.jpg",
+            "duration": 289.75,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/pl/E-K52AQFqqPV0qV1.m3u8?tag=29&v=cfc",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/480x270/gXsXWhhfV3uxlgGX.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/640x360/ay7jZlc5ofmbF_SH.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/1280x720/WZwnTlo40uVvjyPA.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/1920x1080/4kIKO9Wi6P7YD_Gf.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/3840x2160/TDrrYrxt7ZQkYV7v.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "videos": [
+          {
+            "id": "2105578577496526852",
+            "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/3840x2160/TDrrYrxt7ZQkYV7v.mp4?tag=29",
+            "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2105578577496526852/img/1CKlWxMNq_CtoBk1.jpg",
+            "duration": 289.75,
+            "width": 3840,
+            "height": 2160,
+            "format": "video/mp4",
+            "type": "video",
+            "formats": [
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/pl/E-K52AQFqqPV0qV1.m3u8?tag=29&v=cfc",
+                "container": "m3u8"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/480x270/gXsXWhhfV3uxlgGX.mp4?tag=29",
+                "bitrate": 256000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/640x360/ay7jZlc5ofmbF_SH.mp4?tag=29",
+                "bitrate": 832000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/1280x720/WZwnTlo40uVvjyPA.mp4?tag=29",
+                "bitrate": 2176000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/1920x1080/4kIKO9Wi6P7YD_Gf.mp4?tag=29",
+                "bitrate": 10368000,
+                "container": "mp4",
+                "codec": "h264"
+              },
+              {
+                "url": "https://video.twimg.com/amplify_video/2105578577496526852/vid/avc1/3840x2160/TDrrYrxt7ZQkYV7v.mp4?tag=29",
+                "bitrate": 25128000,
+                "container": "mp4",
+                "codec": "h264"
+              }
+            ],
+            "publisher": null
+          }
+        ],
+        "external": {
+          "type": "video",
+          "url": "https://www.youtube.com/embed/YJHZEU4Nip4?si=Z_pnC6FEfXv5B0bp",
+          "thumbnail_url": "https://img.youtube.com/vi/YJHZEU4Nip4?si=Z_pnC6FEfXv5B0bp/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105300130241102286",
+      "id": "2105300130241102286",
+      "text": "前売AチケットURL公開\nhttps://livepocket.jp/e/axy83slfnp",
+      "raw_text": {
+        "text": "前売AチケットURL公開\nhttps://t.co/YMJLnJiWP5",
+        "display_text_range": [
+          0,
+          36
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              13,
+              36
+            ],
+            "original": "https://t.co/YMJLnJiWP5",
+            "replacement": "https://livepocket.jp/e/axy83slfnp",
+            "display": "livepocket.jp/e/axy83slfnp"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 0,
+      "likes": 5,
+      "bookmarks": 0,
+      "quotes": 0,
+      "embed_card": "summary_large_image",
+      "created_at": "Wed Sep 30 14:14:00 +0000 2026",
+      "created_timestamp": 1790777640,
+      "possibly_sensitive": false,
+      "views": 3329,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {},
+      "quote": {
+        "type": "status",
+        "url": "https://x.com/EVOL__official/status/2101302541451698332",
+        "id": "2101302541451698332",
+        "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500",
+        "raw_text": {
+          "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500 https://t.co/SWjplNFlhh",
+          "display_text_range": [
+            0,
+            107
+          ],
+          "facets": [
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533436448768",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            },
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533566480384",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "EVOL__official",
+          "url": "https://x.com/EVOL__official",
+          "id": "1530444250671788032",
+          "followers": 2124,
+          "following": 9,
+          "likes": 0,
+          "media_count": 629,
+          "statuses": 1064,
+          "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+          "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+          "raw_description": {
+            "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+            "facets": [
+              {
+                "type": "url",
+                "indices": [
+                  67,
+                  90
+                ],
+                "original": "https://t.co/HNwwPwkDfp",
+                "replacement": "https://timetr.ee/p/evol",
+                "display": "timetr.ee/p/evol"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  102,
+                  125
+                ],
+                "original": "https://t.co/O3ireEy7tK",
+                "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+                "display": "tunecore.co.jp/artists/_EVOL"
+              }
+            ]
+          },
+          "location": "Japan,Tokyo",
+          "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+          "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+          "joined": "Sat May 28 07:02:12 +0000 2022",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "type": "profile"
+        },
+        "replies": 1,
+        "reposts": 22,
+        "likes": 57,
+        "bookmarks": 54,
+        "quotes": 78,
+        "embed_card": "summary_large_image",
+        "created_at": "Sat Sep 19 13:29:00 +0000 2026",
+        "created_timestamp": 1789824540,
+        "possibly_sensitive": false,
+        "views": 96368,
+        "is_note_tweet": false,
+        "community_note": null,
+        "lang": "ja",
+        "replying_to": null,
+        "media": {
+          "all": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "photos": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "mosaic": {
+            "type": "mosaic_photo",
+            "formats": {
+              "jpeg": "https://mosaic.fxtwitter.com/jpeg/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX",
+              "webp": "https://mosaic.fxtwitter.com/webp/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX"
+            }
+          }
+        },
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "card": {
+        "url": "https://livepocket.jp/e/axy83slfnp",
+        "title": "唯我生誕のチケット情報｜LivePocket（ライブポケット）",
+        "description": "唯我生誕のチケット情報・予約・購入はライブポケットで。|2026年10月14日(水)：新宿WALLY(東京都)：ΣVOL",
+        "domain": "livepocket.jp",
+        "image": {
+          "width": 420,
+          "height": 420,
+          "url": "https://pbs.twimg.com/card_img/2106838303605673984/PKCMJOtV?format=jpg&name=420x420_2"
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105300129934876939",
+      "id": "2105300129934876939",
+      "text": "前売AチケットURL公開\nhttps://livepocket.jp/e/axy83slfnp",
+      "raw_text": {
+        "text": "前売AチケットURL公開\nhttps://t.co/YMJLnJiWP5",
+        "display_text_range": [
+          0,
+          36
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              13,
+              36
+            ],
+            "original": "https://t.co/YMJLnJiWP5",
+            "replacement": "https://livepocket.jp/e/axy83slfnp",
+            "display": "livepocket.jp/e/axy83slfnp"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 0,
+      "likes": 2,
+      "bookmarks": 1,
+      "quotes": 0,
+      "embed_card": "summary_large_image",
+      "created_at": "Wed Sep 30 14:14:00 +0000 2026",
+      "created_timestamp": 1790777640,
+      "possibly_sensitive": false,
+      "views": 2041,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {},
+      "quote": {
+        "type": "status",
+        "url": "https://x.com/EVOL__official/status/2101302541451698332",
+        "id": "2101302541451698332",
+        "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500",
+        "raw_text": {
+          "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500 https://t.co/SWjplNFlhh",
+          "display_text_range": [
+            0,
+            107
+          ],
+          "facets": [
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533436448768",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            },
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533566480384",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "EVOL__official",
+          "url": "https://x.com/EVOL__official",
+          "id": "1530444250671788032",
+          "followers": 2124,
+          "following": 9,
+          "likes": 0,
+          "media_count": 629,
+          "statuses": 1064,
+          "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+          "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+          "raw_description": {
+            "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+            "facets": [
+              {
+                "type": "url",
+                "indices": [
+                  67,
+                  90
+                ],
+                "original": "https://t.co/HNwwPwkDfp",
+                "replacement": "https://timetr.ee/p/evol",
+                "display": "timetr.ee/p/evol"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  102,
+                  125
+                ],
+                "original": "https://t.co/O3ireEy7tK",
+                "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+                "display": "tunecore.co.jp/artists/_EVOL"
+              }
+            ]
+          },
+          "location": "Japan,Tokyo",
+          "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+          "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+          "joined": "Sat May 28 07:02:12 +0000 2022",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "type": "profile"
+        },
+        "replies": 1,
+        "reposts": 22,
+        "likes": 57,
+        "bookmarks": 54,
+        "quotes": 78,
+        "embed_card": "summary_large_image",
+        "created_at": "Sat Sep 19 13:29:00 +0000 2026",
+        "created_timestamp": 1789824540,
+        "possibly_sensitive": false,
+        "views": 96368,
+        "is_note_tweet": false,
+        "community_note": null,
+        "lang": "ja",
+        "replying_to": null,
+        "media": {
+          "all": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "photos": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "mosaic": {
+            "type": "mosaic_photo",
+            "formats": {
+              "jpeg": "https://mosaic.fxtwitter.com/jpeg/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX",
+              "webp": "https://mosaic.fxtwitter.com/webp/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX"
+            }
+          }
+        },
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "card": {
+        "url": "https://livepocket.jp/e/axy83slfnp",
+        "title": "唯我生誕のチケット情報｜LivePocket（ライブポケット）",
+        "description": "唯我生誕のチケット情報・予約・購入はライブポケットで。|2026年10月14日(水)：新宿WALLY(東京都)：ΣVOL",
+        "domain": "livepocket.jp",
+        "image": {
+          "width": 420,
+          "height": 420,
+          "url": "https://pbs.twimg.com/card_img/2106838303605673984/PKCMJOtV?format=jpg&name=420x420_2"
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105297614866436509",
+      "id": "2105297614866436509",
+      "text": "前売SチケットURL公開\nhttps://livepocket.jp/e/qenwzy6y4w",
+      "raw_text": {
+        "text": "前売SチケットURL公開\nhttps://t.co/tlXvNLfOUy",
+        "display_text_range": [
+          0,
+          36
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              13,
+              36
+            ],
+            "original": "https://t.co/tlXvNLfOUy",
+            "replacement": "https://livepocket.jp/e/qenwzy6y4w",
+            "display": "livepocket.jp/e/qenwzy6y4w"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 0,
+      "likes": 2,
+      "bookmarks": 0,
+      "quotes": 0,
+      "embed_card": "summary_large_image",
+      "created_at": "Wed Sep 30 14:04:00 +0000 2026",
+      "created_timestamp": 1790777040,
+      "possibly_sensitive": false,
+      "views": 2669,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {},
+      "quote": {
+        "type": "status",
+        "url": "https://x.com/EVOL__official/status/2101302541451698332",
+        "id": "2101302541451698332",
+        "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500",
+        "raw_text": {
+          "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500 https://t.co/SWjplNFlhh",
+          "display_text_range": [
+            0,
+            107
+          ],
+          "facets": [
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533436448768",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            },
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533566480384",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "EVOL__official",
+          "url": "https://x.com/EVOL__official",
+          "id": "1530444250671788032",
+          "followers": 2124,
+          "following": 9,
+          "likes": 0,
+          "media_count": 629,
+          "statuses": 1064,
+          "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+          "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+          "raw_description": {
+            "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+            "facets": [
+              {
+                "type": "url",
+                "indices": [
+                  67,
+                  90
+                ],
+                "original": "https://t.co/HNwwPwkDfp",
+                "replacement": "https://timetr.ee/p/evol",
+                "display": "timetr.ee/p/evol"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  102,
+                  125
+                ],
+                "original": "https://t.co/O3ireEy7tK",
+                "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+                "display": "tunecore.co.jp/artists/_EVOL"
+              }
+            ]
+          },
+          "location": "Japan,Tokyo",
+          "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+          "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+          "joined": "Sat May 28 07:02:12 +0000 2022",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "type": "profile"
+        },
+        "replies": 1,
+        "reposts": 22,
+        "likes": 57,
+        "bookmarks": 54,
+        "quotes": 78,
+        "embed_card": "summary_large_image",
+        "created_at": "Sat Sep 19 13:29:00 +0000 2026",
+        "created_timestamp": 1789824540,
+        "possibly_sensitive": false,
+        "views": 96368,
+        "is_note_tweet": false,
+        "community_note": null,
+        "lang": "ja",
+        "replying_to": null,
+        "media": {
+          "all": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "photos": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "mosaic": {
+            "type": "mosaic_photo",
+            "formats": {
+              "jpeg": "https://mosaic.fxtwitter.com/jpeg/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX",
+              "webp": "https://mosaic.fxtwitter.com/webp/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX"
+            }
+          }
+        },
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "card": {
+        "url": "https://livepocket.jp/e/qenwzy6y4w",
+        "title": "唯我生誕のチケット情報｜LivePocket（ライブポケット）",
+        "description": "唯我生誕のチケット情報・予約・購入はライブポケットで。|2026年10月14日(水)：新宿WALLY(東京都)：ΣVOL",
+        "domain": "livepocket.jp",
+        "image": {
+          "width": 420,
+          "height": 420,
+          "url": "https://pbs.twimg.com/card_img/2105383164914892800/2qHTSvXg?format=jpg&name=420x420_2"
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    },
+    {
+      "type": "status",
+      "url": "https://x.com/EVOL__official/status/2105297613943943368",
+      "id": "2105297613943943368",
+      "text": "前売SチケットURL公開\nhttps://livepocket.jp/e/qenwzy6y4w",
+      "raw_text": {
+        "text": "前売SチケットURL公開\nhttps://t.co/tlXvNLgmK6",
+        "display_text_range": [
+          0,
+          36
+        ],
+        "facets": [
+          {
+            "type": "url",
+            "indices": [
+              13,
+              36
+            ],
+            "original": "https://t.co/tlXvNLgmK6",
+            "replacement": "https://livepocket.jp/e/qenwzy6y4w",
+            "display": "livepocket.jp/e/qenwzy6y4w"
+          }
+        ]
+      },
+      "author": {
+        "screen_name": "EVOL__official",
+        "url": "https://x.com/EVOL__official",
+        "id": "1530444250671788032",
+        "followers": 2124,
+        "following": 9,
+        "likes": 0,
+        "media_count": 629,
+        "statuses": 1064,
+        "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+        "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+        "raw_description": {
+          "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+          "facets": [
+            {
+              "type": "url",
+              "indices": [
+                67,
+                90
+              ],
+              "original": "https://t.co/HNwwPwkDfp",
+              "replacement": "https://timetr.ee/p/evol",
+              "display": "timetr.ee/p/evol"
+            },
+            {
+              "type": "url",
+              "indices": [
+                102,
+                125
+              ],
+              "original": "https://t.co/O3ireEy7tK",
+              "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+              "display": "tunecore.co.jp/artists/_EVOL"
+            }
+          ]
+        },
+        "location": "Japan,Tokyo",
+        "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+        "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+        "joined": "Sat May 28 07:02:12 +0000 2022",
+        "protected": false,
+        "website": null,
+        "verification": {
+          "verified": true,
+          "verified_at": null,
+          "type": "individual"
+        },
+        "type": "profile"
+      },
+      "replies": 0,
+      "reposts": 0,
+      "likes": 3,
+      "bookmarks": 0,
+      "quotes": 0,
+      "embed_card": "summary_large_image",
+      "created_at": "Wed Sep 30 14:04:00 +0000 2026",
+      "created_timestamp": 1790777040,
+      "possibly_sensitive": false,
+      "views": 2118,
+      "is_note_tweet": false,
+      "community_note": null,
+      "lang": "ja",
+      "replying_to": null,
+      "media": {},
+      "quote": {
+        "type": "status",
+        "url": "https://x.com/EVOL__official/status/2101302541451698332",
+        "id": "2101302541451698332",
+        "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500",
+        "raw_text": {
+          "text": "【唯我生誕 Birthday Live】\n\n日程: 2026年10月14日(水)\n会場 : 新宿WALLY\n開場 : 19:00/開演19:20\n販売 : 前売S ¥4,000/A ¥3,000/当日 ¥3,500 https://t.co/SWjplNFlhh",
+          "display_text_range": [
+            0,
+            107
+          ],
+          "facets": [
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533436448768",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            },
+            {
+              "type": "media",
+              "indices": [
+                108,
+                131
+              ],
+              "id": "2101302533566480384",
+              "display": "pic.x.com/SWjplNFlhh",
+              "original": "https://t.co/SWjplNFlhh",
+              "replacement": "https://x.com/EVOL__official/status/2101302541451698332/photo/1"
+            }
+          ]
+        },
+        "author": {
+          "screen_name": "EVOL__official",
+          "url": "https://x.com/EVOL__official",
+          "id": "1530444250671788032",
+          "followers": 2124,
+          "following": 9,
+          "likes": 0,
+          "media_count": 629,
+          "statuses": 1064,
+          "name": "ΣVOL@3/16 Zepp Shinjuku Tour Final",
+          "description": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://timetr.ee/p/evol ▶︎ 🎼各種配信▶︎ https://www.tunecore.co.jp/artists/_EVOL",
+          "raw_description": {
+            "text": "ΣVOL OFFICIAL ▶︎ネオラウドダークミクスチャーロック\"ΣVOL\" 2022.07.11Birth 🗓️スケジュール▶︎ https://t.co/HNwwPwkDfp ▶︎ 🎼各種配信▶︎ https://t.co/O3ireEy7tK",
+            "facets": [
+              {
+                "type": "url",
+                "indices": [
+                  67,
+                  90
+                ],
+                "original": "https://t.co/HNwwPwkDfp",
+                "replacement": "https://timetr.ee/p/evol",
+                "display": "timetr.ee/p/evol"
+              },
+              {
+                "type": "url",
+                "indices": [
+                  102,
+                  125
+                ],
+                "original": "https://t.co/O3ireEy7tK",
+                "replacement": "https://www.tunecore.co.jp/artists/_EVOL",
+                "display": "tunecore.co.jp/artists/_EVOL"
+              }
+            ]
+          },
+          "location": "Japan,Tokyo",
+          "banner_url": "https://pbs.twimg.com/profile_banners/1530444250671788032/1788029574",
+          "avatar_url": "https://pbs.twimg.com/profile_images/1770831086651572225/p3NtIr06_200x200.jpg",
+          "joined": "Sat May 28 07:02:12 +0000 2022",
+          "protected": false,
+          "website": null,
+          "verification": {
+            "verified": true,
+            "verified_at": null,
+            "type": "individual"
+          },
+          "type": "profile"
+        },
+        "replies": 1,
+        "reposts": 22,
+        "likes": 57,
+        "bookmarks": 54,
+        "quotes": 78,
+        "embed_card": "summary_large_image",
+        "created_at": "Sat Sep 19 13:29:00 +0000 2026",
+        "created_timestamp": 1789824540,
+        "possibly_sensitive": false,
+        "views": 96368,
+        "is_note_tweet": false,
+        "community_note": null,
+        "lang": "ja",
+        "replying_to": null,
+        "media": {
+          "all": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "photos": [
+            {
+              "type": "photo",
+              "id": "2101302533436448768",
+              "url": "https://pbs.twimg.com/media/HSlThV8boAABEiS.jpg?name=orig",
+              "width": 1024,
+              "height": 1536
+            },
+            {
+              "type": "photo",
+              "id": "2101302533566480384",
+              "url": "https://pbs.twimg.com/media/HSlThWbbwAA2QxX.jpg?name=orig",
+              "width": 1567,
+              "height": 1045
+            }
+          ],
+          "mosaic": {
+            "type": "mosaic_photo",
+            "formats": {
+              "jpeg": "https://mosaic.fxtwitter.com/jpeg/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX",
+              "webp": "https://mosaic.fxtwitter.com/webp/2101302541451698332/HSlThV8boAABEiS/HSlThWbbwAA2QxX"
+            }
+          }
+        },
+        "provider": "twitter",
+        "reposted_by": null
+      },
+      "card": {
+        "url": "https://livepocket.jp/e/qenwzy6y4w",
+        "title": "唯我生誕のチケット情報｜LivePocket（ライブポケット）",
+        "description": "唯我生誕のチケット情報・予約・購入はライブポケットで。|2026年10月14日(水)：新宿WALLY(東京都)：ΣVOL",
+        "domain": "livepocket.jp",
+        "image": {
+          "width": 420,
+          "height": 420,
+          "url": "https://pbs.twimg.com/card_img/2105383164914892800/2qHTSvXg?format=jpg&name=420x420_2"
+        }
+      },
+      "provider": "twitter",
+      "reposted_by": null
+    }
+  ],
+  "cursor": {
+    "top": "DAAHCgABHUfmT77AJxELAAIAAAATMjEwOTIxMTIyMzE4MzI4MjU5MAgAAwAAAAEAAA",
+    "bottom": "DAAHCgABHUfmT76__-0LAAIAAAATMjEwNTI5NzYxMzk0Mzk0MzM2OAgAAwAAAAIAAA"
+  }
+}
