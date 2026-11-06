@@ -431,8 +431,9 @@ body:has([data-analytics-consent]) .back-to-top { visibility: hidden; }
 html:lang(ja) .feature-showcase .feature-copy h2,
 html:lang(zh) .feature-showcase .feature-copy h2 { letter-spacing: 0; }
 .feature-showcase .feature-intro { margin: 12px 0 16px; color: #5f586a; }
-.feature-showcase .feature-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
-.feature-showcase .feature-list li { display: block; padding: 4px 10px; border: 1px solid #e8dfe9; border-radius: 999px; color: #514460; font-size: .875rem; }
+.feature-showcase .feature-list { margin: 0 0 16px; }
+.feature-showcase .feature-list li { color: #514460; }
+.feature-showcase .feature-list .line-icon { flex: none; }
 .landing-nav a, .hero-store, .feature-showcase .quiet-link { touch-action: manipulation; }
 .landing-nav a:active, .hero-store:active, .feature-showcase .quiet-link:active { opacity: .72; }
 .landing-nav a:focus-visible, .hero-store:focus-visible, .feature-showcase .quiet-link:focus-visible { outline: 2px solid #62518c; outline-offset: 3px; }
