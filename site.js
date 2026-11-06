@@ -193,8 +193,8 @@
     document.querySelector(".back-to-top")?.setAttribute("title", topLabel);
     document.querySelector(".hero-stage")?.setAttribute("aria-label", labels[2]);
     document.querySelectorAll('img[src="oshilove-home.webp"]').forEach(el => el.alt = labels[3]);
-    document.querySelectorAll('img[src="oshilove-profile.webp"]').forEach(el => el.alt = labels[4]);
-    document.querySelectorAll('img[src="oshipocket-stats.webp"]').forEach(el => el.alt = labels[5]);
+    document.querySelectorAll('img[src$="oshilove-profile.webp"]').forEach(el => el.alt = labels[4]);
+    document.querySelectorAll('img[src$="oshipocket-stats.webp"]').forEach(el => el.alt = labels[5]);
     if (description) {
       document.querySelector('meta[property="og:title"]')?.setAttribute("content", document.title);
       document.querySelector('meta[property="og:description"]')?.setAttribute("content", description.content);
@@ -356,7 +356,7 @@
       });
     }
     const navLinks = [...document.querySelectorAll(".nav-sections a")];
-    const sections = ["apps", "choose", "how-it-works", "faq", "download"]
+    const sections = ["choose", "apps", "how-it-works", "faq"]
       .map(id => document.getElementById(id)).filter(Boolean);
     let pending = false;
     const updateNavigation = () => {
@@ -391,7 +391,7 @@
     window.addEventListener("resize", updateNavigation);
     updateNavigation();
 
-    if ("IntersectionObserver" in window) {
+    if (!document.body.classList.contains("landing") && "IntersectionObserver" in window) {
       const revealTargets = document.querySelectorAll([
         ".section-heading",
         ".feature-section",

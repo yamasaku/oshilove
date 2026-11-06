@@ -104,64 +104,68 @@
     </nav>
   </header>
   <main id="main">
-    <section class="landing-hero brand-hero wrap" id="home">
-      <div class="hero-content" id="choose">
-        <h1><span data-lang="ja">推し活の記録を<br>すっきり整理</span><span data-lang="zh-tw">整理你的追星日常</span><span data-lang="en">Organise your oshi life</span></h1>
-        <p class="brand-hero-intro"><span data-lang="ja">OshiLove で写真と思い出を記録。Oshi Pocket で現場と支出を管理。</span><span data-lang="zh-tw">OshiLove 記錄相片與回憶，Oshi Pocket 管理活動與開支。</span><span data-lang="en">OshiLove for photos and memories. Oshi Pocket for events and spending.</span></p>
-        <div class="brand-apps" id="download">
-          <a class="brand-app" href="https://apps.apple.com/app/id6811063943" aria-label="OshiLove — App Store"><img src="app-icon.png" width="42" height="42" alt=""><span><strong>OshiLove</strong><small><span data-lang="ja">写真・日記・記念日</span><span data-lang="zh-tw">相片、日記、紀念日</span><span data-lang="en">Photos, diaries, anniversaries</span></small></span><span class="brand-app-arrow" aria-hidden="true">↗</span></a>
-          <a class="brand-app" href="https://apps.apple.com/app/id6811325536" aria-label="Oshi Pocket — App Store"><img src="oshipocket-icon.webp" width="42" height="42" alt=""><span><strong>Oshi Pocket</strong><small><span data-lang="ja">ライブ・チェキ・支出</span><span data-lang="zh-tw">演出、チェキ、開支</span><span data-lang="en">Shows, cheki, spending</span></small></span><span class="brand-app-arrow" aria-hidden="true">↗</span></a>
-        </div>
-        <p class="micro-copy"><svg class="line-icon" aria-hidden="true"><use href="#icon-lock"></use></svg><span data-lang="ja">登録不要 · 記録は端末内に</span><span data-lang="zh-tw">毋須註冊 · 記錄儲存在裝置內</span><span data-lang="en">No account needed · Records stay on your device</span></p>
+    <section class="home-intro wrap" id="home" aria-labelledby="home-title">
+      <div id="choose">
+        <h1 id="home-title"><span data-lang="ja"><span class="home-title-phrase">推し活の記録を</span><wbr><span class="home-title-phrase">すっきり整理</span></span><span data-lang="zh-tw">整理你的追星日常</span><span data-lang="en">Organise your oshi life</span></h1>
+        <p><span data-lang="ja">思い出を残す OshiLove。ライブの予定と支出を管理する Oshi Pocket。</span><span data-lang="zh-tw">用 OshiLove 留住追星回憶，用 Oshi Pocket 管理活動與開支。</span><span data-lang="en">Keep your memories in OshiLove. Track events and spending in Oshi Pocket.</span></p>
       </div>
-      <figure class="brand-visual">
-        <img class="brand-screen brand-screen-pocket" src="oshipocket-stats.webp" alt="Oshi Pocket の支出統計画面" width="828" height="1800" decoding="async">
-        <img class="brand-screen brand-screen-love" src="oshilove-home.webp" alt="OshiLove のホーム画面" width="828" height="1800" decoding="async" fetchpriority="high">
-      </figure>
     </section>
 
-    <section class="section wrap" id="apps">
-      <article class="feature-section blush feature-showcase">
-        <div class="feature-copy">
-          <p class="app-name"><img src="app-icon.png" alt="" width="28" height="28">OshiLove</p>
-          <h2><span data-lang="ja">推しとの思い出を残す</span><span data-lang="zh-tw">珍藏推し回憶</span><span data-lang="en">Keep your oshi memories</span></h2>
-          <p class="feature-intro"><span data-lang="ja">写真、日記、記念日をひとつに。</span><span data-lang="zh-tw">集中整理相片、日記與紀念日。</span><span data-lang="en">Save photos, diary entries and anniversaries together.</span></p>
+    <section class="home-apps wrap" id="apps" aria-label="OshiLove &amp; Oshi Pocket">
+      <div class="home-app-grid" id="download">
+      <article class="home-app-card home-app-love" id="oshilove">
+        <div class="home-app-copy">
+          <h2><img src="app-icon.png" width="36" height="36" alt="">OshiLove</h2>
+          <p><span data-lang="ja">写真や日記で思い出を残す</span><span data-lang="zh-tw">記錄相片、日記與紀念日</span><span data-lang="en">Save photos, diary entries and anniversaries</span></p>
           <ul class="feature-list"><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">写真と日記のタイムライン</span><span data-lang="zh-tw">相片日記</span><span data-lang="en">Photo diary</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">月ごとの写真</span><span data-lang="zh-tw">每月相片回顧</span><span data-lang="en">Monthly photo view</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">記念日カウントダウン</span><span data-lang="zh-tw">紀念日倒數</span><span data-lang="en">Anniversary countdown</span></li></ul>
-          <a class="quiet-link" href="https://apps.apple.com/app/id6811063943" aria-label="OshiLove — App Store">App Store <span aria-hidden="true">↗</span></a>
+          <a class="pill-button home-app-download" href="https://apps.apple.com/app/id6811063943" aria-label="OshiLove — App Store">App Store <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="feature-media"><figure class="device feature-device"><div class="app-screenshot-placeholder"><img src="oshilove-profile.webp" alt="OshiLove の推しプロフィール画面" width="828" height="1800" loading="lazy" decoding="async"></div></figure></div>
+        <figure class="home-app-preview">
+          <img src="oshilove-profile.webp" alt="OshiLove の推しプロフィール画面" width="828" height="1800" decoding="async">
+        </figure>
       </article>
-      <article class="feature-section lilac reverse feature-showcase">
-        <div class="feature-copy">
-          <p class="app-name"><img src="oshipocket-icon.webp" alt="" width="28" height="28">Oshi Pocket</p>
-          <h2><span data-lang="ja">現場と支出をひと目で</span><span data-lang="zh-tw">活動與開支，一目了然</span><span data-lang="en">Events and spending at a glance</span></h2>
-          <p class="feature-intro"><span data-lang="ja">ライブの予定、チェキの枚数、使った金額をまとめて記録。</span><span data-lang="zh-tw">記錄演出、チェキ數量與每次活動的開支。</span><span data-lang="en">Log shows, cheki counts and what you spent.</span></p>
+      <article class="home-app-card home-app-pocket" id="oshipocket">
+        <div class="home-app-copy">
+          <h2><img src="oshipocket-icon.webp" width="36" height="36" alt="">Oshi Pocket</h2>
+          <p><span data-lang="ja">ライブの予定と支出を管理</span><span data-lang="zh-tw">記錄演出日程、チェキ與開支</span><span data-lang="en">Track live events, cheki and spending</span></p>
           <ul class="feature-list"><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">現場の予定</span><span data-lang="zh-tw">活動日程</span><span data-lang="en">Event plans</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">チェキの枚数</span><span data-lang="zh-tw">チェキ數量</span><span data-lang="en">Cheki counts</span></li><li><svg class="line-icon" aria-hidden="true"><use href="#icon-check"></use></svg><span data-lang="ja">推し別の支出</span><span data-lang="zh-tw">按推し查看開支</span><span data-lang="en">Spending by oshi</span></li></ul>
-          <a class="quiet-link" href="https://apps.apple.com/app/id6811325536" aria-label="Oshi Pocket — App Store">App Store <span aria-hidden="true">↗</span></a>
+          <a class="pill-button home-app-download" href="https://apps.apple.com/app/id6811325536" aria-label="Oshi Pocket — App Store">App Store <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="feature-media"><figure class="device feature-device lavender"><div class="app-screenshot-placeholder"><img src="oshipocket-stats.webp" alt="Oshi Pocket の支出統計画面" width="828" height="1800" loading="lazy" decoding="async"></div></figure></div>
+        <figure class="home-app-preview">
+          <img src="oshipocket-stats.webp" alt="Oshi Pocket の支出統計画面" width="828" height="1800" decoding="async" loading="lazy">
+        </figure>
       </article>
+      </div>
+      <p class="home-app-note"><svg class="line-icon" aria-hidden="true"><use href="#icon-lock"></use></svg><span data-lang="ja">登録不要 · 記録は端末内に</span><span data-lang="zh-tw">毋須註冊 · 記錄儲存在裝置內</span><span data-lang="en">No account needed · Records stay on your device</span></p>
     </section>
 
-    <section class="section wrap" id="how-it-works">
-      <div class="section-heading centered"><h2><span data-lang="ja">はじめ方</span><span data-lang="zh-tw">使用方法</span><span data-lang="en">How it works</span></h2></div>
-      <div class="getting-started"><article><h3>OshiLove</h3><ol><li><span data-lang="ja">推しのプロフィールを登録</span><span data-lang="zh-tw">加入推し個人資料</span><span data-lang="en">Add your oshi profile</span></li><li><span data-lang="ja">最初の記念日や予定を追加</span><span data-lang="zh-tw">加入第一個紀念日或日程</span><span data-lang="en">Add your first anniversary or plan</span></li><li><span data-lang="ja">写真や日記を残して振り返る</span><span data-lang="zh-tw">加入相片或日記，開始回顧</span><span data-lang="en">Save a photo or diary entry to revisit</span></li></ol></article><article><h3>Oshi Pocket</h3><ol><li><span data-lang="ja">記録したい推しを登録</span><span data-lang="zh-tw">加入想記錄的推し</span><span data-lang="en">Add the oshi you want to track</span></li><li><span data-lang="ja">ライブや特典会などの現場を追加</span><span data-lang="zh-tw">新增演出或特典會等活動</span><span data-lang="en">Add a live event or meet-and-greet</span></li><li><span data-lang="ja">費用とチェキ枚数を入力して統計を確認</span><span data-lang="zh-tw">輸入費用及即影即有相片數量，再查看統計</span><span data-lang="en">Enter expenses and cheki counts, then review statistics</span></li></ol></article></div>
-    </section>
-
-    <section class="section wrap" id="resources">
-      <div class="resource-panel">
+    <section class="home-tools wrap" aria-labelledby="home-tools-title">
+      <h2 id="home-tools-title"><span data-lang="ja">ウェブツール</span><span data-lang="zh-tw">網頁工具</span><span data-lang="en">Web tools</span></h2>
+      <div class="home-tool-grid">
+        <section class="home-tool" id="resources">
+        <div class="resource-panel">
         <div class="resource-panel-heading">
         <div>
-        <h2><span data-lang="ja">推し活素材</span><span data-lang="zh-tw">推し活素材</span><span data-lang="en">Oshi resources</span></h2>
+        <h3><span data-lang="ja">推し活素材</span><span data-lang="zh-tw">推し活素材</span><span data-lang="en">Oshi resources</span></h3>
         <p><span data-lang="ja">写真に使えるフレームとスタンプ</span><span data-lang="zh-tw">適用於相片的相框與貼圖</span><span data-lang="en">Frames and stamps for your photos</span></p>
         </div>
         <a class="pill-button" data-site-lang href="/resources"><span data-lang="ja">素材一覧を見る</span><span data-lang="zh-tw">瀏覽素材系列</span><span data-lang="en">Browse resources</span> <span aria-hidden="true">→</span></a>
         </div>
         <div class="home-material-previews"><!-- home-material-previews --></div>
+        </div>
+        </section>
+        <section class="home-tool home-radar" id="radar"><div class="home-radar-panel"><div><h3><span data-lang="ja">Xの投稿チェック</span><span data-lang="zh-tw">X 動態追蹤</span><span data-lang="en">X Updates</span></h3><p><span data-lang="ja">Xの公開ポストを<strong>自動で分類</strong>。ライブやチケットの日付をカレンダーで確認できます</span><span data-lang="zh-tw"><strong>自動分類</strong> X 的公開貼文，並將辨識到的演出及售票日期整理到月曆</span><span data-lang="en"><strong>Automatically sort</strong> public X posts and see event and ticket dates on a calendar</span></p></div><form class="home-radar-search" data-radar-form action="/radar" method="get"><label for="home-radar-account"><span data-lang="ja">XのURL または @ユーザー名</span><span data-lang="zh-tw">X 帳戶網址或 @用戶名稱</span><span data-lang="en">X profile URL or @username</span></label><div><input id="home-radar-account" name="account" type="text" placeholder="@username" required maxlength="300" autocomplete="off" autocapitalize="none" spellcheck="false"><button class="pill-button" type="submit"><span data-lang="ja">検索</span><span data-lang="zh-tw">搜尋</span><span data-lang="en">Search</span> ↗</button></div><a data-site-lang href="/radar"><span data-lang="ja">検索ページを開く</span><span data-lang="zh-tw">開啟搜尋頁</span><span data-lang="en">Open search page</span> ↗</a></form></div></section>
       </div>
     </section>
 
-<section class="section home-radar wrap" id="radar"><div class="home-radar-panel"><div><h2><span data-lang="ja">Xの投稿チェック</span><span data-lang="zh-tw">X 動態追蹤</span><span data-lang="en">X Updates</span></h2><p><span data-lang="ja">Xアカウントを入力すると、ライブ・チケット・動画などの公開ポストを<strong>自動で分類</strong>し、見つけた日付をカレンダーにまとめます</span><span data-lang="zh-tw">輸入 X 帳戶後，系統會<strong>自動分類</strong>公開貼文，整理演出、售票、影片等資訊，並將辨識到的日期列入月曆</span><span data-lang="en">Enter an X account to <strong>automatically sort</strong> public posts into events, ticket announcements, videos and more. Dates found in posts appear on a calendar</span></p></div><form class="home-radar-search" data-radar-form action="/radar" method="get"><label for="home-radar-account"><span data-lang="ja">XのURL または @ユーザー名</span><span data-lang="zh-tw">X 帳戶網址或 @用戶名稱</span><span data-lang="en">X profile URL or @username</span></label><div><input id="home-radar-account" name="account" type="text" placeholder="@username" required maxlength="300" autocomplete="off" autocapitalize="none" spellcheck="false"><button class="pill-button" type="submit"><span data-lang="ja">検索</span><span data-lang="zh-tw">搜尋</span><span data-lang="en">Search</span> ↗</button></div><a data-site-lang href="/radar"><span data-lang="ja">検索ページを開く</span><span data-lang="zh-tw">開啟搜尋頁</span><span data-lang="en">Open search page</span> ↗</a></form></div></section>
+    <section class="home-guide wrap" id="how-it-works">
+      <div class="section-heading"><h2><span data-lang="ja">はじめ方</span><span data-lang="zh-tw">使用方法</span><span data-lang="en">How it works</span></h2></div>
+      <div class="getting-started">
+        <details><summary>OshiLove</summary><ol><li><span data-lang="ja">推しのプロフィールを登録</span><span data-lang="zh-tw">加入推し個人資料</span><span data-lang="en">Add your oshi profile</span></li><li><span data-lang="ja">最初の記念日や予定を追加</span><span data-lang="zh-tw">加入第一個紀念日或日程</span><span data-lang="en">Add your first anniversary or plan</span></li><li><span data-lang="ja">写真や日記を残して振り返る</span><span data-lang="zh-tw">加入相片或日記，開始回顧</span><span data-lang="en">Save a photo or diary entry to revisit</span></li></ol></details>
+        <details><summary>Oshi Pocket</summary><ol><li><span data-lang="ja">記録したい推しを登録</span><span data-lang="zh-tw">加入想記錄的推し</span><span data-lang="en">Add the oshi you want to track</span></li><li><span data-lang="ja">ライブや特典会などの現場を追加</span><span data-lang="zh-tw">新增演出或特典會等活動</span><span data-lang="en">Add a live event or meet-and-greet</span></li><li><span data-lang="ja">費用とチェキ枚数を入力して統計を確認</span><span data-lang="zh-tw">輸入費用及即影即有相片數量，再查看統計</span><span data-lang="en">Enter expenses and cheki counts, then review statistics</span></li></ol></details>
+      </div>
+    </section>
+
     <section class="section faq-section wrap" id="faq">
       <div class="section-heading"><h2><span data-lang="ja">よくある質問</span><span data-lang="zh-tw">常見問題</span><span data-lang="en">FAQ</span></h2></div>
       <div class="faq-list">
