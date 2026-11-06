@@ -214,7 +214,7 @@
     });
 
     // Landing-page copy intentionally omits sentence-ending full stops.
-    document.querySelectorAll("main [data-lang], footer [data-lang]").forEach((element) => {
+    document.querySelectorAll("body:not(.privacy-policy) main [data-lang], body:not(.privacy-policy) footer [data-lang]").forEach((element) => {
       const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
       while (walker.nextNode()) {
         walker.currentNode.nodeValue = walker.currentNode.nodeValue
