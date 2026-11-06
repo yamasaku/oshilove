@@ -429,3 +429,70 @@ html:lang(zh) .feature-showcase .feature-copy h2 { letter-spacing: 0; }
 @media (prefers-reduced-motion: reduce) {
   .feature-showcase .device, .feature-showcase .device:hover { transform: none; scale: 1; transition: none; }
 }
+
+/* One product scene, with a shared set of app entry points. */
+.brand-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(26px, 6vw, 80px); }
+.brand-hero .hero-content { animation: none; }
+.brand-hero .hero-content h1 { font-size: clamp(2.2rem, 4.3vw, 4rem); line-height: 1.22; text-wrap: initial; }
+html:lang(zh) .brand-hero .hero-content h1,
+html:lang(ja) .brand-hero .hero-content h1 { letter-spacing: 0; }
+.brand-hero-intro { max-width: 34ch; margin: 16px 0; }
+.brand-apps { display: grid; gap: 2px; max-width: 370px; scroll-margin-top: 135px; }
+.brand-app {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 10px;
+  min-height: 62px;
+  border-radius: 14px;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.brand-app img { border-radius: 11px; }
+.brand-app strong, .brand-app small { display: block; }
+.brand-app small { color: #625a70; font-size: .83rem; }
+.brand-app-arrow { color: #62518c; font-size: 1.25rem; }
+.brand-app:active { background: #eee9ff; }
+.brand-app:focus-visible { outline: 2px solid #62518c; outline-offset: 2px; }
+@media (hover: hover) and (pointer: fine) {
+  .brand-app:hover { background: #f5f1fc; }
+}
+.brand-visual {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 1.15;
+  margin: 0;
+  overflow: hidden;
+  border-radius: clamp(24px, 5vw, 58px);
+  background: #f3edf9;
+}
+.brand-screen {
+  position: absolute;
+  width: 39%;
+  height: auto;
+  top: 14%;
+  border: 6px solid #fff;
+  border-radius: clamp(16px, 3vw, 30px);
+  box-shadow: 0 14px 34px rgb(65 43 82 / 18%);
+}
+.brand-screen-pocket { left: 51%; top: 22%; transform: rotate(8deg); }
+.brand-screen-love { left: 16%; transform: rotate(-7deg); }
+@media (max-width: 760px) {
+  .brand-hero { grid-template-columns: minmax(0, 1fr); gap: 18px; padding-block: 26px 14px; }
+  .brand-hero .hero-content h1 { font-size: clamp(1.9rem, 7vw, 3rem); }
+  .brand-hero-intro { margin: 10px auto 12px; font-size: .9rem; }
+  .brand-apps { margin-inline: auto; text-align: left; }
+  .brand-visual { width: min(100%, 470px); justify-self: center; aspect-ratio: 1.42; }
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .landing-nav { grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; }
+  .landing-nav .nav-sections { gap: 4px; padding-inline: 0; }
+  .landing-nav .nav-sections a { padding-inline: 5px; white-space: nowrap; }
+  .landing-nav .nav-controls { gap: 10px; }
+}
