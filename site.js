@@ -179,6 +179,9 @@
     }[nextLanguage];
     document.querySelector(".landing-nav")?.setAttribute("aria-label", labels[0]);
     document.querySelectorAll("[data-language-select]").forEach(el => el.setAttribute("aria-label", labels[1]));
+    document.querySelector(".mobile-language-label")?.replaceChildren(labels[1]);
+    const menuButton = document.querySelector(".mobile-menu-toggle");
+    if (menuButton) menuButton.setAttribute("aria-label", menuLabel(menuButton.getAttribute("aria-expanded") === "true"));
     document.querySelector(".footer-products")?.setAttribute("aria-label", ({ja: "アプリのポリシーとサポート", "zh-tw": "App 政策與支援", en: "App policies and support"})[nextLanguage]);
     const topLabel = ({ja: "ページの先頭へ", "zh-tw": "返回頁頂", en: "Back to top"})[nextLanguage];
     document.querySelector(".back-to-top")?.setAttribute("aria-label", topLabel);
@@ -193,7 +196,62 @@
     }
   }
 
+  function menuLabel(open) {
+    return ({ja: open ? "メニューを閉じる" : "メニューを開く", "zh-tw": open ? "關閉選單" : "開啟選單", en: open ? "Close menu" : "Open menu"})[document.documentElement.dataset.language || language];
+  }
+
+  function setupMobileNavigation() {
+    const header = document.querySelector(".landing-header");
+    const nav = header?.querySelector(".landing-nav");
+    const links = nav?.querySelector(".nav-sections");
+    const controls = nav?.querySelector(".nav-controls");
+    const languageSelect = controls?.querySelector("[data-language-select]");
+    if (!header || !links || !controls || !languageSelect) return;
+    links.id = links.id || "site-navigation-links";
+    const languageRow = document.createElement("label");
+    languageRow.className = "mobile-menu-language";
+    const languageLabel = document.createElement("span");
+    languageLabel.className = "mobile-language-label";
+    languageRow.append(languageLabel);
+    links.append(languageRow);
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "mobile-menu-toggle";
+    toggle.setAttribute("aria-controls", links.id);
+    toggle.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-open-icon" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-close-icon" d="m6 6 12 12M18 6 6 18"/></svg>';
+    controls.append(toggle);
+    function setOpen(open, restoreFocus = false) {
+      header.classList.toggle("is-menu-open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", menuLabel(open));
+      if (restoreFocus) toggle.focus({preventScroll: true});
+    }
+    toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+    header.addEventListener("keydown", event => {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        event.preventDefault();
+        setOpen(false, true);
+      }
+    });
+    header.addEventListener("click", event => {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("click", event => {
+      if (!header.contains(event.target)) setOpen(false);
+    });
+    const mobile = window.matchMedia("(max-width: 760px)");
+    function updateLayout() {
+      setOpen(false);
+      if (mobile.matches) languageRow.append(languageSelect);
+      else controls.prepend(languageSelect);
+    }
+    mobile.addEventListener("change", updateLayout);
+    header.classList.add("has-mobile-menu");
+    updateLayout();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    setupMobileNavigation();
     apply(language);
     addAnalyticsSettingsControl();
     loadAnalytics();

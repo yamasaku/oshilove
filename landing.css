@@ -531,3 +531,23 @@ html:lang(ja) .brand-hero .hero-content h1 { letter-spacing: 0; }
   .material-card-body { padding: 12px; }
   .material-card h3 { margin-bottom: 6px; }
 }
+
+/* One compact mobile bar; navigation and language remain in its disclosure. */
+.mobile-menu-toggle, .mobile-menu-language { display: none; }
+.mobile-menu-toggle { align-items: center; justify-content: center; width: 44px; height: 44px; padding: 10px; border: 0; border-radius: 12px; color: #514076; background: #f5f1fc; cursor: pointer; touch-action: manipulation; }
+.mobile-menu-toggle svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.mobile-menu-toggle .menu-close-icon, .mobile-menu-toggle[aria-expanded="true"] .menu-open-icon { display: none; }
+.mobile-menu-toggle[aria-expanded="true"] .menu-close-icon { display: block; }
+.mobile-menu-toggle:active { background: #e5dcf3; }
+.mobile-menu-toggle:focus-visible { outline: 2px solid #62518c; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .landing-header.has-mobile-menu .landing-nav { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; row-gap: 0; }
+  .has-mobile-menu .mobile-menu-toggle { display: inline-flex; flex: 0 0 44px; }
+  .has-mobile-menu .nav-controls { gap: 8px; }
+  .landing-header.has-mobile-menu .nav-sections { display: none; }
+  .landing-header.has-mobile-menu.is-menu-open .nav-sections { display: flex; flex-direction: column; align-items: stretch; gap: 2px; margin-top: 10px; padding: 10px 0 0; max-height: calc(100svh - 120px); overflow-y: auto; overscroll-behavior: contain; }
+  .has-mobile-menu .nav-sections a { justify-content: flex-start; flex: none; min-height: 44px; padding-inline: 12px; font-size: .9rem; }
+  .has-mobile-menu .mobile-menu-language { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 12px 2px; margin-top: 6px; border-top: 1px solid var(--border); color: #646273; font-size: .875rem; }
+  .has-mobile-menu .mobile-menu-language .lang-select { max-width: 160px; min-height: 44px; font-size: 16px; }
+  .landing.compact-header section[id], .landing section[id], .hero-stage[id], .hero-content[id], .document details[id] { scroll-margin-top: 105px; }
+}
