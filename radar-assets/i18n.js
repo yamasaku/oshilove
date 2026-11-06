@@ -4,7 +4,7 @@ const rows = {
   LOCAL_RATE_LIMITED: ['リクエストが多すぎます。1分後にお試しください。','查詢太頻密，請一分鐘後再試。','查詢過於頻繁，請一分鐘後再試。','查询过于频繁，请一分钟后重试。'],
   uncertainMerch: ['物販・要確認','物販／待確認','物販／待確認','物贩／待确认'],
   goods: ['グッズ','周邊','周邊','周边'],
-  homeTitle: ['X投稿検索','X 貼文搜尋','X 貼文搜尋','X 帖子搜索'],
+  homeTitle: ['Xの投稿チェック','X 動態追蹤','X 動態追蹤','X 动态追踪'],
   contactX: ['不具合・お問い合わせ：X @skr_oshilove ↗','遇到問題？透過 X 聯絡 @skr_oshilove ↗','遇到問題？透過 X 聯絡 @skr_oshilove ↗','遇到问题？通过 X 联系 @skr_oshilove ↗'],
   backToTop: ['ページの先頭へ','返回頁頂','回到頂端','返回顶部'],
   appPromoTitle: ['推し活を、アプリでも。','用 App 記低追星日常','用 App 記錄追星日常','用 App 记录追星日常'],
@@ -130,12 +130,12 @@ const rows = {
   icsNote: ['本文から抽出した日付です。年や時刻は原文でご確認ください。この予定は終日リマインダーです。','由貼文文字抽取嘅日期。請核對原文年份及時間。此項為全日提示。','由貼文文字抽取的日期。請核對原文年份與時間。此項為全日提示。','从帖子文字提取的日期。请核对原文年份与时间。此项为全天提醒。'],
 };
 const english = {
-  "privacyDetails": "Account names are sent to Cloudflare and FxEmbed and may remain in your URL and browser history. Image providers receive connection details such as your IP address. Follows, read markers and recent results stay in this browser until you clear them. Exports contain your follow list. Google Analytics is not loaded on the X Post Search page.",
+  "privacyDetails": "Account names are sent to Cloudflare and FxEmbed and may remain in your URL and browser history. Image providers receive connection details such as your IP address. Follows, read markers and recent results stay in this browser until you clear them. Exports contain your follow list. Google Analytics is not loaded on the X Updates page.",
   "LOCAL_RATE_LIMITED": "Too many requests. Please try again in a minute.",
   "uncertainMerch": "Merch · check source",
   "goods": "Merch",
   "video": "Video",
-  "homeTitle": "X Post Search",
+  "homeTitle": "X Updates",
   "contactX": "Help: X @skr_oshilove ↗",
   "backToTop": "Back to top",
   "appPromoTitle": "Keep your oshi records in the apps",
@@ -264,8 +264,8 @@ const english = {
 for(const [key,value] of Object.entries(english)){ if(rows[key]) rows[key][4]=value; else rows[key]=[value,value,value,value,value]; }
 rows.video=['動画','影片','影片','视频','Video'];
 rows.migration=['旧サイトのフォローを移す ↗','搬移舊站收藏 ↗','搬移舊站收藏 ↗','搬移旧站收藏 ↗','Move follows from the old site ↗'];
-rows.privacyDetails[0]='検索名はCloudflareとFxEmbedに送信され、URLや閲覧履歴に残る場合があります。画像の提供元にもIP等が送信されます。フォロー・既読・保存結果はこのブラウザに保存されます。X投稿検索ページではGoogle Analyticsを読み込みません。';
-rows.privacyDetails[2]='搜尋名稱會傳送至 Cloudflare 與 FxEmbed，並可能保留在網址及瀏覽記錄中。圖片來源亦可能處理 IP 等連線資料。收藏、已讀記錄及最近結果只儲存在此瀏覽器。X 貼文搜尋頁不會載入 Google Analytics。';
+rows.privacyDetails[0]='検索名はCloudflareとFxEmbedに送信され、URLや閲覧履歴に残る場合があります。画像の提供元にもIP等が送信されます。フォロー・既読・保存結果はこのブラウザに保存されます。Xの投稿チェックページではGoogle Analyticsを読み込みません。';
+rows.privacyDetails[2]='搜尋名稱會傳送至 Cloudflare 與 FxEmbed，並可能保留在網址及瀏覽記錄中。圖片來源亦可能處理 IP 等連線資料。收藏、已讀記錄及最近結果只儲存在此瀏覽器。X 動態追蹤頁不會載入 Google Analytics。';
 export const LANGUAGES = ['ja', 'zh-HK', 'zh-TW', 'zh-CN', 'en'];
 export function detectLanguage(preferences = []) {
   for (const value of preferences) {
