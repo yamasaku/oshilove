@@ -60,6 +60,7 @@ function button(content, handler, className) {
   return b;
 }
 function filtersWithoutDate() { return {...state,date:""}; }
+function seriesTitle(item) { return item.titles?.[document.documentElement.dataset.language] || item.title; }
 function preferredVariant(variants) {
   return variants.find(variant=>variant.color==="white")
     || variants.find(variant=>variant.color==="pink")
@@ -144,17 +145,17 @@ function renderResults() {
     const coverVariant = preferredVariant(variants);
     const card = node("article","catalog-card");
     const cover = button("",()=>openSeries(item,cover),"catalog-cover");
-    cover.setAttribute("aria-label",t.browse+" · "+item.title);
+    cover.setAttribute("aria-label",t.browse+" · "+seriesTitle(item));
     const img = node("img");
     img.src = coverVariant.preview;
-    img.alt = item.title+" · "+t[coverVariant.color];
+    img.alt = seriesTitle(item)+" · "+t[coverVariant.color];
     img.loading = "lazy";
     img.width = coverVariant.width;
     img.height = coverVariant.height;
     cover.append(img);
     const body = node("div","catalog-card-body");
-    const title = node("h3","",item.title);
-    title.lang = "ja";
+    const title = node("h3","",seriesTitle(item));
+    title.lang = item.titles ? document.documentElement.lang : "ja";
     const info = node("p","catalog-meta",[t[item.type],t.files(variants.length),item.eventDate?.replace("-","/")||t.anyday].join(" · "));
     const colors = node("div","catalog-colors");
     for(const color of [...new Set(variants.map(v=>v.color))]) {
@@ -174,13 +175,13 @@ function renderDialog(item) {
   const variant = variants.find(v=>v.id===state.variant)||preferredVariant(variants);
   if(!variant) return;
   state.variant = variant.id;
-  $("#material-dialog-title").textContent = item.title;
+  $("#material-dialog-title").textContent = seriesTitle(item);
   $("#close-material-dialog").setAttribute("aria-label",t.close);
   const content = $("#material-dialog-content");
   const preview = node("div","detail-preview");
   const img = node("img");
   img.src = variant.preview;
-  img.alt = item.title+" · "+t[variant.color];
+  img.alt = seriesTitle(item)+" · "+t[variant.color];
   img.width = variant.width;
   img.height = variant.height;
   preview.append(img);
@@ -200,11 +201,11 @@ function renderDialog(item) {
   const download = node("a","pill-button",t.download);
   download.href = variant.url;
   download.download = "";
-  download.setAttribute("aria-label",t.downloadLabel(item.title+" "+t[variant.color]));
+  download.setAttribute("aria-label",t.downloadLabel(seriesTitle(item)+" "+t[variant.color]));
   const zip = node("a","quiet-link",t.zip+" ("+t.files(item.variants.length)+")");
   zip.href = item.zip.url;
   zip.download = "";
-  zip.setAttribute("aria-label",t.zipLabel(item.title));
+  zip.setAttribute("aria-label",t.zipLabel(seriesTitle(item)));
   const links = node("div","detail-downloads");
   links.append(download,zip);
   const thumbList = node("div","detail-variants");

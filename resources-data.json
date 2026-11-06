@@ -387,6 +387,7 @@
     {
       "id": "halloween-1",
       "title": "Halloween 01",
+      "titles": {"ja": "ハロウィン ①", "zh-tw": "萬聖節 ①", "en": "Halloween ①"},
       "type": "stamp",
       "theme": "halloween",
       "eventDate": "10-31",
@@ -455,6 +456,7 @@
     {
       "id": "halloween-2",
       "title": "Halloween 02",
+      "titles": {"ja": "ハロウィン ②", "zh-tw": "萬聖節 ②", "en": "Halloween ②"},
       "type": "stamp",
       "theme": "halloween",
       "eventDate": "10-31",
@@ -523,6 +525,7 @@
     {
       "id": "halloween-3",
       "title": "Halloween 03",
+      "titles": {"ja": "ハロウィン ③", "zh-tw": "萬聖節 ③", "en": "Halloween ③"},
       "type": "stamp",
       "theme": "halloween",
       "eventDate": "10-31",

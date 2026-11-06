@@ -8,7 +8,7 @@ export function matches(item, filters) {
     halloween: "halloween ハロウィン 萬聖節",
     daily: "daily 日常 everyday"
   };
-  const searchable = normalized([item.title, item.eventDate, item.eventDate?.replace("-", "/"), item.eventDate?.replace("-", "."), aliases[item.type], aliases[item.theme], ...item.variants.map(v=>v.label)].join(" "));
+  const searchable = normalized([item.title, ...Object.values(item.titles || {}), item.eventDate, item.eventDate?.replace("-", "/"), item.eventDate?.replace("-", "."), aliases[item.type], aliases[item.theme], ...item.variants.map(v=>v.label)].join(" "));
   return words.every(word => searchable.includes(word))
     && (!filters.type || item.type === filters.type)
     && (!filters.theme || item.theme === filters.theme)
