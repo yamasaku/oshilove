@@ -1,4 +1,9 @@
 {
+  "featured": [
+    "oshi-story-frames",
+    "oshi-ichiban",
+    "magic"
+  ],
   "items": [
     {
       "id": "oshi-day-frames",
@@ -380,14 +385,18 @@
         }
       ],
       "zip": {
-        "url": "/materials/oshi-story-frames/all-53878732743c.zip",
-        "bytes": 290500
+        "url": "/materials/oshi-story-frames/all-1be10eae89f7.zip",
+        "bytes": 307184
       }
     },
     {
       "id": "halloween-1",
       "title": "Halloween 01",
-      "titles": {"ja": "ハロウィン ①", "zh-tw": "萬聖節 ①", "en": "Halloween ①"},
+      "titles": {
+        "ja": "ハロウィン ①",
+        "zh-tw": "萬聖節 ①",
+        "en": "Halloween ①"
+      },
       "type": "stamp",
       "theme": "halloween",
       "eventDate": "10-31",
@@ -456,7 +465,11 @@
     {
       "id": "halloween-2",
       "title": "Halloween 02",
-      "titles": {"ja": "ハロウィン ②", "zh-tw": "萬聖節 ②", "en": "Halloween ②"},
+      "titles": {
+        "ja": "ハロウィン ②",
+        "zh-tw": "萬聖節 ②",
+        "en": "Halloween ②"
+      },
       "type": "stamp",
       "theme": "halloween",
       "eventDate": "10-31",
@@ -525,7 +538,11 @@
     {
       "id": "halloween-3",
       "title": "Halloween 03",
-      "titles": {"ja": "ハロウィン ③", "zh-tw": "萬聖節 ③", "en": "Halloween ③"},
+      "titles": {
+        "ja": "ハロウィン ③",
+        "zh-tw": "萬聖節 ③",
+        "en": "Halloween ③"
+      },
       "type": "stamp",
       "theme": "halloween",
       "eventDate": "10-31",

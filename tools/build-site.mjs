@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
+import {renderHomeMaterials} from "./home-materials.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const output = path.resolve(root, ".dist");
@@ -24,4 +25,10 @@ function copyPublicFile(source, destination) {
   } else fs.copyFileSync(source, destination);
 }
 for (const file of publicFiles) copyPublicFile(path.join(root, file), path.join(output, file));
+const catalog = JSON.parse(fs.readFileSync(path.join(root,"resources-data.json"),"utf8"));
+for (const page of ["index.html","ja.html","zh-tw.html","en.html"]) {
+  const file = path.join(output,page);
+  const html = fs.readFileSync(file,"utf8").replace("<!-- home-material-previews -->",renderHomeMaterials(catalog));
+  fs.writeFileSync(file,html);
+}
 console.log("Built public website in .dist; Worker source and local originals are excluded.");

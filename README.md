@@ -18,10 +18,32 @@ When adding resources, use the source filenames to identify colours, preserve or
 
 ## Build and deploy
 
-Requires Node.js and Wrangler. Run from this directory:
+### 較簡單的素材更新方法（Windows）
+
+1. 將同一系列的原始 PNG 放在一個資料夾，例如 `D:\X material\新系列`。顏色可寫在檔名內，例如 `white.png`、`pink.png`、`blue.png`。未能辨認顏色時，工具會讓你選擇；不會猜測或修改原檔。
+2. 雙擊專案內的 **`更新素材.cmd`**。首次使用需要 Node.js 22 或以上；工具會安裝所需套件。
+3. 選擇更新現有系列，或輸入 `0` 新增系列，再輸入資料夾路徑。新系列會詢問名稱、貼圖／相框、主題及每年的紀念日（`MM-DD`，沒有可留空）。
+4. 檢查數量後輸入 `Y` 發佈。工具會產生 WebP 預覽、原檔 ZIP，上載 R2、更新素材頁／日曆，以及首頁 3 組精選。新增或更新的系列會放在首頁第一位；封面優先白色，其次粉紅色。
+
+匯入會保留未在這次資料夾中出現的現有素材，不會刪除 R2 物件。`-oshideco` 路徑和 `.stamp` 檔案一律排除。中途斷線或 Cloudflare 暫時出錯，可重新開啟工具選擇繼續，不用重新上載已完成的檔案。
+
+工具會更新本機的素材清單及預覽；原始碼備份仍需提交到 GitHub。可讓 Codex 在更新完成後協助同步。
+
+只準備、不上載的指令例子：
 
 ```powershell
-node --test tests/materials.test.mjs
+node tools/materials.mjs --folder "D:\X material\新系列" --title "新系列" --type stamp --theme daily --prepare
+node tools/materials.mjs --resume --publish
+```
+
+`--series` 可指定現有系列 ID；`--date 11-04` 可設定紀念日；`--color white` 可處理單一顏色的未命名檔案。三語名稱可在 `resources-data.json` 的 `titles` 中設定。
+
+### Website deployment
+
+Requires Node.js 22 or newer. Run `npm install` once, then run from this directory:
+
+```powershell
+npm test
 node tools/build-site.mjs
 npx wrangler versions upload --config wrangler.jsonc --profile oshilove
 npx wrangler versions deploy <VERSION_ID>@100% --yes --config wrangler.jsonc --profile oshilove

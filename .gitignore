@@ -2,3 +2,5 @@ worker-env.d.ts
 material-work/
 .wrangler/
 .dist/
+node_modules/
+.material-work/
