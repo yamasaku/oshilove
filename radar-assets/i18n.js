@@ -4,7 +4,7 @@ const rows = {
   LOCAL_RATE_LIMITED: ['リクエストが多すぎます。1分後にお試しください。','查詢太頻密，請一分鐘後再試。','查詢過於頻繁，請一分鐘後再試。','查询过于频繁，请一分钟后重试。'],
   uncertainMerch: ['物販・要確認','物販／待確認','物販／待確認','物贩／待确认'],
   goods: ['グッズ','周邊','周邊','周边'],
-  homeTitle: ['Xアカウントの情報整理','X 帳戶內容整理','X 帳號內容整理','X 账号内容整理'],
+  homeTitle: ['X投稿検索','X 貼文搜尋','X 貼文搜尋','X 帖子搜索'],
   contactX: ['不具合・お問い合わせ：X @skr_oshilove ↗','遇到問題？透過 X 聯絡 @skr_oshilove ↗','遇到問題？透過 X 聯絡 @skr_oshilove ↗','遇到问题？通过 X 联系 @skr_oshilove ↗'],
   backToTop: ['ページの先頭へ','返回頁頂','回到頂端','返回顶部'],
   appPromoTitle: ['推し活を、アプリでも。','用 App 記低追星日常','用 App 記錄追星日常','用 App 记录追星日常'],
@@ -19,7 +19,6 @@ const rows = {
   importFollowing: ['フォローをインポート','匯入追蹤名單','匯入追蹤名單','导入关注列表'],
   imported: ['フォローを読み込みました。','已匯入追蹤名單。','已匯入追蹤名單。','已导入关注列表。'],
   invalidImport: ['有効なフォローファイルを選んでください。','請揀有效嘅追蹤名單檔案。','請選擇有效的追蹤名單檔案。','请选择有效的关注列表文件。'],
-  title: ['推し Radar — 推しの大切な瞬間を、ひとつに。','推し Radar — 每個重要時刻，都跟得上。','推し Radar — 每個重要時刻，都跟得上。','推し Radar — 每个重要时刻，都跟得上。'],
   skip: ['コンテンツへ','跳到內容','跳到內容','跳到内容'],
   discover: ['アカウントを探す','發現帳戶','探索帳號','发现账号'],
   following: ['フォロー中','我的追蹤','我的追蹤','我的关注'],
@@ -131,12 +130,12 @@ const rows = {
   icsNote: ['本文から抽出した日付です。年や時刻は原文でご確認ください。この予定は終日リマインダーです。','由貼文文字抽取嘅日期。請核對原文年份及時間。此項為全日提示。','由貼文文字抽取的日期。請核對原文年份與時間。此項為全日提示。','从帖子文字提取的日期。请核对原文年份与时间。此项为全天提醒。'],
 };
 const english = {
-  "privacyDetails": "Account names are sent to Cloudflare and FxEmbed and may remain in your URL and browser history. Image providers receive connection details such as your IP address. Follows, read markers and recent results stay in this browser until you clear them. Exports contain your follow list. Google Analytics is not loaded on Radar pages.",
+  "privacyDetails": "Account names are sent to Cloudflare and FxEmbed and may remain in your URL and browser history. Image providers receive connection details such as your IP address. Follows, read markers and recent results stay in this browser until you clear them. Exports contain your follow list. Google Analytics is not loaded on the X Post Search page.",
   "LOCAL_RATE_LIMITED": "Too many requests. Please try again in a minute.",
   "uncertainMerch": "Merch · check source",
   "goods": "Merch",
   "video": "Video",
-  "homeTitle": "Organise updates from X",
+  "homeTitle": "X Post Search",
   "contactX": "Help: X @skr_oshilove ↗",
   "backToTop": "Back to top",
   "appPromoTitle": "Keep your oshi records in the apps",
@@ -152,7 +151,6 @@ const english = {
   "migration": "Move follows from the old site ↗",
   "imported": "Follows imported.",
   "invalidImport": "Choose a valid follow export file.",
-  "title": "Oshi Radar | Organise X events, tickets and videos",
   "skip": "Skip to content",
   "discover": "Find an account",
   "following": "Following",
@@ -246,10 +244,10 @@ const english = {
   "aboutDatesTitle": "Categories and calendar",
   "aboutDates": "Posts can have multiple categories. Missing years are estimated from post dates. Text in images is not read. Calendar entries use dates found in loaded text and export as all-day reminders. Check original dates and times.",
   "aboutPrivacyTitle": "Privacy and sources",
-  "aboutPrivacy": "No X password or cookies are needed. Searched account names go to Cloudflare and FxEmbed. Image providers may process connection details. Radar is not affiliated with X or the featured artists.",
-  "clear": "Clear Radar data in this browser",
+  "aboutPrivacy": "No X password or cookies are needed. Searched account names go to Cloudflare and FxEmbed. Image providers may process connection details. This tool is not affiliated with X or the featured artists.",
+  "clear": "Clear search data in this browser",
   "clearConfirm": "Delete all follows, read markers and saved results in this browser?",
-  "cleared": "Radar data cleared.",
+  "cleared": "Search data cleared.",
   "close": "Close",
   "calendarTitle": "Event calendar",
   "calendar": "Calendar",
@@ -266,8 +264,8 @@ const english = {
 for(const [key,value] of Object.entries(english)){ if(rows[key]) rows[key][4]=value; else rows[key]=[value,value,value,value,value]; }
 rows.video=['動画','影片','影片','视频','Video'];
 rows.migration=['旧サイトのフォローを移す ↗','搬移舊站收藏 ↗','搬移舊站收藏 ↗','搬移旧站收藏 ↗','Move follows from the old site ↗'];
-rows.privacyDetails[0]='検索名はCloudflareとFxEmbedに送信され、URLや閲覧履歴に残る場合があります。画像の提供元にもIP等が送信されます。フォロー・既読・保存結果はこのブラウザに保存されます。RadarページではGoogle Analyticsを読み込みません。';
-rows.privacyDetails[2]='搜尋名稱會傳送至 Cloudflare 與 FxEmbed，並可能保留在網址及瀏覽記錄中。圖片來源亦可能處理 IP 等連線資料。收藏、已讀記錄及最近結果只儲存在此瀏覽器。Radar 頁不會載入 Google Analytics。';
+rows.privacyDetails[0]='検索名はCloudflareとFxEmbedに送信され、URLや閲覧履歴に残る場合があります。画像の提供元にもIP等が送信されます。フォロー・既読・保存結果はこのブラウザに保存されます。X投稿検索ページではGoogle Analyticsを読み込みません。';
+rows.privacyDetails[2]='搜尋名稱會傳送至 Cloudflare 與 FxEmbed，並可能保留在網址及瀏覽記錄中。圖片來源亦可能處理 IP 等連線資料。收藏、已讀記錄及最近結果只儲存在此瀏覽器。X 貼文搜尋頁不會載入 Google Analytics。';
 export const LANGUAGES = ['ja', 'zh-HK', 'zh-TW', 'zh-CN', 'en'];
 export function detectLanguage(preferences = []) {
   for (const value of preferences) {
