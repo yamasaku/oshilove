@@ -173,9 +173,9 @@
       description.setAttribute("content", description.getAttribute(`data-page-description-${nextLanguage}`));
     }
     const labels = {
-      ja: ["メインナビゲーション", "言語", "OshiLove と OshiPocket の画面", "OshiLove のホーム画面", "OshiLove の推しプロフィール画面", "OshiPocket の支出統計画面"],
-      "zh-tw": ["主要導覽", "語言", "OshiLove 與 OshiPocket 畫面", "OshiLove 首頁畫面", "OshiLove 推し個人檔案畫面", "OshiPocket 開支統計畫面"],
-      en: ["Main navigation", "Language", "OshiLove and OshiPocket previews", "OshiLove home screen", "OshiLove oshi profile screen", "OshiPocket spending statistics screen"]
+      ja: ["メインナビゲーション", "言語", "OshiLove と Oshi Pocket の画面", "OshiLove のホーム画面", "OshiLove の推しプロフィール画面", "Oshi Pocket の支出統計画面"],
+      "zh-tw": ["主要導覽", "語言", "OshiLove 與 Oshi Pocket 畫面", "OshiLove 首頁畫面", "OshiLove 推し個人檔案畫面", "Oshi Pocket 開支統計畫面"],
+      en: ["Main navigation", "Language", "OshiLove and Oshi Pocket previews", "OshiLove home screen", "OshiLove oshi profile screen", "Oshi Pocket spending statistics screen"]
     }[nextLanguage];
     document.querySelector(".landing-nav")?.setAttribute("aria-label", labels[0]);
     document.querySelectorAll("[data-language-select]").forEach(el => el.setAttribute("aria-label", labels[1]));
@@ -213,7 +213,7 @@
     document.querySelectorAll('a[href*="apps.apple.com"]').forEach((link) => {
       link.addEventListener("click", () => {
         if (analyticsConsent !== "granted" || !window.gtag) return;
-        const app = link.href.includes("6811325536") ? "OshiPocket" : "OshiLove";
+        const app = link.href.includes("6811325536") ? "Oshi Pocket" : "OshiLove";
         window.gtag("event", "app_store_click", { app_name: app, link_url: link.href });
       });
     });

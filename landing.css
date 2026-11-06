@@ -353,3 +353,30 @@ body:has([data-analytics-consent]) .back-to-top { visibility: hidden; }
 .support-page .document .support-contact { margin-top: 32px; padding: clamp(18px, 4vw, 30px); border-radius: 22px; background: #f5f1fc; }
 .support-contact .contact-box { padding: 0; background: transparent; color: inherit; overflow-wrap: anywhere; }
 .support-contact .contact-box a { color: #514076; font-weight: 650; }
+
+/* Keep the app choices and their download links near the top of the homepage. */
+.landing-hero { min-height: 0; padding-block: clamp(32px, 6vw, 64px) 34px; }
+.landing-hero h1 { margin: 0; }
+.hero-content[id], .hero-stage[id] { scroll-margin-top: 105px; }
+.hero-product-purpose { margin: 8px 0 12px; }
+.hero-store { min-height: 44px; margin: auto 0 14px; padding: 8px 18px; background: #fff; color: #514076; }
+.home-support-link { margin: 18px auto 0; text-align: center; }
+.landing .faq-section { padding-bottom: 48px; }
+
+@media (max-width: 760px) {
+  .landing-nav { padding: 8px 12px; }
+  .landing-nav .nav-sections { display: none; }
+  .landing section[id] { scroll-margin-top: 88px; }
+  .landing-hero { padding-block: 24px 12px; gap: 16px; }
+  .landing .hero-content h1 { font-size: clamp(1.65rem, 5.8vw, 2.35rem); }
+  .hero-content .micro-copy { margin: 8px 0 0; }
+  .hero-product { padding-block: 12px; border-radius: 20px; }
+  .hero-product .product-icon { width: 24px; height: 24px; }
+  .hero-product-purpose { margin: 5px 0 8px; }
+  .hero-store { margin-bottom: 8px; }
+  .hero-product .device { width: min(100%, 140px); border-radius: 17px; }
+  .hero-product .app-screenshot-placeholder { max-height: clamp(106px, 25vw, 158px); border-radius: 13px; }
+}
+@media (max-width: 360px) {
+  .landing-nav .nav-controls { gap: 6px; }
+}
