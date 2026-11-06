@@ -161,6 +161,11 @@
     document.querySelectorAll("[data-language-select]").forEach((select) => {
       select.value = nextLanguage;
     });
+    document.querySelectorAll("a[data-site-lang]").forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set("lang", nextLanguage);
+      link.href = url.href;
+    });
     const title = document.querySelector(`[data-page-title-${nextLanguage}]`);
     if (title) document.title = title.getAttribute(`data-page-title-${nextLanguage}`);
     const description = document.querySelector(`[data-page-description-${nextLanguage}]`);

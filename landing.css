@@ -1,6 +1,6 @@
-/* Landing-only styles; privacy and support retain their existing document layout. */
+/* Shared site navigation and footer, followed by homepage layout. */
 html { scroll-behavior: auto; }
-.landing {
+:root {
   --paper: #fffdfd;
   --pink: #ffdde8;
   --blush: #f8afc5;
@@ -12,10 +12,11 @@ html { scroll-behavior: auto; }
   --border: #eeebf2;
   --soft-shadow: 0 14px 32px rgb(65 43 82 / 8%);
   --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+.landing {
   margin: 0;
   background: var(--paper);
   color: var(--text);
-  font-family: ui-rounded, "Hiragino Maru Gothic ProN", "Yu Gothic", "Segoe UI", sans-serif;
   line-height: 1.85;
 }
 .landing main { width: 100%; }
@@ -41,7 +42,7 @@ html { scroll-behavior: auto; }
 .nav-sections a { color: #646273; font-size: .82rem; font-weight: 600; text-decoration: none; }
 .nav-sections a:hover, .quiet-link:hover, .footer-product a:hover { color: #705eb2; }
 .nav-controls { justify-self: end; gap: 24px; padding-right: 6px; }
-.landing .lang-select { border: 0; background: transparent; padding-left: 6px; font-size: .78rem; font-weight: 500; }
+.landing-nav .lang-select { border: 0; background: transparent; padding-left: 6px; font-size: .78rem; font-weight: 500; }
 .pill-button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 48px; padding: 12px 23px; border-radius: 999px; background: #eee9ff; color: #62518c; text-decoration: none; font-size: .85rem; font-weight: 750; }
 .pill-button.primary { background: #8f7bd8; color: #fff; box-shadow: 0 8px 18px rgb(117 94 193 / 20%); }
 .nav-cta { min-height: 44px; padding: 9px 18px; font-size: .78rem; white-space: nowrap; }
@@ -135,7 +136,7 @@ html { scroll-behavior: auto; }
 .footer-icon-pair { display: inline-flex; align-items: center; padding-right: 7px; }
 .footer-icon-pair img + img { margin-left: -8px; }
 .landing-footer p { max-width: 290px; margin: 8px 0 0; font-size: .72rem; color: #9d91a1; }
-.footer-products { display: grid; grid-template-columns: repeat(3, minmax(120px, 1fr)); gap: 42px; }
+.footer-products { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 42px; }
 .footer-product { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .footer-product strong { margin-bottom: 4px; color: #4f4857; font-size: .73rem; }
 .footer-product a { color: #817589; font-size: .68rem; line-height: 1.5; text-decoration: none; }
@@ -150,7 +151,7 @@ html { scroll-behavior: auto; }
 }
 @media (max-width: 760px) {
   .wrap { width: calc(100% - 40px); }.landing-header { top: 10px; width: calc(100% - 24px); margin-top: 10px; }
-  .landing-nav { grid-template-columns: 1fr auto; gap: 12px; min-height: 64px; padding: 8px 14px; border-radius: 20px; }.nav-cta { padding: 9px 13px; font-size: .69rem; }.landing .lang-select { max-width: 110px; padding-right: 21px; font-size: .7rem; }
+  .landing-nav { grid-template-columns: 1fr auto; gap: 12px; min-height: 64px; padding: 8px 14px; border-radius: 20px; }.nav-cta { padding: 9px 13px; font-size: .69rem; }.landing-nav .lang-select { max-width: 110px; padding-right: 21px; font-size: .7rem; }
   .landing-brand { gap: 6px; font-size: 1.15rem; }.landing-brand img { width: 29px; height: 29px; }
   .landing-hero { grid-template-columns: 1fr; padding-block: 52px 35px; gap: 38px; }.hero-content { text-align: center; }.landing h1 { font-size: clamp(1.8rem, 6.6vw, 3rem); letter-spacing: -.055em; line-height: 1.5; }.lead { max-width: 460px; margin: 20px auto 0; font-size: .84rem; }.hero-content .button-row { justify-content: center; gap: 16px; }.micro-copy { justify-content: center; font-size: .6rem; }.pill-button { padding: 11px 19px; font-size: .78rem; }.quiet-link { font-size: .75rem; }
 
@@ -213,7 +214,7 @@ html.reveal-ready .reveal-on-scroll.is-visible { opacity: 1; transform: translat
 @media (max-width: 760px) {
   .landing-nav { padding: 14px 18px 12px; row-gap: 10px; }
   .nav-controls { gap: 18px; padding-right: 0; }
-  .landing .lang-select { padding-left: 8px; padding-right: 26px; }
+  .landing-nav .lang-select { padding-left: 8px; padding-right: 26px; }
   .nav-sections { display: flex; grid-column: 1 / -1; grid-row: 2; justify-content: space-around; gap: 8px; padding: 10px 0 0; border-top: 1px solid var(--border); }
   .nav-sections a { font-size: .875rem; }
   .nav-controls { grid-column: 2; grid-row: 1; }
@@ -236,8 +237,8 @@ html.reveal-ready .reveal-on-scroll.is-visible { opacity: 1; transform: translat
 
 /* Readable supporting text and immediate feedback across input methods. */
 .landing .lead, .landing .choice-card > p, .landing .getting-started li { font-size: 1rem; }
-.landing .micro-copy, .landing .download-note, .landing .footer-product a,
-.landing .footer-product strong, .landing .copyright, .landing .store-button small { font-size: .875rem; }
+.landing .micro-copy, .landing .download-note, .landing-footer .footer-product a,
+.landing-footer .footer-product strong, .landing-footer .copyright, .landing .store-button small { font-size: .875rem; }
 .landing .pill-button:active, .landing .store-button:active,
 .landing .consent-button:active, .landing .privacy-links a:active { transform: scale(.98); transition: transform .1s ease-out; }
 .landing .faq-plus { transition: transform .2s ease-out; }
@@ -245,7 +246,7 @@ html.reveal-ready .reveal-on-scroll.is-visible { opacity: 1; transform: translat
 @media (max-width: 400px) {
   .landing-nav { padding-inline: 12px; }
   .nav-controls { gap: 10px; }
-  .landing .lang-select { max-width: 98px; padding-left: 0; }
+  .landing-nav .lang-select { max-width: 98px; padding-left: 0; }
 }
 html[lang="ja"] .landing h1, html[lang="ja"] .landing h2, html[lang="ja"] .landing h3,
 html[lang="zh-Hant"] .landing h1, html[lang="zh-Hant"] .landing h2, html[lang="zh-Hant"] .landing h3 { letter-spacing: -.015em; }
@@ -305,3 +306,6 @@ body:has([data-analytics-consent]) .back-to-top { visibility: hidden; }
 @media (hover: hover) { .back-to-top:hover { background: #e5defa; } }
 @media (prefers-reduced-motion: reduce) { .back-to-top, .back-to-top:active { transform: none; transition: opacity .15s ease !important; } }
 @media (prefers-contrast: more) { .back-to-top { border-color: #1a1a1a; color: #1a1a1a; background: #fff; } }
+
+/* Keep linked support answers clear of the shared sticky navigation. */
+.document details[id] { scroll-margin-top: 150px; }
