@@ -134,4 +134,10 @@ async function main() {
     else console.log("已保留待發佈更新，尚未上載。下次開啟工具可繼續。");
   } finally { input?.close(); }
 }
-main().catch(error=>{console.error("\n"+error.message);process.exitCode=1;});
+main().catch(error=>{
+  console.error("\n"+error.message);
+  if (process.env.OSHI_MATERIALS_LAUNCH_LOG) {
+    try { fs.appendFileSync(process.env.OSHI_MATERIALS_LAUNCH_LOG, `Error: ${error.message}\n`); } catch {}
+  }
+  process.exitCode=1;
+});
