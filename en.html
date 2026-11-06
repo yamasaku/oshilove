@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en" data-language="en" data-fixed-language="en">
 <head>
+  <script>
+    // Redirect legacy GitHub Pages links only; retain the Cloudflare site.
+    if (location.hostname === "yamasaku.github.io" && location.pathname.startsWith("/oshilove/")) {
+      location.replace("https://oshilovepocket.com/en.html" + location.search + location.hash);
+    }
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#FFFDFD">
@@ -8,13 +15,13 @@
   <meta name="keywords" content="OshiLove,OshiPocket,推し活,推し活アプリ,オタ活,思い出記録,ライブ,特典会,チェキ,支出管理,iOSアプリ">
   <meta name="author" content="WONG SUM YI">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-  <link rel="canonical" href="https://yamasaku.github.io/oshilove/en.html">
+  <link rel="canonical" href="https://oshilovepocket.com/en.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OshiLove & OshiPocket">
   <meta property="og:title" content="OshiLove & OshiPocket | Apps for your oshi life">
   <meta property="og:description" content="OshiLove and OshiPocket are private iOS apps for organising oshi memories, plans, photos, events and expenses without creating an account.">
-  <meta property="og:url" content="https://yamasaku.github.io/oshilove/en.html">
-  <meta property="og:image" content="https://yamasaku.github.io/oshilove/social-preview.png">
+  <meta property="og:url" content="https://oshilovepocket.com/en.html">
+  <meta property="og:image" content="https://oshilovepocket.com/social-preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="OshiLove and OshiPocket app preview">
@@ -22,7 +29,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OshiLove & OshiPocket | Apps for your oshi life">
   <meta name="twitter:description" content="OshiLove and OshiPocket are private iOS apps for organising oshi memories, plans, photos, events and expenses without creating an account.">
-  <meta name="twitter:image" content="https://yamasaku.github.io/oshilove/social-preview.png">
+  <meta name="twitter:image" content="https://oshilovepocket.com/social-preview.png">
   <title data-page-title-ja="OshiLove & OshiPocket｜推し活記録アプリ" data-page-title-zh-tw="OshiLove & OshiPocket｜追星記錄 App" data-page-title-en="OshiLove & OshiPocket | Apps for your oshi life">OshiLove & OshiPocket | Apps for your oshi life</title>
   <link rel="icon" href="app-icon.png">
   <link rel="stylesheet" href="styles.css">
@@ -34,27 +41,27 @@
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://yamasaku.github.io/oshilove/#website",
-        "url": "https://yamasaku.github.io/oshilove/",
+        "@id": "https://oshilovepocket.com/#website",
+        "url": "https://oshilovepocket.com/",
         "name": "OshiLove & OshiPocket",
         "alternateName": "Oshi",
         "inLanguage": ["ja", "zh-Hant", "en"]
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://yamasaku.github.io/oshilove/#oshilove",
+        "@id": "https://oshilovepocket.com/#oshilove",
         "name": "OshiLove - 推し活・思い出記録アプリ",
         "alternateName": "OshiLove",
         "operatingSystem": "iOS",
         "applicationCategory": "LifestyleApplication",
         "description": "予定、記念日、日記、写真をひとつにまとめて残せる推し活記録アプリ。",
-        "url": "https://yamasaku.github.io/oshilove/",
+        "url": "https://oshilovepocket.com/",
         "downloadUrl": "https://apps.apple.com/app/id6811063943",
         "sameAs": "https://apps.apple.com/app/id6811063943"
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://yamasaku.github.io/oshilove/#oshipocket",
+        "@id": "https://oshilovepocket.com/#oshipocket",
         "name": "Oshi Pocket - 推し活記録",
         "alternateName": "OshiPocket",
         "operatingSystem": "iOS",
@@ -67,10 +74,10 @@
     ]
   }
   </script>
-  <link rel="alternate" hreflang="ja" href="https://yamasaku.github.io/oshilove/ja.html">
-  <link rel="alternate" hreflang="zh-Hant" href="https://yamasaku.github.io/oshilove/zh-tw.html">
-  <link rel="alternate" hreflang="en" href="https://yamasaku.github.io/oshilove/en.html">
-  <link rel="alternate" hreflang="x-default" href="https://yamasaku.github.io/oshilove/">
+  <link rel="alternate" hreflang="ja" href="https://oshilovepocket.com/ja.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://oshilovepocket.com/zh-tw.html">
+  <link rel="alternate" hreflang="en" href="https://oshilovepocket.com/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://oshilovepocket.com/">
 </head>
 <body class="landing">
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -134,7 +141,7 @@
         <div class="privacy-icon"><svg class="line-icon" aria-hidden="true"><use href="#icon-lock"></use></svg></div>
         <div class="privacy-body">
           <div class="privacy-copy"><h3><span data-lang="ja">アカウント登録不要</span><span data-lang="zh-tw">毋須註冊帳戶</span><span data-lang="en">No account required</span></h3><p><span data-lang="ja">記録は端末内に保存されます</span><span data-lang="zh-tw">記錄儲存在您的裝置內</span><span data-lang="en">Records are stored on your device</span></p></div>
-          <div class="privacy-links"><a href="https://yamasaku.github.io/oshilove/privacy.html">OshiLove <span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy</span></a><a href="https://yamasaku.github.io/oshi-pocket/privacy.html">OshiPocket <span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy</span></a></div>
+          <div class="privacy-links"><a href="https://oshilovepocket.com/privacy.html">OshiLove <span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy</span></a><a href="https://yamasaku.github.io/oshi-pocket/privacy.html">OshiPocket <span data-lang="ja">プライバシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy</span></a></div>
         </div>
       </aside>
     </section>
@@ -166,7 +173,7 @@
 </section>
         <section class="faq-group"><h3><span data-lang="ja">困ったとき</span><span data-lang="zh-tw">疑難排解</span><span data-lang="en">Troubleshooting</span></h3>
 <details><summary><span data-lang="ja">写真が表示されないときは？</span><span data-lang="zh-tw">OshiLove 相片未能顯示怎麼辦？</span><span data-lang="en">Why are my OshiLove photos missing?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><span data-lang="ja">端末の写真アクセス権限と元写真をご確認ください。選択した写真のみを許可している場合は対象写真を追加してください。機種変更後は元写真を新しい端末にも用意し、必要に応じて再接続してください</span><span data-lang="zh-tw">請檢查裝置相片權限及原始相片；如只允許所選相片，請加入需要顯示的相片。換機後亦須將原始相片同步至新裝置，並按需要重新連結</span><span data-lang="en">Check photo permissions and the original images. With limited access, add the photos you want to display. After a device transfer, make the originals available on the new device and reconnect them if needed</span></p></details>
-<details><summary><span data-lang="ja">困ったときはどこから問い合わせできますか？</span><span data-lang="zh-tw">需要協助時可以在哪裏聯絡？</span><span data-lang="en">Where can I get help?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><a href="https://yamasaku.github.io/oshilove/support.html">OshiLove <span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a><span aria-hidden="true"> · </span><a href="https://yamasaku.github.io/oshi-pocket/support.html">OshiPocket <span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></p></details>
+<details><summary><span data-lang="ja">困ったときはどこから問い合わせできますか？</span><span data-lang="zh-tw">需要協助時可以在哪裏聯絡？</span><span data-lang="en">Where can I get help?</span><span aria-hidden="true" class="faq-plus">+</span></summary><p><a href="https://oshilovepocket.com/support.html">OshiLove <span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a><span aria-hidden="true"> · </span><a href="https://yamasaku.github.io/oshi-pocket/support.html">OshiPocket <span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></p></details>
 </section>
       </div>
     </section>
@@ -180,7 +187,7 @@
   <footer class="landing-footer wrap">
     <div class="footer-intro"><a class="landing-brand" href="#home"><span class="footer-icon-pair"><img src="app-icon.png" width="32" height="32" alt=""><img src="oshipocket-icon.webp" width="32" height="32" alt=""></span><span>OshiLove <span class="brand-dot">＋</span> OshiPocket</span></a></div>
     <nav class="footer-products" aria-label="App policies and support">
-      <div class="footer-product"><strong>OshiLove</strong><a href="https://yamasaku.github.io/oshilove/privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy Policy</span></a><a href="https://yamasaku.github.io/oshilove/support.html"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></div>
+      <div class="footer-product"><strong>OshiLove</strong><a href="https://oshilovepocket.com/privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy Policy</span></a><a href="https://oshilovepocket.com/support.html"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></div>
       <div class="footer-product"><strong>OshiPocket</strong><a href="https://yamasaku.github.io/oshi-pocket/privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="zh-tw">私隱政策</span><span data-lang="en">Privacy Policy</span></a><a href="https://yamasaku.github.io/oshi-pocket/support.html"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></div>
       <div class="footer-product"><strong><span data-lang="ja">その他</span><span data-lang="zh-tw">其他</span><span data-lang="en">More</span></strong><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"><span data-lang="ja">利用規約</span><span data-lang="zh-tw">使用條款</span><span data-lang="en">Terms</span></a><a href="#download">App Store</a></div>
     </nav>
