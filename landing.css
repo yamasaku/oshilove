@@ -496,3 +496,38 @@ html:lang(ja) .brand-hero .hero-content h1 { letter-spacing: 0; }
   .landing-nav .nav-sections a { padding-inline: 5px; white-space: nowrap; }
   .landing-nav .nav-controls { gap: 10px; }
 }
+
+/* The dated cover identifies the series; the actual artwork is on its distribution post. */
+.materials-page { background: var(--paper); }
+.materials { max-width: 1040px; padding-block: clamp(38px, 7vw, 84px) 28px; }
+.materials-intro { margin-bottom: clamp(26px, 5vw, 54px); }
+.materials-intro h1 { margin: 0; font-size: clamp(2.25rem, 7vw, 4rem); line-height: 1.18; }
+.materials-intro p, .materials-note { color: #62596e; }
+.materials-intro p { margin: 12px 0 0; }
+.materials h2 { margin: 0 0 14px; font-size: 1.3rem; color: #2b2237; }
+.material-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.material-card { min-width: 0; border: 1px solid var(--border); border-radius: 24px; background: #fff; overflow: hidden; }
+.material-cover { position: relative; display: grid; place-content: center; min-height: 125px; aspect-ratio: 2.2; background: #fae9ef; color: #684258; text-align: center; }
+.material-lilac .material-cover { background: #eee9fa; color: #554675; }
+.material-peach .material-cover { background: #faede5; color: #754e43; }
+.material-cover span { line-height: 1; font-size: 1.3rem; }
+.material-cover strong { font-size: clamp(1.65rem, 5vw, 2.55rem); font-variant-numeric: tabular-nums; letter-spacing: -.055em; }
+.material-card-body { padding: 16px; }
+.material-card h3 { margin: 0 0 12px; color: #2b2237; font-size: 1.15rem; }
+.material-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+.material-actions .pill-button { gap: 7px; padding: 8px 12px; min-height: 44px; touch-action: manipulation; }
+.material-actions .pill-button:active { opacity: .72; }
+.material-actions .quiet-link { display: inline-flex; align-items: center; min-height: 44px; }
+.materials-note { margin: 20px 0 0; font-size: .875rem; }
+.materials-note a { display: inline-block; }
+.nav-sections a[aria-current="page"] { color: #514076; background: #eee9ff; }
+@media (max-width: 700px) {
+  .material-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+}
+@media (max-width: 460px) {
+  .material-grid { grid-template-columns: minmax(0, 1fr); }
+  .material-card { display: grid; grid-template-columns: minmax(76px, 30%) minmax(0, 1fr); }
+  .material-cover { height: 100%; aspect-ratio: auto; }
+  .material-card-body { padding: 12px; }
+  .material-card h3 { margin-bottom: 6px; }
+}
