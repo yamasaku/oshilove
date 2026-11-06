@@ -24,10 +24,10 @@
 .materials .material-result-heading h2 { margin: 0; }
 #material-count { margin: 0 0 14px; font-size: .875rem; color: #62596e; }
 .catalog-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
-.catalog-card { overflow: hidden; border: 1px solid var(--border); border-radius: 20px; background: #fff; min-width: 0; }
-.catalog-cover { width: 100%; height: 210px; padding: 16px; border: 0; background: #68606b; display: grid; place-items: center; cursor: pointer; }
+.catalog-card { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border); border-radius: 20px; background: #fff; min-width: 0; }
+.catalog-cover { flex: 0 0 auto; width: 100%; height: 210px; padding: 16px; border: 0; background: #68606b; display: grid; place-items: center; cursor: pointer; }
 .catalog-cover img { width: 100%; height: 100%; object-fit: contain; min-height: 0; }
-.catalog-card-body { padding: 14px; }
+.catalog-card-body { flex: 1; display: flex; flex-direction: column; padding: 14px; }
 .catalog-card h3 { margin: 0; font-size: 1.05rem; line-height: 1.4; color: #2b2237; }
 .catalog-meta { margin: 7px 0; font-size: .75rem; color: #62596e; }
 .catalog-colors { display: flex; flex-wrap: wrap; gap: 4px; min-height: 18px; margin: 8px 0 12px; }
@@ -35,7 +35,7 @@
 .color-pink { background: #eda5c3; }.color-red { background: #e97578; }.color-orange { background: #edb374; }
 .color-yellow { background: #e8df87; }.color-green { background: #9dc9ad; }.color-blue { background: #92b9e1; }
 .color-purple { background: #bfa4de; }.color-white { background: #fff; }.color-black { background: #373039; }
-.catalog-card .pill-button { min-height: 44px; width: 100%; padding: 9px 12px; border: 0; font: inherit; font-size: .875rem; cursor: pointer; }
+.catalog-card .pill-button { margin-top: auto; min-height: 44px; width: 100%; padding: 9px 12px; border: 0; font: inherit; font-size: .875rem; cursor: pointer; }
 .materials-empty { padding: 24px; background: #f6f2fb; border-radius: 18px; }
 .materials [hidden] { display: none; }
 #material-dialog { width: min(740px,calc(100% - 24px)); max-height: 90vh; max-height: 90svh; margin: auto; padding: 18px; border: 1px solid var(--border); border-radius: 24px; background: #fff; color: var(--ink); overscroll-behavior: contain; }

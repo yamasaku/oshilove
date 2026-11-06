@@ -288,7 +288,7 @@
     },
     {
       "id": "oshi-day-stamps",
-      "title": "いい推しの日 スタンプ",
+      "title": "いい推しの日",
       "type": "stamp",
       "theme": "anniversary",
       "eventDate": "11-04",
@@ -345,7 +345,7 @@
     },
     {
       "id": "oshi-story-frames",
-      "title": "推ししか勝たん フレーム",
+      "title": "推ししか勝たん",
       "type": "frame",
       "theme": "daily",
       "eventDate": null,
