@@ -1,4 +1,4 @@
-import {matches, matchingVariants} from "./resources-core.mjs";
+import {matches, matchingVariants, preferredVariant} from "./resources-core.mjs";
 import {createPhotoComposer} from "./photo-composer.js";
 
 const text = {
@@ -63,11 +63,6 @@ function button(content, handler, className) {
 }
 function filtersWithoutDate() { return {...state,date:""}; }
 function seriesTitle(item) { return item.titles?.[document.documentElement.dataset.language] || item.title; }
-function preferredVariant(variants) {
-  return variants.find(variant=>variant.color==="white")
-    || variants.find(variant=>variant.color==="pink")
-    || variants[0];
-}
 function readUrl() {
   const params = new URLSearchParams(location.search);
   state.query = params.get("q") || "";
@@ -144,7 +139,7 @@ function renderResults() {
   result.replaceChildren();
   for(const item of selected) {
     const variants = matchingVariants(item,state.color);
-    const coverVariant = preferredVariant(variants);
+    const coverVariant = preferredVariant(variants, item.coverVariantId);
     const card = node("article","catalog-card");
     const cover = button("",()=>openSeries(item,cover),"catalog-cover");
     cover.setAttribute("aria-label",t.browse+" · "+seriesTitle(item));
@@ -177,7 +172,7 @@ function renderDialog(item) {
   dialog.classList.remove("is-photo-editor");
   const t = lang();
   const variants = matchingVariants(item,state.color);
-  const variant = variants.find(v=>v.id===state.variant)||preferredVariant(variants);
+  const variant = variants.find(v=>v.id===state.variant)||preferredVariant(variants, item.coverVariantId);
   if(!variant) return;
   state.variant = variant.id;
   $("#material-dialog-title").textContent = seriesTitle(item);

@@ -3,6 +3,7 @@ import path from 'node:path';
 import {parse,serialize,attr,set,all,one,tag,remove,inner,append,escape} from './html.mjs';
 import {pages,languages,pagePath,identify} from '../locale-routes.js';
 import {localeRows} from '../radar-assets/i18n.js';
+import {preferredVariant} from '../resources-core.mjs';
 const origin='https://oshilovepocket.com';
 const info={
  '':{
@@ -37,7 +38,8 @@ export function buildSEO(root,output,catalog){
   if(page==='resources'){
    const target=one(doc,n=>attr(n,'id')==='material-results');
    inner(target,catalog.items.map(item=>{
-    const cover=item.variants.find(v=>v.color==='white')||item.variants.find(v=>v.color==='pink')||item.variants[0],title=item.titles?.[lang]||item.title;
+    const cover = preferredVariant(item.variants, item.coverVariantId);
+    const title = item.titles?.[lang] || item.title;
     const kind=({ja:{frame:'フレーム',stamp:'スタンプ'},'zh-tw':{frame:'相框',stamp:'貼圖'},en:{frame:'Frame',stamp:'Stamp'}})[lang][item.type];
     return `<article class="catalog-card"><a class="catalog-cover" href="${route}?series=${encodeURIComponent(item.id)}"><img src="${cover.preview}" width="${cover.width}" height="${cover.height}" alt="${escape(title)}" loading="lazy"></a><div class="catalog-card-body"><h3>${escape(title)}</h3><p>${kind} · ${item.variants.length} PNG${item.eventDate?' · '+item.eventDate.replace('-','/'):''}</p><a class="pill-button" href="${item.zip.url}" download>${({ja:'全 PNG を保存','zh-tw':'下載整套 PNG',en:'Download all PNGs'})[lang]}</a></div></article>`;
    }).join(''));

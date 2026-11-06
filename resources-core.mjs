@@ -19,3 +19,10 @@ export function matches(item, filters) {
 export function matchingVariants(item, color) {
   return item.variants.filter(variant => !color || variant.color === color);
 }
+
+export function preferredVariant(variants, coverVariantId) {
+  return variants.find(variant => variant.id && variant.id === coverVariantId)
+    || variants.find(variant => variant.color === "white")
+    || variants.find(variant => variant.color === "pink")
+    || variants[0];
+}
