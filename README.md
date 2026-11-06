@@ -1,58 +1,36 @@
-# OshiLove & OshiPocket website
+# OshiLove & Oshi Pocket website
 
-Static, multilingual product website for OshiLove and OshiPocket. The existing
-OshiLove privacy policy and support pages keep their original URLs and content.
+Official website: https://oshilovepocket.com
 
-## Pages
+The site supports Japanese, Traditional Chinese and English, with shared privacy and support pages. Static pages are served by Cloudflare Workers Assets. The resources page uses an R2 binding for original PNG and ZIP downloads.
 
-- `index.html` — shared product landing page
-- `landing.css` — landing page layout, pastel colour variables and responsive styles
-- `privacy.html` — privacy policy for App Store / Google Play
-- `support.html` — support page and frequently asked questions
+## Resources
 
-The site defaults to Japanese and supports Traditional Chinese and English. It uses Google Analytics 4 with Consent Mode: the Google tag loads only after consent is granted. No analytics requests or cookieless measurements are sent before consent or when declined. Withdrawing consent disables collection, clears accessible GA cookies and reloads the page to remove the tag. Advertising storage and personalisation remain disabled. It uses no external fonts.
+- `resources.html`, `resources.css`, `resources.js`: search, filters, annual-occasion calendar and preview dialog.
+- `resources-core.mjs`: shared filtering logic.
+- `resources-data.json`: public catalogue and versioned download paths.
+- `material-previews/`: small WebP previews; original PNG and ZIP files stay in R2.
+- `materials-worker.js`: streams only downloads listed in the public catalogue. The R2 bucket has no public listing endpoint.
 
-The landing page also includes a side-by-side app chooser and a privacy-focused
-summary so visitors can quickly understand which app fits their needs and how
-their records are stored.
+Original materials are maintained locally in `D:\X material`. **Ignore every source file or directory whose path contains `-oshideco`, and leave those original files unchanged.** Do not include them in previews, the public catalogue or ZIP downloads. `.stamp` authoring files are also excluded.
 
-## Product screenshots
+When adding resources, use the source filenames to identify colours, preserve original PNG bytes and transparency, and assign calendar dates to the material's annual occasion rather than its upload date. Resources without a specific occasion have `eventDate: null`. Upload new PNG and ZIP objects before publishing their catalogue entries. Object paths include content hashes and can be cached immutably.
 
-The landing page uses real portrait screenshots supplied for both apps:
+## Build and deploy
 
-- `oshilove-home.webp`
-- `oshilove-profile.webp`
-- `oshipocket-stats.webp`
+Requires Node.js and Wrangler. Run from this directory:
 
-They are presented inside the reusable `.device` frame without cropping app
-controls. Optimised WebP files are loaded on the page; the supplied PNG files
-remain as source assets. New screens should keep the same 9:19.5 ratio and
-descriptive alt text.
+```powershell
+node --test tests/materials.test.mjs
+node tools/build-site.mjs
+npx wrangler versions upload --config wrangler.jsonc --profile oshilove
+npx wrangler versions deploy <VERSION_ID>@100% --yes --config wrangler.jsonc --profile oshilove
+```
 
-The App Store buttons use app IDs verified from App Store Connect. Regional
-availability has not been confirmed, so the page does not claim either app is
-currently available in every storefront. The footer keeps separate Privacy and
-Support URLs for OshiLove and OshiPocket, matching their submitted Apple URLs.
+The build recreates `.dist` using an explicit list of public files. Worker source, tests, local work files and original material files are excluded. Deploy using this Worker's configuration so the `MATERIALS` R2 binding and `/materials/*` routing are retained; a static-only deployment would disable downloads.
 
-`robots.txt`, `sitemap.xml`, canonical URLs, Open Graph large-image metadata and
-JSON-LD are included for search and link previews. Update the sitemap `lastmod`
-values when publishing meaningful content changes.
+The Worker uses the `oshilove-materials` bucket in the OshiLove Cloudflare account. Authentication belongs to the local Wrangler profile and is not stored in this repository.
 
-## Before publishing
+After deploying, check search, combined filters, calendar selection and preview downloads in all three languages. Confirm PNG/ZIP responses return the expected content type, attachment filename and size. Unlisted object paths must return 404.
 
-Support requests use the public GitHub Issues page. Users should be reminded not to attach private photos or personal information.
-
-## Suggested GitHub Pages setup
-
-1. Create a public repository named `oshilove` under the `yamasaku` GitHub account.
-2. Copy the contents of this directory to the repository root.
-3. In GitHub, open **Settings → Pages**.
-4. Select **Deploy from a branch**, branch `main`, folder `/ (root)`.
-5. The expected website URL will be `https://yamasaku.github.io/oshilove/`.
-
-Suggested App Store URLs:
-
-- Privacy Policy: `https://yamasaku.github.io/oshilove/privacy.html`
-- Support URL: `https://yamasaku.github.io/oshilove/support.html`
-
-Copyright: `2026 WONG SUM YI`
+The site uses bundled fonts. Google Analytics loads only after the visitor accepts analytics; no analytics requests are sent before a choice or after refusal. Advertising storage and personalisation remain disabled.

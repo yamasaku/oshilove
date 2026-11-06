@@ -1,0 +1,956 @@
+{
+  "items": [
+    {
+      "id": "oshi-day-frames",
+      "title": "いい推しの日",
+      "type": "frame",
+      "theme": "anniversary",
+      "eventDate": "11-04",
+      "variants": [
+        {
+          "id": "01-afea345502b2",
+          "color": "green",
+          "label": "green",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 117096,
+          "preview": "/material-previews/oshi-day-frames-01-afea345502b2.webp",
+          "url": "/materials/oshi-day-frames/01-afea345502b2.png",
+          "downloadName": "oshi-day-frames-green-01.png"
+        },
+        {
+          "id": "02-685d3599ba4a",
+          "color": "red",
+          "label": "red",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 104785,
+          "preview": "/material-previews/oshi-day-frames-02-685d3599ba4a.webp",
+          "url": "/materials/oshi-day-frames/02-685d3599ba4a.png",
+          "downloadName": "oshi-day-frames-red-02.png"
+        },
+        {
+          "id": "03-afd215779499",
+          "color": "orange",
+          "label": "orange",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 114228,
+          "preview": "/material-previews/oshi-day-frames-03-afd215779499.webp",
+          "url": "/materials/oshi-day-frames/03-afd215779499.png",
+          "downloadName": "oshi-day-frames-orange-03.png"
+        },
+        {
+          "id": "04-8a85eced7d4e",
+          "color": "black",
+          "label": "black",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 100003,
+          "preview": "/material-previews/oshi-day-frames-04-8a85eced7d4e.webp",
+          "url": "/materials/oshi-day-frames/04-8a85eced7d4e.png",
+          "downloadName": "oshi-day-frames-black-04.png"
+        },
+        {
+          "id": "05-dd71f74d72d3",
+          "color": "yellow",
+          "label": "yellow",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 118698,
+          "preview": "/material-previews/oshi-day-frames-05-dd71f74d72d3.webp",
+          "url": "/materials/oshi-day-frames/05-dd71f74d72d3.png",
+          "downloadName": "oshi-day-frames-yellow-05.png"
+        },
+        {
+          "id": "06-016a6ef30aad",
+          "color": "purple",
+          "label": "purple",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 108891,
+          "preview": "/material-previews/oshi-day-frames-06-016a6ef30aad.webp",
+          "url": "/materials/oshi-day-frames/06-016a6ef30aad.png",
+          "downloadName": "oshi-day-frames-purple-06.png"
+        },
+        {
+          "id": "07-9046accab52f",
+          "color": "blue",
+          "label": "blue",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 122950,
+          "preview": "/material-previews/oshi-day-frames-07-9046accab52f.webp",
+          "url": "/materials/oshi-day-frames/07-9046accab52f.png",
+          "downloadName": "oshi-day-frames-blue-07.png"
+        },
+        {
+          "id": "08-11a3faaf9cea",
+          "color": "pink",
+          "label": "pink",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 120043,
+          "preview": "/material-previews/oshi-day-frames-08-11a3faaf9cea.webp",
+          "url": "/materials/oshi-day-frames/08-11a3faaf9cea.png",
+          "downloadName": "oshi-day-frames-pink-08.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/oshi-day-frames/all-7de8c5e1c909.zip",
+        "bytes": 867331
+      }
+    },
+    {
+      "id": "iiotoko-frames",
+      "title": "いい男の日",
+      "type": "frame",
+      "theme": "anniversary",
+      "eventDate": "11-05",
+      "variants": [
+        {
+          "id": "01-53f4e7c9398d",
+          "color": "orange",
+          "label": "orange",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 136965,
+          "preview": "/material-previews/iiotoko-frames-01-53f4e7c9398d.webp",
+          "url": "/materials/iiotoko-frames/01-53f4e7c9398d.png",
+          "downloadName": "iiotoko-frames-orange-01.png"
+        },
+        {
+          "id": "02-30a20ece5009",
+          "color": "yellow",
+          "label": "yellow",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 137987,
+          "preview": "/material-previews/iiotoko-frames-02-30a20ece5009.webp",
+          "url": "/materials/iiotoko-frames/02-30a20ece5009.png",
+          "downloadName": "iiotoko-frames-yellow-02.png"
+        },
+        {
+          "id": "03-26d3260c356e",
+          "color": "green",
+          "label": "green",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 141722,
+          "preview": "/material-previews/iiotoko-frames-03-26d3260c356e.webp",
+          "url": "/materials/iiotoko-frames/03-26d3260c356e.png",
+          "downloadName": "iiotoko-frames-green-03.png"
+        },
+        {
+          "id": "04-41e695631451",
+          "color": "purple",
+          "label": "purple",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 144951,
+          "preview": "/material-previews/iiotoko-frames-04-41e695631451.webp",
+          "url": "/materials/iiotoko-frames/04-41e695631451.png",
+          "downloadName": "iiotoko-frames-purple-04.png"
+        },
+        {
+          "id": "05-98a9ae99549c",
+          "color": "red",
+          "label": "red",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 132356,
+          "preview": "/material-previews/iiotoko-frames-05-98a9ae99549c.webp",
+          "url": "/materials/iiotoko-frames/05-98a9ae99549c.png",
+          "downloadName": "iiotoko-frames-red-05.png"
+        },
+        {
+          "id": "06-c5af4a085458",
+          "color": "pink",
+          "label": "pink",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 164677,
+          "preview": "/material-previews/iiotoko-frames-06-c5af4a085458.webp",
+          "url": "/materials/iiotoko-frames/06-c5af4a085458.png",
+          "downloadName": "iiotoko-frames-pink-06.png"
+        },
+        {
+          "id": "07-caa33ab5a955",
+          "color": "blue",
+          "label": "blue",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 144477,
+          "preview": "/material-previews/iiotoko-frames-07-caa33ab5a955.webp",
+          "url": "/materials/iiotoko-frames/07-caa33ab5a955.png",
+          "downloadName": "iiotoko-frames-blue-07.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/iiotoko-frames/all-202aa19379a1.zip",
+        "bytes": 970662
+      }
+    },
+    {
+      "id": "iionna-frames",
+      "title": "いい女の日",
+      "type": "frame",
+      "theme": "anniversary",
+      "eventDate": "11-07",
+      "variants": [
+        {
+          "id": "01-ed868136c143",
+          "color": "orange",
+          "label": "orange",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 139449,
+          "preview": "/material-previews/iionna-frames-01-ed868136c143.webp",
+          "url": "/materials/iionna-frames/01-ed868136c143.png",
+          "downloadName": "iionna-frames-orange-01.png"
+        },
+        {
+          "id": "02-96f1ffb4ba2a",
+          "color": "yellow",
+          "label": "yellow",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 140489,
+          "preview": "/material-previews/iionna-frames-02-96f1ffb4ba2a.webp",
+          "url": "/materials/iionna-frames/02-96f1ffb4ba2a.png",
+          "downloadName": "iionna-frames-yellow-02.png"
+        },
+        {
+          "id": "03-6a8224b04691",
+          "color": "green",
+          "label": "green",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 142063,
+          "preview": "/material-previews/iionna-frames-03-6a8224b04691.webp",
+          "url": "/materials/iionna-frames/03-6a8224b04691.png",
+          "downloadName": "iionna-frames-green-03.png"
+        },
+        {
+          "id": "04-0fc307f9bf7c",
+          "color": "purple",
+          "label": "purple",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 149693,
+          "preview": "/material-previews/iionna-frames-04-0fc307f9bf7c.webp",
+          "url": "/materials/iionna-frames/04-0fc307f9bf7c.png",
+          "downloadName": "iionna-frames-purple-04.png"
+        },
+        {
+          "id": "05-c22ff1fe8257",
+          "color": "red",
+          "label": "red",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 133741,
+          "preview": "/material-previews/iionna-frames-05-c22ff1fe8257.webp",
+          "url": "/materials/iionna-frames/05-c22ff1fe8257.png",
+          "downloadName": "iionna-frames-red-05.png"
+        },
+        {
+          "id": "06-7ad8c8237677",
+          "color": "pink",
+          "label": "pink",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 165127,
+          "preview": "/material-previews/iionna-frames-06-7ad8c8237677.webp",
+          "url": "/materials/iionna-frames/06-7ad8c8237677.png",
+          "downloadName": "iionna-frames-pink-06.png"
+        },
+        {
+          "id": "07-ff30ea1e4da7",
+          "color": "blue",
+          "label": "blue",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 147308,
+          "preview": "/material-previews/iionna-frames-07-ff30ea1e4da7.webp",
+          "url": "/materials/iionna-frames/07-ff30ea1e4da7.png",
+          "downloadName": "iionna-frames-blue-07.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/iionna-frames/all-0460b5e7223a.zip",
+        "bytes": 985664
+      }
+    },
+    {
+      "id": "oshi-day-stamps",
+      "title": "いい推しの日 スタンプ",
+      "type": "stamp",
+      "theme": "anniversary",
+      "eventDate": "11-04",
+      "variants": [
+        {
+          "id": "01-8cd3fbd50029",
+          "color": "purple",
+          "label": "purple",
+          "width": 1000,
+          "height": 740,
+          "bytes": 127310,
+          "preview": "/material-previews/oshi-day-stamps-01-8cd3fbd50029.webp",
+          "url": "/materials/oshi-day-stamps/01-8cd3fbd50029.png",
+          "downloadName": "oshi-day-stamps-purple-01.png"
+        },
+        {
+          "id": "02-fc17469d830d",
+          "color": "blue",
+          "label": "blue",
+          "width": 1000,
+          "height": 740,
+          "bytes": 131401,
+          "preview": "/material-previews/oshi-day-stamps-02-fc17469d830d.webp",
+          "url": "/materials/oshi-day-stamps/02-fc17469d830d.png",
+          "downloadName": "oshi-day-stamps-blue-02.png"
+        },
+        {
+          "id": "03-dc99e1c1b980",
+          "color": "pink",
+          "label": "pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 130899,
+          "preview": "/material-previews/oshi-day-stamps-03-dc99e1c1b980.webp",
+          "url": "/materials/oshi-day-stamps/03-dc99e1c1b980.png",
+          "downloadName": "oshi-day-stamps-pink-03.png"
+        },
+        {
+          "id": "04-b0c67607e1e9",
+          "color": "white",
+          "label": "white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 152258,
+          "preview": "/material-previews/oshi-day-stamps-04-b0c67607e1e9.webp",
+          "url": "/materials/oshi-day-stamps/04-b0c67607e1e9.png",
+          "downloadName": "oshi-day-stamps-white-04.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/oshi-day-stamps/all-8c0a99af0ff6.zip",
+        "bytes": 538055
+      }
+    },
+    {
+      "id": "oshi-story-frames",
+      "title": "推ししか勝たん フレーム",
+      "type": "frame",
+      "theme": "daily",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-2591f9dda916",
+          "color": "pink",
+          "label": "推ししか勝ったん",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 116711,
+          "preview": "/material-previews/oshi-story-frames-01-2591f9dda916.webp",
+          "url": "/materials/oshi-story-frames/01-2591f9dda916.png",
+          "downloadName": "oshi-story-frames-pink-01.png"
+        },
+        {
+          "id": "02-2edbe1c0ad41",
+          "color": "pink",
+          "label": "今日も大好き",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 119907,
+          "preview": "/material-previews/oshi-story-frames-02-2edbe1c0ad41.webp",
+          "url": "/materials/oshi-story-frames/02-2edbe1c0ad41.png",
+          "downloadName": "oshi-story-frames-pink-02.png"
+        },
+        {
+          "id": "03-4226983990c0",
+          "color": "white",
+          "label": "すき更新中",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 70140,
+          "preview": "/material-previews/oshi-story-frames-03-4226983990c0.webp",
+          "url": "/materials/oshi-story-frames/03-4226983990c0.png",
+          "downloadName": "oshi-story-frames-white-03.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/oshi-story-frames/all-53878732743c.zip",
+        "bytes": 290500
+      }
+    },
+    {
+      "id": "halloween-1",
+      "title": "Halloween 01",
+      "type": "stamp",
+      "theme": "halloween",
+      "eventDate": "10-31",
+      "variants": [
+        {
+          "id": "01-99f3d08cbeeb",
+          "color": "blue",
+          "label": "Halloween1 blue",
+          "width": 1000,
+          "height": 740,
+          "bytes": 137107,
+          "preview": "/material-previews/halloween-1-01-99f3d08cbeeb.webp",
+          "url": "/materials/halloween-1/01-99f3d08cbeeb.png",
+          "downloadName": "halloween-1-blue-01.png"
+        },
+        {
+          "id": "02-06951a32fe4c",
+          "color": "orange",
+          "label": "Halloween1 orange",
+          "width": 1000,
+          "height": 740,
+          "bytes": 142027,
+          "preview": "/material-previews/halloween-1-02-06951a32fe4c.webp",
+          "url": "/materials/halloween-1/02-06951a32fe4c.png",
+          "downloadName": "halloween-1-orange-02.png"
+        },
+        {
+          "id": "03-700af20a18ce",
+          "color": "pink",
+          "label": "Halloween1 pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 140554,
+          "preview": "/material-previews/halloween-1-03-700af20a18ce.webp",
+          "url": "/materials/halloween-1/03-700af20a18ce.png",
+          "downloadName": "halloween-1-pink-03.png"
+        },
+        {
+          "id": "04-c9b95e922e91",
+          "color": "white",
+          "label": "Halloween1 white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 40020,
+          "preview": "/material-previews/halloween-1-04-c9b95e922e91.webp",
+          "url": "/materials/halloween-1/04-c9b95e922e91.png",
+          "downloadName": "halloween-1-white-04.png"
+        },
+        {
+          "id": "05-14172874f5d5",
+          "color": "white",
+          "label": "Halloween1",
+          "width": 1000,
+          "height": 740,
+          "bytes": 131327,
+          "preview": "/material-previews/halloween-1-05-14172874f5d5.webp",
+          "url": "/materials/halloween-1/05-14172874f5d5.png",
+          "downloadName": "halloween-1-white-05.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/halloween-1/all-f6c59bd235ac.zip",
+        "bytes": 588137
+      }
+    },
+    {
+      "id": "halloween-2",
+      "title": "Halloween 02",
+      "type": "stamp",
+      "theme": "halloween",
+      "eventDate": "10-31",
+      "variants": [
+        {
+          "id": "01-709357abb952",
+          "color": "blue",
+          "label": "Halloween2 blue",
+          "width": 1000,
+          "height": 740,
+          "bytes": 143617,
+          "preview": "/material-previews/halloween-2-01-709357abb952.webp",
+          "url": "/materials/halloween-2/01-709357abb952.png",
+          "downloadName": "halloween-2-blue-01.png"
+        },
+        {
+          "id": "02-64bbd438b076",
+          "color": "orange",
+          "label": "Halloween2 orange",
+          "width": 1000,
+          "height": 740,
+          "bytes": 146775,
+          "preview": "/material-previews/halloween-2-02-64bbd438b076.webp",
+          "url": "/materials/halloween-2/02-64bbd438b076.png",
+          "downloadName": "halloween-2-orange-02.png"
+        },
+        {
+          "id": "03-b0986019278b",
+          "color": "pink",
+          "label": "Halloween2 pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 148765,
+          "preview": "/material-previews/halloween-2-03-b0986019278b.webp",
+          "url": "/materials/halloween-2/03-b0986019278b.png",
+          "downloadName": "halloween-2-pink-03.png"
+        },
+        {
+          "id": "04-b4c2afac6cea",
+          "color": "white",
+          "label": "Halloween2 white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 35734,
+          "preview": "/material-previews/halloween-2-04-b4c2afac6cea.webp",
+          "url": "/materials/halloween-2/04-b4c2afac6cea.png",
+          "downloadName": "halloween-2-white-04.png"
+        },
+        {
+          "id": "05-932054601178",
+          "color": "white",
+          "label": "Halloween2",
+          "width": 1000,
+          "height": 740,
+          "bytes": 122251,
+          "preview": "/material-previews/halloween-2-05-932054601178.webp",
+          "url": "/materials/halloween-2/05-932054601178.png",
+          "downloadName": "halloween-2-white-05.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/halloween-2/all-aedfb266b03a.zip",
+        "bytes": 595139
+      }
+    },
+    {
+      "id": "halloween-3",
+      "title": "Halloween 03",
+      "type": "stamp",
+      "theme": "halloween",
+      "eventDate": "10-31",
+      "variants": [
+        {
+          "id": "01-56db7196a8cb",
+          "color": "orange",
+          "label": "Halloween 3 orange",
+          "width": 1000,
+          "height": 740,
+          "bytes": 150540,
+          "preview": "/material-previews/halloween-3-01-56db7196a8cb.webp",
+          "url": "/materials/halloween-3/01-56db7196a8cb.png",
+          "downloadName": "halloween-3-orange-01.png"
+        },
+        {
+          "id": "02-9c343bf3315a",
+          "color": "pink",
+          "label": "Halloween 3 pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 155888,
+          "preview": "/material-previews/halloween-3-02-9c343bf3315a.webp",
+          "url": "/materials/halloween-3/02-9c343bf3315a.png",
+          "downloadName": "halloween-3-pink-02.png"
+        },
+        {
+          "id": "03-205b80f0546b",
+          "color": "white",
+          "label": "Halloween 3 white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 39500,
+          "preview": "/material-previews/halloween-3-03-205b80f0546b.webp",
+          "url": "/materials/halloween-3/03-205b80f0546b.png",
+          "downloadName": "halloween-3-white-03.png"
+        },
+        {
+          "id": "04-2847fd1de427",
+          "color": "white",
+          "label": "Halloween 3",
+          "width": 1000,
+          "height": 740,
+          "bytes": 132423,
+          "preview": "/material-previews/halloween-3-04-2847fd1de427.webp",
+          "url": "/materials/halloween-3/04-2847fd1de427.png",
+          "downloadName": "halloween-3-white-04.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/halloween-3/all-87aa833da7c1.zip",
+        "bytes": 475922
+      }
+    },
+    {
+      "id": "suki-toutoi",
+      "title": "すき・尊い",
+      "type": "stamp",
+      "theme": "daily",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-12dcde98392d",
+          "color": "white",
+          "label": "~すき尊い スタンプ~ 2",
+          "width": 1000,
+          "height": 740,
+          "bytes": 95284,
+          "preview": "/material-previews/suki-toutoi-01-12dcde98392d.webp",
+          "url": "/materials/suki-toutoi/01-12dcde98392d.png",
+          "downloadName": "suki-toutoi-white-01.png"
+        },
+        {
+          "id": "02-a1bee0d42864",
+          "color": "blue",
+          "label": "~すき尊い スタンプ~ BLUE",
+          "width": 1000,
+          "height": 740,
+          "bytes": 543070,
+          "preview": "/material-previews/suki-toutoi-02-a1bee0d42864.webp",
+          "url": "/materials/suki-toutoi/02-a1bee0d42864.png",
+          "downloadName": "suki-toutoi-blue-02.png"
+        },
+        {
+          "id": "03-f317387cbd31",
+          "color": "pink",
+          "label": "~すき尊い スタンプ~ PINK",
+          "width": 1000,
+          "height": 740,
+          "bytes": 527623,
+          "preview": "/material-previews/suki-toutoi-03-f317387cbd31.webp",
+          "url": "/materials/suki-toutoi/03-f317387cbd31.png",
+          "downloadName": "suki-toutoi-pink-03.png"
+        },
+        {
+          "id": "04-8916dbf4d5e4",
+          "color": "purple",
+          "label": "~すき尊い スタンプ~ PURPLE",
+          "width": 1000,
+          "height": 740,
+          "bytes": 543822,
+          "preview": "/material-previews/suki-toutoi-04-8916dbf4d5e4.webp",
+          "url": "/materials/suki-toutoi/04-8916dbf4d5e4.png",
+          "downloadName": "suki-toutoi-purple-04.png"
+        },
+        {
+          "id": "14-77957de7a417",
+          "color": "white",
+          "label": "~すき尊い スタンプ~",
+          "width": 1000,
+          "height": 740,
+          "bytes": 199424,
+          "preview": "/material-previews/suki-toutoi-14-77957de7a417.webp",
+          "url": "/materials/suki-toutoi/14-77957de7a417.png",
+          "downloadName": "suki-toutoi-white-14.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/suki-toutoi/all-40f18314c750.zip",
+        "bytes": 1887887
+      }
+    },
+    {
+      "id": "vampire",
+      "title": "吸血鬼",
+      "type": "stamp",
+      "theme": "halloween",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-a9bd1c0cb143",
+          "color": "black",
+          "label": "吸血鬼 black",
+          "width": 1000,
+          "height": 740,
+          "bytes": 135154,
+          "preview": "/material-previews/vampire-01-a9bd1c0cb143.webp",
+          "url": "/materials/vampire/01-a9bd1c0cb143.png",
+          "downloadName": "vampire-black-01.png"
+        },
+        {
+          "id": "02-55a613ec4142",
+          "color": "pink",
+          "label": "吸血鬼 pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 146397,
+          "preview": "/material-previews/vampire-02-55a613ec4142.webp",
+          "url": "/materials/vampire/02-55a613ec4142.png",
+          "downloadName": "vampire-pink-02.png"
+        },
+        {
+          "id": "03-80d17c3da4c6",
+          "color": "red",
+          "label": "吸血鬼 red",
+          "width": 1000,
+          "height": 740,
+          "bytes": 130240,
+          "preview": "/material-previews/vampire-03-80d17c3da4c6.webp",
+          "url": "/materials/vampire/03-80d17c3da4c6.png",
+          "downloadName": "vampire-red-03.png"
+        },
+        {
+          "id": "04-710822dcdeab",
+          "color": "white",
+          "label": "吸血鬼 white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 38830,
+          "preview": "/material-previews/vampire-04-710822dcdeab.webp",
+          "url": "/materials/vampire/04-710822dcdeab.png",
+          "downloadName": "vampire-white-04.png"
+        },
+        {
+          "id": "05-2ee6d04bef8a",
+          "color": "white",
+          "label": "吸血鬼",
+          "width": 1000,
+          "height": 740,
+          "bytes": 126363,
+          "preview": "/material-previews/vampire-05-2ee6d04bef8a.webp",
+          "url": "/materials/vampire/05-2ee6d04bef8a.png",
+          "downloadName": "vampire-white-05.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/vampire/all-0052e099aa7c.zip",
+        "bytes": 574006
+      }
+    },
+    {
+      "id": "oshi-love",
+      "title": "推しLOVE",
+      "type": "stamp",
+      "theme": "daily",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-64231d00c937",
+          "color": "blue",
+          "label": "推しLOVE blue",
+          "width": 1000,
+          "height": 740,
+          "bytes": 146861,
+          "preview": "/material-previews/oshi-love-01-64231d00c937.webp",
+          "url": "/materials/oshi-love/01-64231d00c937.png",
+          "downloadName": "oshi-love-blue-01.png"
+        },
+        {
+          "id": "02-d11d5f36f26a",
+          "color": "pink",
+          "label": "推しLOVE pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 152672,
+          "preview": "/material-previews/oshi-love-02-d11d5f36f26a.webp",
+          "url": "/materials/oshi-love/02-d11d5f36f26a.png",
+          "downloadName": "oshi-love-pink-02.png"
+        },
+        {
+          "id": "03-f1bb12d9e9b9",
+          "color": "white",
+          "label": "推しLOVE white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 37044,
+          "preview": "/material-previews/oshi-love-03-f1bb12d9e9b9.webp",
+          "url": "/materials/oshi-love/03-f1bb12d9e9b9.png",
+          "downloadName": "oshi-love-white-03.png"
+        },
+        {
+          "id": "04-080e26e6b480",
+          "color": "white",
+          "label": "推しLOVE",
+          "width": 1000,
+          "height": 740,
+          "bytes": 125220,
+          "preview": "/material-previews/oshi-love-04-080e26e6b480.webp",
+          "url": "/materials/oshi-love/04-080e26e6b480.png",
+          "downloadName": "oshi-love-white-04.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/oshi-love/all-d870d8c54036.zip",
+        "bytes": 460111
+      }
+    },
+    {
+      "id": "oshi-ichiban",
+      "title": "推しいちばん",
+      "type": "stamp",
+      "theme": "daily",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-97c04589b909",
+          "color": "white",
+          "label": "推しいちばん_x-safe",
+          "width": 1000,
+          "height": 740,
+          "bytes": 119749,
+          "preview": "/material-previews/oshi-ichiban-01-97c04589b909.webp",
+          "url": "/materials/oshi-ichiban/01-97c04589b909.png",
+          "downloadName": "oshi-ichiban-white-01.png"
+        },
+        {
+          "id": "02-3eedff19f96b",
+          "color": "white",
+          "label": "推しいちばん_x-safe1",
+          "width": 1000,
+          "height": 740,
+          "bytes": 36439,
+          "preview": "/material-previews/oshi-ichiban-02-3eedff19f96b.webp",
+          "url": "/materials/oshi-ichiban/02-3eedff19f96b.png",
+          "downloadName": "oshi-ichiban-white-02.png"
+        },
+        {
+          "id": "03-fec930c635e3",
+          "color": "blue",
+          "label": "推しいちばん_x-safe2",
+          "width": 1000,
+          "height": 740,
+          "bytes": 138630,
+          "preview": "/material-previews/oshi-ichiban-03-fec930c635e3.webp",
+          "url": "/materials/oshi-ichiban/03-fec930c635e3.png",
+          "downloadName": "oshi-ichiban-blue-03.png"
+        },
+        {
+          "id": "04-d7be159062d3",
+          "color": "pink",
+          "label": "推しいちばん_x-safe3",
+          "width": 1000,
+          "height": 740,
+          "bytes": 144555,
+          "preview": "/material-previews/oshi-ichiban-04-d7be159062d3.webp",
+          "url": "/materials/oshi-ichiban/04-d7be159062d3.png",
+          "downloadName": "oshi-ichiban-pink-04.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/oshi-ichiban/all-5289a4afe4df.zip",
+        "bytes": 437432
+      }
+    },
+    {
+      "id": "praise",
+      "title": "褒めことば",
+      "type": "stamp",
+      "theme": "daily",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-798507f3672d",
+          "color": "blue",
+          "label": "褒め 1 blue",
+          "width": 1000,
+          "height": 740,
+          "bytes": 113632,
+          "preview": "/material-previews/praise-01-798507f3672d.webp",
+          "url": "/materials/praise/01-798507f3672d.png",
+          "downloadName": "praise-blue-01.png"
+        },
+        {
+          "id": "02-6a9ce840ad84",
+          "color": "pink",
+          "label": "褒め 1 pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 117570,
+          "preview": "/material-previews/praise-02-6a9ce840ad84.webp",
+          "url": "/materials/praise/02-6a9ce840ad84.png",
+          "downloadName": "praise-pink-02.png"
+        },
+        {
+          "id": "03-3c9994f20a92",
+          "color": "white",
+          "label": "褒め 1 white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 33200,
+          "preview": "/material-previews/praise-03-3c9994f20a92.webp",
+          "url": "/materials/praise/03-3c9994f20a92.png",
+          "downloadName": "praise-white-03.png"
+        },
+        {
+          "id": "04-d1476e8339b3",
+          "color": "white",
+          "label": "褒め 1",
+          "width": 1000,
+          "height": 740,
+          "bytes": 104965,
+          "preview": "/material-previews/praise-04-d1476e8339b3.webp",
+          "url": "/materials/praise/04-d1476e8339b3.png",
+          "downloadName": "praise-white-04.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/praise/all-f3ec51bb108f.zip",
+        "bytes": 363851
+      }
+    },
+    {
+      "id": "magic",
+      "title": "魔法",
+      "type": "stamp",
+      "theme": "halloween",
+      "eventDate": null,
+      "variants": [
+        {
+          "id": "01-2767b47ba447",
+          "color": "pink",
+          "label": "魔法 pink",
+          "width": 1000,
+          "height": 740,
+          "bytes": 154404,
+          "preview": "/material-previews/magic-01-2767b47ba447.webp",
+          "url": "/materials/magic/01-2767b47ba447.png",
+          "downloadName": "magic-pink-01.png"
+        },
+        {
+          "id": "02-8f946148fe3b",
+          "color": "purple",
+          "label": "魔法1 purple bk",
+          "width": 1000,
+          "height": 740,
+          "bytes": 153056,
+          "preview": "/material-previews/magic-02-8f946148fe3b.webp",
+          "url": "/materials/magic/02-8f946148fe3b.png",
+          "downloadName": "magic-purple-02.png"
+        },
+        {
+          "id": "03-48937f5b64ef",
+          "color": "purple",
+          "label": "魔法1 purple",
+          "width": 1000,
+          "height": 740,
+          "bytes": 138367,
+          "preview": "/material-previews/magic-03-48937f5b64ef.webp",
+          "url": "/materials/magic/03-48937f5b64ef.png",
+          "downloadName": "magic-purple-03.png"
+        },
+        {
+          "id": "04-e7670f5846d5",
+          "color": "white",
+          "label": "魔法1 white",
+          "width": 1000,
+          "height": 740,
+          "bytes": 40850,
+          "preview": "/material-previews/magic-04-e7670f5846d5.webp",
+          "url": "/materials/magic/04-e7670f5846d5.png",
+          "downloadName": "magic-white-04.png"
+        },
+        {
+          "id": "13-791b1a0e86f6",
+          "color": "white",
+          "label": "魔法1",
+          "width": 1000,
+          "height": 740,
+          "bytes": 140565,
+          "preview": "/material-previews/magic-13-791b1a0e86f6.webp",
+          "url": "/materials/magic/13-791b1a0e86f6.png",
+          "downloadName": "magic-white-13.png"
+        }
+      ],
+      "zip": {
+        "url": "/materials/magic/all-7197341bf6cd.zip",
+        "bytes": 624858
+      }
+    }
+  ]
+}

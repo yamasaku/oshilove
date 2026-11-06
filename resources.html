@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fffdfd">
-  <meta name="description" content="推し活の写真を飾るフレーム素材。シリーズごとの配布ポストをまとめています。">
+  <meta name="description" content="推し活のフレームとスタンプ。検索、カラー、記念日カレンダーから探して、PNG を直接ダウンロード。">
   <link rel="canonical" href="https://oshilovepocket.com/resources">
   <link rel="icon" href="app-icon.png">
   <title data-page-title-ja="推し活素材 | Oshi" data-page-title-zh-tw="推し活素材 | Oshi" data-page-title-en="Oshi resources | Oshi">推し活素材 | Oshi</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="landing.css">
   <script defer src="site.js"></script>
+  <link rel="stylesheet" href="resources.css">
+  <script type="module" src="resources.js"></script>
 </head>
 <body class="materials-page">
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14"/></symbol></svg>
@@ -34,44 +36,51 @@
   <main class="materials wrap" id="main">
     <header class="materials-intro">
       <h1><span data-lang="ja">推し活素材</span><span data-lang="zh-tw">推し活素材</span><span data-lang="en">Oshi resources</span></h1>
-      <p><span data-lang="ja">推しとの写真に、ちょっと特別なフレームを。</span><span data-lang="zh-tw">為您的推し相片添上專屬相框。</span><span data-lang="en">A little frame for your favourite oshi moments.</span></p>
+      <p><span data-lang="ja">色で選んで、記念日で見つける。写真を飾るフレームとスタンプ。</span><span data-lang="zh-tw">按顏色挑選，按紀念日尋找。為相片添上相框與貼圖。</span><span data-lang="en">Find your colour. Pick your occasion. Frames and stamps for your photos.</span></p>
     </header>
-    <section aria-labelledby="frame-series">
-      <h2 id="frame-series"><span data-lang="ja">記念日フレーム</span><span data-lang="zh-tw">紀念日相框</span><span data-lang="en">Anniversary frames</span></h2>
-      <div class="material-grid">
-        <article class="material-card material-rose">
-          <div class="material-cover" aria-hidden="true"><span>♡</span><strong>11.07</strong></div>
-          <div class="material-card-body">
-            <h3 lang="ja">いい女の日</h3>
-            <div class="material-actions">
-              <a class="pill-button" href="https://x.com/skr_oshilove/status/2118207438730170717"><span data-lang="ja">X で配布を見る</span><span data-lang="zh-tw">查看 X 配布帖</span><span data-lang="en">View on X</span> <span aria-hidden="true">↗</span></a>
-              
-            </div>
-          </div>
-        </article>
-        <article class="material-card material-lilac">
-          <div class="material-cover" aria-hidden="true"><span>♡</span><strong>11.05</strong></div>
-          <div class="material-card-body">
-            <h3 lang="ja">いい男の日</h3>
-            <div class="material-actions">
-              <a class="pill-button" href="https://x.com/skr_oshilove/status/2118018805029024229"><span data-lang="ja">X で配布を見る</span><span data-lang="zh-tw">查看 X 配布帖</span><span data-lang="en">View on X</span> <span aria-hidden="true">↗</span></a>
-              
-            </div>
-          </div>
-        </article>
-        <article class="material-card material-peach">
-          <div class="material-cover" aria-hidden="true"><span>♡</span><strong>11.04</strong></div>
-          <div class="material-card-body">
-            <h3 lang="ja">いい推しの日</h3>
-            <div class="material-actions">
-              <a class="pill-button" href="https://x.com/skr_oshilove/status/2117668568812880068"><span data-lang="ja">X で配布を見る</span><span data-lang="zh-tw">查看 X 配布帖</span><span data-lang="en">View on X</span> <span aria-hidden="true">↗</span></a>
-              <a class="quiet-link" href="https://x.com/skr_oshilove/status/2117821492906062241"><span data-lang="ja">追加カラー</span><span data-lang="zh-tw">追加顏色</span><span data-lang="en">More colours</span> <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
+    <form class="material-search" role="search">
+      <label for="material-query"><span data-lang="ja">素材を検索</span><span data-lang="zh-tw">搜尋素材</span><span data-lang="en">Search resources</span></label>
+      <input id="material-query" type="search" autocomplete="off" enterkeyhint="search">
+      <div class="material-filter-row">
+        <label><span data-lang="ja">種類</span><span data-lang="zh-tw">類型</span><span data-lang="en">Type</span><select id="filter-type">
+          <option value="">ALL</option><option value="frame">FRAME</option><option value="stamp">STAMP</option>
+        </select></label>
+        <label><span data-lang="ja">テーマ</span><span data-lang="zh-tw">主題</span><span data-lang="en">Theme</span><select id="filter-theme">
+          <option value="">ALL</option><option value="anniversary">ANNIVERSARY</option><option value="halloween">HALLOWEEN</option><option value="daily">DAILY</option>
+        </select></label>
+        <label><span data-lang="ja">カラー</span><span data-lang="zh-tw">顏色</span><span data-lang="en">Colour</span><select id="filter-color">
+          <option value="">ALL</option>
+          <option value="pink">pink</option><option value="red">red</option><option value="orange">orange</option><option value="yellow">yellow</option><option value="green">green</option><option value="blue">blue</option><option value="purple">purple</option><option value="white">white</option><option value="black">black</option>
+        </select></label>
       </div>
-    </section>
-    <p class="materials-note"><span data-lang="ja">画像の保存方法と利用条件は、各配布ポストをご確認ください。</span><span data-lang="zh-tw">圖片儲存方式與使用說明，請參閱各配布帖。</span><span data-lang="en">See each original post for the images and usage notes.</span> <a href="https://x.com/skr_oshilove">@skr_oshilove</a></p>
+    </form>
+    <div class="material-browser">
+      <details class="material-calendar" open>
+        <summary><span data-lang="ja">記念日から探す</span><span data-lang="zh-tw">按紀念日尋找</span><span data-lang="en">Find an occasion</span></summary>
+        <div class="calendar-content">
+          <div class="calendar-nav"><button type="button" id="month-prev">‹</button><h2 id="calendar-title"></h2><button type="button" id="month-next">›</button></div>
+          <div class="calendar-week" aria-hidden="true"></div>
+          <div class="calendar-days" role="group"></div>
+          <p class="calendar-note"><span data-lang="ja">印のある日に素材があります。毎年の記念日で表示しています。</span><span data-lang="zh-tw">標示日期有對應素材，按每年紀念日整理。</span><span data-lang="en">Marked days have resources. Dates are annual occasions.</span></p>
+          <button type="button" id="clear-date" hidden></button>
+        </div>
+      </details>
+      <section class="material-results" aria-labelledby="material-results-title">
+        <div class="material-result-heading">
+          <h2 id="material-results-title"><span data-lang="ja">素材一覧</span><span data-lang="zh-tw">素材一覽</span><span data-lang="en">Resources</span></h2>
+          <button type="button" id="reset-materials"><span data-lang="ja">条件をクリア</span><span data-lang="zh-tw">清除條件</span><span data-lang="en">Reset filters</span></button>
+        </div>
+        <p id="material-count" role="status" aria-live="polite"></p>
+        <div class="catalog-grid" id="material-results"></div>
+        <div class="materials-empty" id="materials-empty" hidden></div>
+      </section>
+    </div>
+    <p class="materials-note"><span data-lang="ja">PNG は背景透過の原寸データです。使用についてのお問い合わせはサポートへ。</span><span data-lang="zh-tw">PNG 為原尺寸透明背景圖片。如有使用問題，請聯絡支援。</span><span data-lang="en">PNG downloads retain their original size and transparency. Contact support with usage questions.</span> <a data-site-lang href="/support"><span data-lang="ja">サポート</span><span data-lang="zh-tw">支援</span><span data-lang="en">Support</span></a></p>
+    <noscript><p><span data-lang="ja">検索とダウンロードを利用するには JavaScript を有効にしてください。</span><span data-lang="zh-tw">請啟用 JavaScript 以使用搜尋及下載功能。</span><span data-lang="en">Enable JavaScript to search and download resources.</span></p></noscript>
+    <dialog id="material-dialog" aria-labelledby="material-dialog-title">
+      <div class="material-dialog-header"><h2 id="material-dialog-title"></h2><button type="button" id="close-material-dialog">×</button></div>
+      <div id="material-dialog-content"></div>
+    </dialog>
   </main>
   <footer class="landing-footer wrap">
     <div class="footer-intro"><a class="landing-brand" data-site-lang href="index.html#home"><span class="footer-icon-pair"><img src="app-icon.png" width="32" height="32" alt=""><img src="oshipocket-icon.webp" width="32" height="32" alt=""></span><span>OshiLove <span class="brand-dot">＋</span> OshiPocket</span></a></div>

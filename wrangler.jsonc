@@ -1,0 +1,13 @@
+{
+  "name": "oshilove-official",
+  "account_id": "e3462108f1e3c172b346fd25f2c4d198",
+  "main": "./materials-worker.js",
+  "compatibility_date": "2026-10-13",
+  "assets": {
+    "directory": "./.dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/materials/*"]
+  },
+  "r2_buckets": [{"binding": "MATERIALS", "bucket_name": "oshilove-materials"}],
+  "observability": {"enabled": true, "head_sampling_rate": 0.1}
+}
