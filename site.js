@@ -217,6 +217,7 @@
     const links = nav?.querySelector(".nav-sections");
     const controls = nav?.querySelector(".nav-controls");
     const languageSelect = controls?.querySelector("[data-language-select]");
+    const toolsMenu = links?.querySelector(".nav-tools");
     if (!header || !links || !controls || !languageSelect) return;
     links.id = links.id || "site-navigation-links";
     const languageRow = document.createElement("label");
@@ -232,6 +233,7 @@
     toggle.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-open-icon" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-close-icon" d="m6 6 12 12M18 6 6 18"/></svg>';
     controls.append(toggle);
     function setOpen(open, restoreFocus = false) {
+      if (!open && toolsMenu) toolsMenu.open = false;
       header.classList.toggle("is-menu-open", open);
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", menuLabel(open));
@@ -239,13 +241,22 @@
     }
     toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
     header.addEventListener("keydown", event => {
-      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+      if (event.key !== "Escape") return;
+      if (toolsMenu?.open) {
+        event.preventDefault();
+        toolsMenu.open = false;
+        toolsMenu.querySelector("summary")?.focus({preventScroll: true});
+      } else if (toggle.getAttribute("aria-expanded") === "true") {
         event.preventDefault();
         setOpen(false, true);
       }
     });
     header.addEventListener("click", event => {
       if (event.target.closest("a")) setOpen(false);
+      else if (toolsMenu?.open && !toolsMenu.contains(event.target)) toolsMenu.open = false;
+    });
+    toolsMenu?.addEventListener("focusout", event => {
+      if (event.relatedTarget && !toolsMenu.contains(event.relatedTarget)) toolsMenu.open = false;
     });
     document.addEventListener("click", event => {
       if (!header.contains(event.target)) setOpen(false);
@@ -382,7 +393,7 @@
         const selected = link.hash === "#" + active;
         link.classList.toggle("is-current", selected);
         if (selected) link.setAttribute("aria-current", "location");
-        else link.removeAttribute("aria-current");
+        else if (link.getAttribute("aria-current") === "location") link.removeAttribute("aria-current");
       });
     };
     window.addEventListener("scroll", () => {
