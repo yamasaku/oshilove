@@ -346,9 +346,12 @@ body:has([data-analytics-consent]) .back-to-top { visibility: hidden; }
 .support-switch button[aria-pressed="true"] { background: #fff; color: #332450; box-shadow: 0 2px 8px rgb(50 35 72 / 12%); }
 .support-filter-ready .support-answer-label { display: none; }
 .support-page .document section { border: 0; padding: 0; }
+.support-topic + .support-topic { margin-top: 28px; }
+.support-topic h3 { margin: 0 0 10px; }
 .support-faq details { margin: 0 0 10px; border-radius: 18px; background: #f7f3fb; }
 .support-faq summary { min-height: 48px; padding: 14px 18px; font-weight: 650; cursor: pointer; }
 .support-faq details > p { padding: 0 18px 16px; margin: 0; }
+.support-faq details > p a { color: #514076; text-decoration: underline; text-underline-offset: 0.15em; }
 .support-page .document .support-contact { margin-top: 32px; padding: clamp(18px, 4vw, 30px); border-radius: 22px; background: #f5f1fc; }
 .support-contact .contact-box { padding: 0; background: transparent; color: inherit; overflow-wrap: anywhere; }
 .support-contact .contact-box a { color: #514076; font-weight: 650; }

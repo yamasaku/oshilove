@@ -39,18 +39,39 @@
       <header class="document-header"><h1>サポート</h1></header>
       <div class="support-switch" role="group" aria-label="アプリを選択" hidden><button type="button" data-support-select="oshilove" aria-pressed="true">OshiLove</button><button type="button" data-support-select="oshipocket" aria-pressed="false">Oshi Pocket</button></div>
       <section class="support-faq"><h2>よくある質問</h2>
-        <details><summary>機種変更後もデータは残りますか？</summary><p data-support-app="oshilove"><strong class="support-answer-label">OshiLove</strong> OSの端末バックアップからアプリデータが復元される場合があります。ただし、同じアカウントやバックアップ設定、写真の同期状況によって結果が異なります。写真を表示するには、元の写真も新しい端末の写真ライブラリで利用できる必要があります。</p><p data-support-app="oshipocket"><strong class="support-answer-label">Oshi Pocket</strong> OSの端末バックアップから復元される場合がありますが、結果はOS、アカウント、バックアップ設定により異なります。設定の「データ管理」から JSON バックアップを書き出し、新しい端末でそのファイルを選択して復元することもできます。バックアップの保管先はご自身で管理してください。</p></details>
-        <details><summary>データを削除するには？</summary><p data-support-app="oshilove"><strong class="support-answer-label">OshiLove</strong> 日記、予定、アルバムなどは各画面の編集メニューから削除できます。すべての端末内データを削除する場合は、必要なバックアップを保存してから本アプリをアンインストールしてください。</p><p data-support-app="oshipocket"><strong class="support-answer-label">Oshi Pocket</strong> 設定の「データをリセット」を使用するか、本アプリをアンインストールしてください。リセット操作は元に戻せません。</p></details>
-        <details id="oshilove-ja" data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>写真が表示されません</summary><p>端末の「設定」から OshiLove の写真アクセスをご確認ください。「選択した写真のみ」を利用している場合は、表示したい写真を追加してください。元の写真が写真アプリから削除されている場合は、再選択または記録からの削除が必要です。</p></details>
-        <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>通知が届きません</summary><p>OshiLove 内の通知設定、端末の通知許可、集中モードをご確認ください。Expo Go では通知機能の一部を完全に確認できないため、正式版または開発ビルドでの動作が異なる場合があります。</p></details>
-        <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>購入済みの機能を復元するには？</summary><p>OshiLove の設定から購入の復元を選び、購入時と同じ App Store アカウントを使用してください。記録データの復元とは別の操作です。</p></details>
-        <details id="oshipocket-ja" data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>記録は外部へ送信されますか？</summary><p>いいえ。推し、現場、支出、メモ、表示設定は端末内へ保存され、開発者のサーバーへ送信されません。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>通貨やテーマを変更できますか？</summary><p>設定の「表示設定」から通貨記号とテーマカラーを変更できます。変更はアプリ全体へ反映されます。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>購入済みのPremium機能を復元するには？</summary><p>設定の「Oshi Pocket Premium」から「購入を復元」を選んでください。購入時と同じApp Store又はGoogle Playアカウントを使用する必要があります。復元しても二重に請求されることはありません。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>月額Premiumを解約するには？</summary><p>iPhoneの「設定」からApple Account、サブスクリプションの順に開き、Oshi Pocketを選択して解約してください。更新日の24時間前までに解約しない限り毎月自動更新されます。アプリを削除するだけでは解約されません。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>返金や請求を確認するには？</summary><p>購入、請求及び返金はApp Store又はGoogle Playが管理します。購入時に使用したストアの購入履歴又はサポートをご確認ください。Oshi Pocketはクレジットカード情報を保存しません。</p></details>
+        <div class="support-topic"><h3>はじめに</h3>
+          <details><summary>どの端末に対応していますか？</summary><p>どちらも App Store で配信しており、iPhone は iOS 15.1 以降に対応しています。お使いの端末で利用できるかは、各アプリの App Store ページで「互換性」をご確認ください。</p></details>
+          <details><summary>アカウント登録は必要ですか？</summary><p>アプリのアカウント登録は不要です。入力した記録は端末内に保存され、端末間で自動同期しません。</p></details>
+          <details><summary>複数の推しを登録できますか？</summary><p>はい。どちらも複数の推しを登録し、推しごとに記録を分けられます。記録を追加する際に、対象の推しを選んでください。</p></details>
+        </div>
+        <div class="support-topic"><h3>バックアップとデータ</h3>
+          <details><summary>機種変更前の端末が手元にありません。記録は戻せますか？</summary><p>アプリで書き出したバックアップがあれば、新しい端末で読み込めます。端末全体のバックアップがある場合は、Apple の手順で復元できますが、アプリの記録が戻るかはバックアップの内容によります。<a href="https://support.apple.com/ja-jp/118105">Apple のバックアップ復元手順</a></p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>機種変更前にバックアップするには？</summary><p>古い iPhone の OshiLove の設定からバックアップを書き出し、次の端末でも開ける場所に保存します。新しい iPhone で OshiLove の設定を開き、「バックアップを復元」を選び、OshiLove で作成した JSON ファイルを開きます。復元すると現在のアプリ内の記録は置き換わります。写真の原本は JSON に含まれないため、写真ライブラリも別途移行してください。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>機種変更前にバックアップするには？</summary><p>古い端末で「設定」→「データ管理」からバックアップを書き出し、次の端末でも開ける場所に保存します。新しい端末の同じ画面で「バックアップファイルから復元」を選び、Oshi Pocket で作成した JSON ファイルを開きます。復元すると現在の記録は置き換わります。</p></details>
+          <details><summary>バックアップを復元できません</summary><p>バックアップを書き出したアプリと同じアプリで、その JSON ファイルを選んでください。ファイルが端末にダウンロードされているかと、アプリが最新かを確認します。復元の前には、今の端末の記録も別にバックアップしておくと安心です。</p></details>
+          <details><summary>削除した記録を戻せますか？</summary><p>削除前のバックアップがある場合は、その時点の記録に戻せる場合があります。復元すると、バックアップ後に追加した記録も置き換わるため、先に現在の記録を別に書き出してください。開発者側で端末内の記録を復元することはできません。</p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>データを削除するには？</summary><p>日記、予定、アルバムなどは各画面の編集メニューから削除できます。端末内のアプリデータをすべて削除したい場合は、必要なバックアップを保存してからアプリを削除してください。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>データを削除するには？</summary><p>すべての記録を消す場合は「設定」→「データ管理」→「データをリセット」を選びます。操作は元に戻せないので、必要な記録は事前に書き出してください。</p></details>
+        </div>
+        <div class="support-topic"><h3>機能とトラブル</h3>
+          <details><summary>アプリが開かない、またはすぐに閉じます</summary><p>アプリを閉じて開き直し、改善しなければ iPhone を再起動して、App Store でアプリの更新を確認してください。未保存の記録を失うことがあるので、バックアップを確認するまではアプリを削除しないでください。</p></details>
+          <details><summary>ウィジェットが一覧に表示されません</summary><p>App Store でアプリを更新して一度開いてください。その後、ホーム画面を長押ししてウィジェットの追加画面を開き、OshiLove または Oshi Pocket を探します。表示したい項目が見つからない場合は、ホーム画面とロック画面の両方のウィジェット一覧をご確認ください。</p></details>
+          <details data-support-app="oshilove" id="oshilove-ja"><summary><span class="support-answer-label">OshiLove · </span>写真が表示されません</summary><p>iPhone の設定で OshiLove の写真アクセスを確認してください。アクセスを一部の写真に限っている場合は、対象の写真を許可します。機種変更後は、元の写真が新しい iPhone の写真ライブラリにあるかを確認し、必要に応じてアプリで選び直してください。</p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>予定や記念日の通知が届きません</summary><p>アプリで対象の予定・記念日の通知設定を確認し、iPhone の「設定」→「通知」で OshiLove の通知が許可されているか確認します。集中モードで通知が消音されていないかもご確認ください。</p></details>
+          <details data-support-app="oshipocket" id="oshipocket-ja"><summary><span class="support-answer-label">Oshi Pocket · </span>イベントに紐付けずにグッズ代を記録できますか？</summary><p>はい。「一般支出を追加」を選ぶと、イベントを作らなくてもグッズ代などを記録できます。見つからない場合は App Store で Oshi Pocket を更新してください。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>イベントの通知が届きません</summary><p>イベントの編集画面でリマインダーと時刻を確認してください。設定の通知初期値は、新しく作るイベントに適用されます。すでに登録したイベントは個別に変更し、iPhone 側の通知許可と集中モードも確認してください。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>通貨記号やテーマはどこで変えられますか？</summary><p>設定の「通貨表示」または「テーマ設定」を開きます。通貨記号を変えても、記録済みの金額は換算されません。</p></details>
+          <details><summary>アプリロックの PIN を忘れました</summary><p>開発者は PIN を復元できません。Face ID などを設定済みで解除できる場合は、先に必要な記録をバックアップしてください。解除できない場合は、アプリを削除する前にサポートへご連絡ください。</p></details>
+        </div>
+        <div class="support-topic"><h3>Premium と購入</h3>
+          <details><summary>月額プランと買い切りの違いは？</summary><p>どちらのアプリも月額プランと、1 回の購入で使えるライフタイムプランがあります。月額プランは App Store のサブスクリプションです。購入前に、対象の機能と金額を各アプリの購入画面でご確認ください。</p></details>
+          <details><summary>購入した Premium が表示されません</summary><p>購入したアプリの設定から Premium 画面を開き、「購入を復元」を選びます。購入時と同じ Apple Account を使ってください。購入の復元と記録の復元は別の操作です。解決しない場合は、再購入する前にサポートへご連絡ください。</p></details>
+          <details><summary>1つの購入で両方のアプリが使えますか？</summary><p>Premium はアプリごとの購入です。OshiLove で購入した場合は OshiLove、Oshi Pocket で購入した場合は Oshi Pocket で復元してください。</p></details>
+          <details><summary>月額プランを解約するには？</summary><p>iPhone の「設定」→自分の名前→「サブスクリプション」を開き、該当するアプリの月額プランを選んで解約します。アプリを削除しても解約されません。<a href="https://support.apple.com/ja-jp/118428">Apple の解約手順</a></p></details>
+          <details><summary>請求を確認したり返金を申請したりするには？</summary><p>購入時の Apple Account で <a href="https://reportaproblem.apple.com/">Apple の「問題を報告する」</a> にサインインし、対象の購入を探してください。返金の可否は Apple が判断します。</p></details>
+        </div>
       </section>
-      <section class="support-contact"><h2>お問い合わせ</h2><p>お問い合わせの際は、次の情報をご記載ください。個人情報やプライベートな写真は送らないでください。</p><ul><li>利用端末とOSバージョン</li><li>アプリ名とバージョン</li><li>問題が発生した画面と操作手順</li><li>表示されたエラーメッセージ</li></ul>
+      <section class="support-contact"><h2>お問い合わせ</h2><p>お問い合わせの際は、次の情報をご記載ください。個人情報やプライベートな写真は送らないでください。</p><ul><li>利用端末とOSバージョン</li><li>アプリ名とバージョン（アプリ内の設定で確認できます）</li><li>問題が発生した画面と操作手順</li><li>表示されたエラーメッセージ</li></ul>
         <div class="contact-box"><a href="mailto:oshiapps.support@gmail.com">oshiapps.support@gmail.com</a></div>
       </section>
     </div>
@@ -58,18 +79,39 @@
       <header class="document-header"><h1>支援</h1></header>
       <div class="support-switch" role="group" aria-label="選擇 App" hidden><button type="button" data-support-select="oshilove" aria-pressed="true">OshiLove</button><button type="button" data-support-select="oshipocket" aria-pressed="false">Oshi Pocket</button></div>
       <section class="support-faq"><h2>常見問題</h2>
-        <details><summary>更換裝置後，資料會否保留？</summary><p data-support-app="oshilove"><strong class="support-answer-label">OshiLove</strong> 作業系統的裝置備份可能會復原應用程式資料，但結果取決於登入帳戶、備份設定及相片同步狀態。要繼續顯示相片，原始相片亦必須可在新裝置的相片圖庫中使用。</p><p data-support-app="oshipocket"><strong class="support-answer-label">Oshi Pocket</strong> 系統裝置備份可能會還原應用程式資料，但結果視乎作業系統、登入帳戶及備份設定而定。您亦可從設定內的「資料管理」匯出 JSON 備份，並在新裝置選取該檔案以還原資料。請自行妥善管理備份的儲存位置。</p></details>
-        <details><summary>如何刪除資料？</summary><p data-support-app="oshilove"><strong class="support-answer-label">OshiLove</strong> 日記、日程及相簿等資料可透過相應畫面的編輯選單刪除。如要刪除裝置內所有應用程式資料，請先保存所需備份，然後解除安裝本應用程式。</p><p data-support-app="oshipocket"><strong class="support-answer-label">Oshi Pocket</strong> 您可以使用設定內的「重設資料」，或解除安裝本應用程式。重設操作無法還原。</p></details>
-        <details id="oshilove-zh-tw" data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>相片未能顯示</summary><p>請在裝置「設定」中檢查 OshiLove 的相片存取權限。如正在使用「所選的相片」，請加入需要顯示的相片。如原始相片已從「相片」應用程式刪除，您需要重新選擇相片或從記錄移除有關參照。</p></details>
-        <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>未有收到通知</summary><p>請檢查 OshiLove 內的通知設定、裝置通知權限及專注模式。Expo Go 未能完整測試部分通知功能，因此正式版本或開發版本的運作可能有所不同。</p></details>
-        <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>如何還原已購買功能？</summary><p>請在 OshiLove 的設定中選擇還原購買項目，並使用購買時的同一個 App Store 帳戶。還原購買項目與還原記錄是兩個不同操作。</p></details>
-        <details id="oshipocket-zh-tw" data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>記錄會否傳送至外部？</summary><p>不會。推し、現場、開支、備註及顯示設定只會儲存在裝置內，不會傳送至開發者的伺服器。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>可以更改貨幣及主題嗎？</summary><p>您可以在設定內的「顯示設定」更改貨幣符號及主題顏色，變更會套用至整個應用程式。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>如何還原已購買的Premium功能？</summary><p>請前往設定內的「Oshi Pocket Premium」，再選擇「還原購買項目」。您須使用購買時相同的App Store或Google Play帳戶；還原購買項目不會造成重複收費。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>如何取消Premium月費計劃？</summary><p>請在iPhone「設定」依次開啟Apple Account及「訂閱項目」，選擇Oshi Pocket後取消。如未在續訂日期最少24小時前取消，計劃將每月自動續訂。只刪除本應用程式並不會取消訂閱。</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>如何查閱退款或收費資料？</summary><p>購買、收費及退款由App Store或Google Play管理。請查看購買時所用商店的購買紀錄或聯絡該商店的支援服務。Oshi Pocket不會儲存信用卡資料。</p></details>
+        <div class="support-topic"><h3>開始使用</h3>
+          <details><summary>支援哪些裝置？</summary><p>兩款 App 均於 App Store 提供，支援 iOS 15.1 或以上的 iPhone。請在各 App 的 App Store 頁面查看「相容性」，確認您的裝置是否適用。</p></details>
+          <details><summary>需要註冊帳戶嗎？</summary><p>毋須註冊 App 帳戶。您輸入的記錄會儲存在裝置內，不會自動同步至其他裝置。</p></details>
+          <details><summary>可以加入多位推し嗎？</summary><p>可以。兩款 App 都可加入多位推し並分開管理記錄。新增記錄時，請選擇對應的推し。</p></details>
+        </div>
+        <div class="support-topic"><h3>備份與資料</h3>
+          <details><summary>舊裝置不在手上，還可以找回記錄嗎？</summary><p>如仍有 App 匯出的備份檔，可在新裝置匯入。如果有 iPhone 的整機備份，亦可參照 Apple 的步驟還原。能否找回 App 記錄，視乎備份包含的資料。<a href="https://support.apple.com/zh-hk/118105">Apple 的備份還原指引</a></p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>更換 iPhone 前，如何備份？</summary><p>請在舊 iPhone 的 OshiLove 設定中匯出備份，並儲存至新裝置可存取的位置。在新 iPhone 開啟 OshiLove 設定，選擇「還原備份」及由 OshiLove 匯出的 JSON 檔案。還原會取代 App 內現有記錄。備份不包含原始相片，請另行轉移相片圖庫。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>更換裝置前，如何備份？</summary><p>請在舊裝置前往「設定」→「資料管理」，匯出備份並儲存至新裝置可存取的位置。在新裝置的相同畫面選擇「從備份檔還原」，並開啟由 Oshi Pocket 匯出的 JSON 檔案。還原會取代目前的記錄。</p></details>
+          <details><summary>無法還原備份，怎麼辦？</summary><p>請在匯出備份的同一款 App 選取該 JSON 檔案，確認檔案已下載到裝置，並將 App 更新至最新版本。還原前可先另行備份目前裝置的記錄。</p></details>
+          <details><summary>可以找回已刪除的記錄嗎？</summary><p>如有刪除前的備份，或可還原至當時的記錄。還原會取代現有資料，包括備份後新增的記錄，請先另行匯出目前資料。開發者無法代為復原裝置內的記錄。</p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>如何刪除資料？</summary><p>可在日記、日程、相簿等畫面的編輯選單刪除個別記錄。如要移除裝置內的所有 App 資料，請先儲存所需備份，再刪除 App。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>如何刪除資料？</summary><p>如要清除所有記錄，請前往「設定」→「資料管理」→「重設資料」。操作無法復原，請先匯出需要保留的記錄。</p></details>
+        </div>
+        <div class="support-topic"><h3>功能與疑難排解</h3>
+          <details><summary>App 無法開啟或突然關閉，怎麼辦？</summary><p>請關閉 App 後重新開啟。如問題持續，請重新啟動 iPhone，並到 App Store 檢查 App 有否更新。刪除 App 可能會移除裝置內的記錄，請先確認已有備份。</p></details>
+          <details><summary>找不到小工具，怎麼辦？</summary><p>請先在 App Store 更新並開啟 App 一次，再長按主畫面，開啟加入小工具的選單並搜尋 OshiLove 或 Oshi Pocket。如找不到想用的款式，請分別查看主畫面和鎖定畫面的小工具選單。</p></details>
+          <details data-support-app="oshilove" id="oshilove-zh-tw"><summary><span class="support-answer-label">OshiLove · </span>相片未能顯示，怎麼辦？</summary><p>請在 iPhone 設定檢查 OshiLove 的相片權限。如果只允許存取部分相片，請將所需相片加入允許清單。更換裝置後，請確認原始相片已在新 iPhone 的相片圖庫內，並在有需要時於 App 內重新選取。</p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>未有收到日程或紀念日提醒，怎麼辦？</summary><p>請先檢查 App 內對應日程或紀念日的通知設定，再到 iPhone「設定」→「通知」確認已允許 OshiLove 發送通知，並查看專注模式有否將通知靜音。</p></details>
+          <details data-support-app="oshipocket" id="oshipocket-zh-tw"><summary><span class="support-answer-label">Oshi Pocket · </span>可以記錄不屬於任何活動的商品開支嗎？</summary><p>可以。選擇「新增一般支出」，即可記錄商品等費用，毋須先建立活動。如果找不到此選項，請在 App Store 更新 Oshi Pocket。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>未有收到活動提醒，怎麼辦？</summary><p>請在活動編輯畫面檢查提醒是否已開啟及時間是否正確。App 設定內的預設提醒只套用至新建活動。已建立的活動須個別修改，亦請檢查 iPhone 的通知權限及專注模式。</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>如何更改貨幣符號或主題？</summary><p>請在設定開啟「貨幣顯示」或「主題設定」。更改貨幣符號只會改變顯示，不會換算已記錄的金額。</p></details>
+          <details><summary>忘記 App 鎖定 PIN，怎麼辦？</summary><p>開發者無法找回 PIN。如已設定 Face ID 等裝置認證，並仍能解鎖，請先備份所需記錄。如無法解鎖，請在刪除 App 前聯絡支援。</p></details>
+        </div>
+        <div class="support-topic"><h3>Premium 與購買</h3>
+          <details><summary>月費與一次性永久解鎖有甚麼分別？</summary><p>兩款 App 均提供月費計劃及一次性永久解鎖。月費計劃由 App Store 訂閱管理。購買前請在對應 App 的購買畫面查看適用功能及價格。</p></details>
+          <details><summary>已付款但未解鎖 Premium，怎麼辦？</summary><p>請在購買時使用的 App 設定內開啟 Premium 頁面，選擇「還原購買」，並使用購買時的同一個 Apple 帳戶。還原購買與還原記錄是兩項不同操作。如仍未解鎖，請在再次購買前聯絡支援。</p></details>
+          <details><summary>一次購買可否同時解鎖兩款 App？</summary><p>兩款 App 的 Premium 分開購買。請在原先購買的 App 內還原購買項目。</p></details>
+          <details><summary>如何取消月費訂閱？</summary><p>在 iPhone 開啟「設定」→您的姓名→「訂閱項目」，選擇對應 App 的月費計劃並取消。刪除 App 不會取消訂閱。<a href="https://support.apple.com/zh-hk/118428">Apple 的取消訂閱指引</a></p></details>
+          <details><summary>如何查看收費或申請退款？</summary><p>請以購買時使用的 Apple 帳戶登入 <a href="https://reportaproblem.apple.com/">Apple「回報問題」</a>，找到有關購買項目。退款申請由 Apple 審核。</p></details>
+        </div>
       </section>
-      <section class="support-contact"><h2>聯絡我們</h2><p>聯絡支援時，請提供以下資料。請勿傳送個人資料或私人相片。</p><ul><li>裝置型號及作業系統版本</li><li>App 名稱及版本</li><li>發生問題的畫面及操作步驟</li><li>顯示的錯誤訊息</li></ul>
+      <section class="support-contact"><h2>聯絡我們</h2><p>聯絡支援時，請提供以下資料。請勿傳送個人資料或私人相片。</p><ul><li>裝置型號及作業系統版本</li><li>App 名稱及版本（可在 App 設定查看）</li><li>發生問題的畫面及操作步驟</li><li>顯示的錯誤訊息</li></ul>
         <div class="contact-box"><a href="mailto:oshiapps.support@gmail.com">oshiapps.support@gmail.com</a></div>
       </section>
     </div>
@@ -77,18 +119,39 @@
       <header class="document-header"><h1>Support</h1></header>
       <div class="support-switch" role="group" aria-label="Choose an app" hidden><button type="button" data-support-select="oshilove" aria-pressed="true">OshiLove</button><button type="button" data-support-select="oshipocket" aria-pressed="false">Oshi Pocket</button></div>
       <section class="support-faq"><h2>FAQ</h2>
-        <details><summary>Will my data remain when I change devices?</summary><p data-support-app="oshilove"><strong class="support-answer-label">OshiLove</strong> An operating-system device backup may restore App data. Results depend on your account, backup settings and photo-library sync. Original photos must also be available in the new device’s photo library for OshiLove to display them.</p><p data-support-app="oshipocket"><strong class="support-answer-label">Oshi Pocket</strong> An operating-system device backup may restore App data, but results depend on your OS, account and backup settings. You can also export a JSON backup from Data Management in Settings and select that file on a new device to restore it. You are responsible for keeping the exported backup secure.</p></details>
-        <details><summary>How do I delete my data?</summary><p data-support-app="oshilove"><strong class="support-answer-label">OshiLove</strong> Diary entries, events and albums can be deleted from their respective edit menus. To remove all on-device App data, save any backup you need and then uninstall OshiLove.</p><p data-support-app="oshipocket"><strong class="support-answer-label">Oshi Pocket</strong> Use “Reset data” in Settings or uninstall the App. A reset cannot be undone.</p></details>
-        <details id="oshilove-en" data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>My photos are not appearing</summary><p>Check OshiLove’s photo permission in device Settings. If you use Limited Photos Access, add the photos you want OshiLove to display. If an original has been deleted from Photos, select a replacement or remove its reference from the record.</p></details>
-        <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>I am not receiving notifications</summary><p>Check notification settings in OshiLove, device notification permission and Focus settings. Expo Go cannot fully test certain notification features, so behaviour may differ in a release or development build.</p></details>
-        <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>How do I restore purchases?</summary><p>In OshiLove Settings, choose Restore Purchases and use the same App Store account you used to buy the features. Restoring purchases does not restore your records.</p></details>
-        <details id="oshipocket-en" data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>Are my records sent anywhere?</summary><p>No. Oshi, event, expense, note and display-setting data stays on your device and is not sent to a developer server.</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>Can I change the currency and theme?</summary><p>Use Display Settings to change the currency symbol and theme colour. Changes apply throughout the App.</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>How do I restore purchased Premium features?</summary><p>Open Oshi Pocket Premium in Settings and choose Restore purchases. You must use the same App Store or Google Play account used for the purchase. Restoring does not charge you again.</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>How do I cancel Monthly Premium?</summary><p>On iPhone, open Settings, Apple Account and Subscriptions, then select Oshi Pocket and cancel. It renews each month unless cancelled at least 24 hours before the renewal date. Deleting the App does not cancel the subscription.</p></details>
-        <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>How do I check a refund or charge?</summary><p>Purchases, billing and refunds are managed by the App Store or Google Play. Check the purchase history or support service for the store used for the purchase. Oshi Pocket does not store credit-card information.</p></details>
+        <div class="support-topic"><h3>Getting started</h3>
+          <details><summary>Which devices are supported?</summary><p>Both apps are available on the App Store and require iOS 15.1 or later on iPhone. Check Compatibility on the App Store listing for your device.</p></details>
+          <details><summary>Do I need an account?</summary><p>You can use either app without registering. Your records stay on your device and do not automatically sync across devices.</p></details>
+          <details><summary>Can I add more than one oshi?</summary><p>Yes. Both apps let you add multiple oshis and organise records by oshi. Select the relevant oshi when you add a record.</p></details>
+        </div>
+        <div class="support-topic"><h3>Backups and data</h3>
+          <details><summary>Can I recover my records without the old device?</summary><p>If you still have a backup exported by the app, import it on the new device. If you have a full iPhone backup, you can restore it with Apple’s instructions. Whether the app’s records are recovered depends on what the backup contains. <a href="https://support.apple.com/en-us/118105">Apple’s backup restoration guide</a></p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>How do I back up before switching iPhones?</summary><p>Export a backup from OshiLove Settings on the old iPhone and save it somewhere the new phone can access. On the new iPhone, open OshiLove Settings, choose Restore backup and select the JSON file from OshiLove. Restoring replaces the records in the app. Transfer your photo library separately, as the backup does not contain the originals.</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>How do I back up before switching devices?</summary><p>On the old device, open Settings → Data management, export a backup and save it somewhere the new device can access. On the new device, use Restore from backup in the same menu and select the JSON file from Oshi Pocket. Restoring replaces the current records.</p></details>
+          <details><summary>Why won’t my backup restore?</summary><p>Select the JSON file in the same app that exported it. Check that the file has downloaded to the device and that the app is up to date. Save a separate backup of your current records before restoring.</p></details>
+          <details><summary>Can I recover deleted records?</summary><p>A backup from before the deletion may let you restore those records. Restoring also replaces records added since the backup, so export your current data separately first. The developer cannot recover records stored on your device.</p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>How do I delete my data?</summary><p>Use the relevant edit menu to delete diaries, events or albums. To remove all local app data, save any backup you need, then delete the app.</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>How do I delete my data?</summary><p>To clear your records, go to Settings → Data management → Reset data. This cannot be undone. Export anything you want to keep first.</p></details>
+        </div>
+        <div class="support-topic"><h3>Features and troubleshooting</h3>
+          <details><summary>What if the app won’t open or keeps closing?</summary><p>Close and reopen the app. If the problem continues, restart your iPhone and check the App Store for an update. Deleting the app can remove records stored on the device, so check that you have a backup first.</p></details>
+          <details><summary>Why can’t I find the widget?</summary><p>Update the app from the App Store and open it once. Then touch and hold the Home Screen, open the widget picker and search for OshiLove or Oshi Pocket. If you cannot find a particular widget, check the Home Screen and Lock Screen pickers separately.</p></details>
+          <details data-support-app="oshilove" id="oshilove-en"><summary><span class="support-answer-label">OshiLove · </span>Why aren’t my photos showing?</summary><p>Check OshiLove’s photo permission in iPhone Settings. If access is limited to selected photos, allow the photos you want to see. After switching devices, make sure the originals are available in the new iPhone’s library and reselect them in the app if needed.</p></details>
+          <details data-support-app="oshilove"><summary><span class="support-answer-label">OshiLove · </span>Why didn’t my event or anniversary reminder arrive?</summary><p>Check the reminder for the event or anniversary in OshiLove, then check that iPhone Settings → Notifications allows OshiLove notifications. Check whether Focus is silencing them.</p></details>
+          <details data-support-app="oshipocket" id="oshipocket-en"><summary><span class="support-answer-label">Oshi Pocket · </span>Can I log merch without linking it to an event?</summary><p>Yes. Choose Add general expense to log merch or other spending without creating an event. If you don’t see this option, update Oshi Pocket in the App Store.</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>Why didn’t my event reminder arrive?</summary><p>Check that the reminder is on and the time is correct in the event’s edit screen. Default reminders in Settings apply to new events. Edit existing events individually and check iPhone notification and Focus settings.</p></details>
+          <details data-support-app="oshipocket"><summary><span class="support-answer-label">Oshi Pocket · </span>How do I change the currency symbol or theme?</summary><p>Open Currency display or Theme settings in Settings. Changing the currency symbol affects display and does not convert recorded amounts.</p></details>
+          <details><summary>What if I forget my App Lock PIN?</summary><p>The developer cannot recover your PIN. If you previously enabled Face ID or another biometric option and can still unlock the app, back up your records first. If you’re locked out, contact support before deleting the app.</p></details>
+        </div>
+        <div class="support-topic"><h3>Premium and billing</h3>
+          <details><summary>What is the difference between monthly and lifetime access?</summary><p>Both apps offer a monthly subscription and a one-time lifetime purchase. Check the included features and current price in the app before buying.</p></details>
+          <details><summary>I paid. Why isn’t Premium unlocked?</summary><p>Open the Premium screen in Settings in the app you bought it in, then choose Restore Purchases. Use the same Apple Account you paid with. Restoring purchases is separate from restoring your records. If Premium still doesn’t unlock, contact support before purchasing again.</p></details>
+          <details><summary>Does one purchase unlock both apps?</summary><p>Each app has its own Premium purchase. Restore it in the app where you bought it.</p></details>
+          <details><summary>How do I cancel a monthly subscription?</summary><p>Open iPhone Settings → your name → Subscriptions, select the app’s monthly plan and cancel it. Deleting the app does not cancel the subscription. <a href="https://support.apple.com/en-us/118428">Apple’s cancellation guide</a></p></details>
+          <details><summary>How do I check a charge or request a refund?</summary><p>Sign in to <a href="https://reportaproblem.apple.com/">Apple’s Report a Problem</a> with the Apple Account used for the purchase. Find the charge there. Apple decides whether a purchase is eligible for a refund.</p></details>
+        </div>
       </section>
-      <section class="support-contact"><h2>Contact support</h2><p>When contacting support, include the information below. Please do not send personal information or private photos.</p><ul><li>Device model and operating-system version</li><li>App name and version</li><li>The affected screen and steps to reproduce</li><li>Any error message shown</li></ul>
+      <section class="support-contact"><h2>Contact support</h2><p>When contacting support, include the information below. Please do not send personal information or private photos.</p><ul><li>Device model and operating-system version</li><li>App name and version (see in-app Settings)</li><li>The affected screen and steps to reproduce</li><li>Any error message shown</li></ul>
         <div class="contact-box"><a href="mailto:oshiapps.support@gmail.com">oshiapps.support@gmail.com</a></div>
       </section>
     </div>
