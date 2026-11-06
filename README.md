@@ -2,6 +2,12 @@
 
 Official website: https://oshilovepocket.com
 
+## Website integrations
+
+- Apple Smart App Banner: all seven public pages use the OshiLove App Store ID `6811063943`. Safari controls the native banner; no custom banner script is required. No app-argument is specified because app deep-link support has not been configured here.
+- Google Analytics 4: existing OshiLove property `557268287`, web stream `16037701020`, measurement ID `G-37KD0MLGN5`. Its stream URL is `https://oshilovepocket.com/`. Keep the consent-gated loader in `site.js`; analytics must remain unloaded until accepted and stop again on refusal.
+- Google Search Console: verified URL-prefix property `https://oshilovepocket.com/`. Keep the `google-site-verification` meta tag in the public pages. `https://oshilovepocket.com/sitemap.xml` has been submitted and successfully read with seven URLs. The sitemap and canonical language URLs use extensionless Cloudflare routes to avoid redirect URLs.
+
 The site supports Japanese, Traditional Chinese and English, with shared privacy and support pages. Static pages are served by Cloudflare Workers Assets. The resources page uses an R2 binding for original PNG and ZIP downloads.
 
 ## Resources
