@@ -60,6 +60,11 @@ function button(content, handler, className) {
   return b;
 }
 function filtersWithoutDate() { return {...state,date:""}; }
+function preferredVariant(variants) {
+  return variants.find(variant=>variant.color==="white")
+    || variants.find(variant=>variant.color==="pink")
+    || variants[0];
+}
 function readUrl() {
   const params = new URLSearchParams(location.search);
   state.query = params.get("q") || "";
@@ -136,15 +141,16 @@ function renderResults() {
   result.replaceChildren();
   for(const item of selected) {
     const variants = matchingVariants(item,state.color);
+    const coverVariant = preferredVariant(variants);
     const card = node("article","catalog-card");
     const cover = button("",()=>openSeries(item,cover),"catalog-cover");
     cover.setAttribute("aria-label",t.browse+" · "+item.title);
     const img = node("img");
-    img.src = variants[0].preview;
-    img.alt = item.title+" · "+t[variants[0].color];
+    img.src = coverVariant.preview;
+    img.alt = item.title+" · "+t[coverVariant.color];
     img.loading = "lazy";
-    img.width = variants[0].width;
-    img.height = variants[0].height;
+    img.width = coverVariant.width;
+    img.height = coverVariant.height;
     cover.append(img);
     const body = node("div","catalog-card-body");
     const title = node("h3","",item.title);
@@ -165,7 +171,7 @@ function renderResults() {
 function renderDialog(item) {
   const t = lang();
   const variants = matchingVariants(item,state.color);
-  const variant = variants.find(v=>v.id===state.variant)||variants[0];
+  const variant = variants.find(v=>v.id===state.variant)||preferredVariant(variants);
   if(!variant) return;
   state.variant = variant.id;
   $("#material-dialog-title").textContent = item.title;
