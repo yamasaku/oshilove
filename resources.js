@@ -1,4 +1,5 @@
 import {matches, matchingVariants} from "./resources-core.mjs";
+import {createPhotoComposer} from "./photo-composer.js";
 
 const text = {
   ja: {
@@ -9,7 +10,7 @@ const text = {
     dateClear:"日付を解除", empty:"条件に合う素材がありません。キーワードや条件を変更してください。",
     error:"素材を読み込めませんでした。もう一度お試しください。", retry:"再読み込み", close:"閉じる", light:"明るい背景", dark:"暗い背景",
     found:n=>n+" シリーズの素材", downloadLabel:title=>title+" を PNG で保存", zipLabel:title=>title+" の全 PNG を ZIP で保存",
-    size:"原寸 PNG", preview:"プレビュー背景", recurrence:"記念日", anyday:"いつでも"
+    size:"原寸 PNG", preview:"プレビュー背景", recurrence:"記念日", anyday:"いつでも",compose:"写真を入れて作る"
   },
   "zh-tw": {
     all:"全部", frame:"相框", stamp:"貼圖", anniversary:"紀念日", halloween:"萬聖節", daily:"日常",
@@ -19,7 +20,7 @@ const text = {
     dateClear:"清除日期", empty:"沒有符合條件的素材，請調整關鍵字或篩選條件。",
     error:"無法載入素材，請再試一次。", retry:"重新載入", close:"關閉", light:"淺色背景", dark:"深色背景",
     found:n=>n+" 個系列的素材", downloadLabel:title=>"下載 "+title+" PNG", zipLabel:title=>"下載 "+title+" 整套 PNG ZIP",
-    size:"原尺寸 PNG", preview:"預覽背景", recurrence:"紀念日", anyday:"日常使用"
+    size:"原尺寸 PNG", preview:"預覽背景", recurrence:"紀念日", anyday:"日常使用",compose:"放入相片製作"
   },
   en: {
     all:"All", frame:"Frames", stamp:"Stamps", anniversary:"Anniversaries", halloween:"Halloween", daily:"Everyday",
@@ -29,7 +30,7 @@ const text = {
     dateClear:"Clear date", empty:"No resources match. Try another keyword or filter.",
     error:"Resources could not be loaded. Please try again.", retry:"Try again", close:"Close", light:"Light background", dark:"Dark background",
     found:n=>n+" resource series", downloadLabel:title=>"Download "+title+" PNG", zipLabel:title=>"Download all "+title+" PNGs as ZIP",
-    size:"Original PNG", preview:"Preview background", recurrence:"Occasion", anyday:"Everyday"
+    size:"Original PNG", preview:"Preview background", recurrence:"Occasion", anyday:"Everyday",compose:"Add your photo"
   }
 };
 const $ = selector => document.querySelector(selector);
@@ -42,6 +43,7 @@ const state = {query:"",type:"",theme:"",color:"",date:"",year:now.getFullYear()
 let items = [];
 let dataLoaded = false;
 let trigger;
+let composer;
 
 let debounce;
 
@@ -170,6 +172,9 @@ function renderResults() {
   }
 }
 function renderDialog(item) {
+  composer?.dispose();
+  composer=null;
+  dialog.classList.remove("is-photo-editor");
   const t = lang();
   const variants = matchingVariants(item,state.color);
   const variant = variants.find(v=>v.id===state.variant)||preferredVariant(variants);
@@ -223,7 +228,20 @@ function renderDialog(item) {
     thumb.append(image,node("span","",t[v.color]));
     thumbList.append(thumb);
   }
-  content.replaceChildren(preview,backdrop,meta,links,thumbList);
+  const actions=[];
+  if(item.type==="frame") {
+    const start=button(t.compose,()=>{
+      dialog.classList.add("is-photo-editor");
+      composer=createPhotoComposer({
+        container:content,variants,initialVariant:variant,
+        getLanguage:()=>document.documentElement.dataset.language,
+        onVariantChange:id=>{state.variant=id;},
+        onBack:()=>{renderDialog(item);dialog.querySelector(".compose-start")?.focus();}
+      });
+    },"pill-button compose-start");
+    actions.push(start);
+  }
+  content.replaceChildren(preview,backdrop,meta,...actions,links,thumbList);
 }
 function render() {
   const t = lang();
@@ -231,6 +249,7 @@ function render() {
   for(const select of Object.values(controls)) for(const option of select.options) option.textContent = t[option.value] || t.all;
   renderCalendar();
   renderResults();
+  if(composer){composer.setLanguage();return;}
   if(dialog.open) {
     const item = items.find(item=>item.id===state.series);
     if(item) renderDialog(item);
@@ -240,6 +259,8 @@ function closeDialog() {
   dialog.close();
 }
 dialog.addEventListener("close",()=>{
+  composer?.dispose();composer=null;
+  dialog.classList.remove("is-photo-editor");
   state.series = "";
   syncUrl();
   trigger?.focus();

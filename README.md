@@ -11,6 +11,7 @@ The site supports Japanese, Traditional Chinese and English, with shared privacy
 - `resources-data.json`: public catalogue and versioned download paths.
 - `material-previews/`: small WebP previews; original PNG and ZIP files stay in R2.
 - `materials-worker.js`: streams only downloads listed in the public catalogue. The R2 bucket has no public listing endpoint.
+- `photo-composer.js`, `composer-core.mjs`: browser-only photo framing. Frame previews offer a photo picker, drag/keyboard positioning, zoom, colour changes and PNG export. The original frame is fetched from R2; selected photos are never uploaded or persisted. Closing the editor releases its image objects and generated download URLs. Test desktop and mobile layouts, EXIF-oriented photos, export dimensions and network requests when changing this feature.
 
 Original materials are maintained locally in `D:\X material`. **Ignore every source file or directory whose path contains `-oshideco`, and leave those original files unchanged.** Do not include them in previews, the public catalogue or ZIP downloads. `.stamp` authoring files are also excluded.
 
